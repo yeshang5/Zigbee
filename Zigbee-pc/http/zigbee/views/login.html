@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no;">
+    <!-- The 3 meta tags * must * be placed in the front, and any other content is * must * be followed！ -->
+    <link rel="icon" href="">
+    <!-- Here to put a small company Logo, you can change！ -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/lib/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+    <!-- Custom Fonts -->
+    <link href="/stylesheets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>无线门禁系统登陆页</title>
+</head>
+<body>
+    <!--<div class="container" ng-app="webapp" ng-controller="CmdController">
+        <h2>Cmd</h2>
+        <div class="row">
+            <div class="col-sm-2">
+                <small ng-bind="save.createTime"></small>
+            </div>
+            <div class="col-sm-5" ng-bind="save.IP">
+            </div>
+            <div class="col-sm-5" ng-bind="save.DEV_ID">
+            </div>
+        </div>
+    </div>!-->
+
+    <!-- Form
+    ================================================== -->
+    <div class="container" id="login" >
+        <div class="row">
+            <h1>无线门禁系统</h1>
+            <div class="col-md-4 col-md-offset-4 center">
+                <div class="login-pannel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">登录</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" class="login-form" method="post">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input type="text"  name="name" class="form-control" pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,15}$" maxlength="16" placeholder="用户名" aria-describedby="sizing-addon1" autocomplete="off" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password"  name="password" class="form-control" pattern="^[0-9a-zA-Z]{4,15}$" maxlength="16" placeholder="密 码" aria-describedby="sizing-addon1" autocomplete="off" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="login">
+                                        <button type="submit" class="btn btn-lg btn-primary btn-block">登 陆</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="clear">
+                                        <button type="reset" class="btn btn-lg btn-warning btn-block">重 置</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="/javascripts/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/lib/bootstrap.min.js"></script>
+
+</body>
+</html>

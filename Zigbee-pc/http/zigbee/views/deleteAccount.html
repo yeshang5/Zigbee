@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The 3 meta tags * must * be placed in the front, and any other content is * must * be followed！ -->
+    <link rel="icon" href="">
+    <!-- Here to put a small company Logo, you can change！ -->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../public/css/lib/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap-table Core CSS -->
+    <!-- MetisMenu CSS -->
+    <link href="../public/css/lib/metisMenu.min.css" rel="stylesheet">
+
+
+
+    <!-- Custom CSS -->
+    <link href="../public/css/common.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../public/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>设备列表</title>
+
+</head>
+<body>
+<div id="wrapper">
+    <!----------------------------------1.菜单-------------------------------------->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <!----------1.1 顶部菜单--------->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand-img" href="home.html" title="无线门锁系统">
+                <img  alt="无线门锁系统" src="../public/images/logo.gif">
+            </a>
+            <a class="navbar-brand-text" href="home.html" title="无线门锁系统">
+                无线门锁系统
+            </a>
+
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+
+                    <i class="fa fa-user fa-fw"></i>
+                    <span class="loginName">张 三</span>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="account.html"><i class="fa fa-gear fa-fw"></i><strong> 注册</strong></a>
+                    </li>
+                    <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i><strong> 注销</strong></a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-messages -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        <!-- /.navbar-top-links -->
+        <!----------1.2 左侧菜单--------->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+
+                    <li class="sidebar-search">
+                        系统菜单
+                        <!-- /input-group -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 系统管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="account.html">网页账户</a>
+                                </li>
+                                <li>
+                                    <a href="deleteAccount.html">账号列表</a>
+                                </li>
+                            </ul>
+
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table fa-fw fa-lg"></i> 进出办理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-paste fa-fw fa-lg"></i> 记录查询<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------2.设备列表-------------------------------------->
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">网页账号</h1>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                账号注册
+            </div>
+            <div class="panel-body">
+                <form>
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="loginAccount">账号</label>
+                                <input type="text" class="form-control" id="loginAccount" pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,15}$" maxlength="16" placeholder="" aria-describedby="sizing-addon1" autocomplete="off" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">密码</label>
+                                <input type="password" class="form-control"  id="loginPassword" pattern="^[0-9a-zA-Z]{4,15}$" maxlength="16" placeholder="" aria-describedby="sizing-addon1" autocomplete="off" required>
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <p><i class="fa fa-ban fa-fw fa-lg"></i>  请确保密码的正确性！</p>
+                            </div>
+                            <button type="submit" class="btn btn-success">注册账号</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-body">
+                                    <h3>注意事项</h3>
+                                </div>
+
+                                <!-- List group -->
+                                <ul class="list-group">
+                                    <li class="list-group-item">账号必须是2-15以内的中文、英文或者数字<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
+                                    <li class="list-group-item">账号之间不要有空格等非法字符<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
+                                    <li class="list-group-item">密码必须是4-15以内的英文和数字<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
+                                    <li class="list-group-item">密码不要有空格等非法字符<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="../public/js/lib/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../public/js/lib/bootstrap.min.js"></script>
+<!-- Bootstrap-table Core JavaScript -->
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../public/js/lib/menu/metisMenu.min.js"></script>
+<script src="../public/js/lib/menu/active.js"></script>
+<!-- own-->
+
+
+</body>
+</html>

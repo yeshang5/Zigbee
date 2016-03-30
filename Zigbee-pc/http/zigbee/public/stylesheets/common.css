@@ -1,0 +1,176 @@
+body{
+    font-family:"Microsoft YaHei";
+    background-color: #f8f8f8;
+}
+
+
+#wrapper{
+    width: 100%;
+}
+
+
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-header a{
+    color: black;
+}
+
+.navbar-header a:hover,
+.navbar-header a:active{
+    color: grey;
+}
+
+
+.navbar-brand-img{
+    float: left;
+    padding: 0;
+}
+
+.navbar-brand-img > img{
+    display: block;
+    height: 50px;
+}
+
+.navbar-brand-text{
+    float: left;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.navbar-brand-text:hover,
+.navbar-brand-text:focus{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+.navbar-top-links{
+    margin-right: 0;
+}
+
+.navbar-top-links a{
+    color: black;
+}
+
+
+.navbar-top-links li{
+    display: inline-block;
+}
+
+
+.navbar-top-links li a{
+    padding: 15px;
+    min-height: 50px;
+}
+
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+    color:black;
+}
+
+
+.navbar-top-links .dropdown-user {
+    right: auto;
+    left: auto;
+}
+
+
+
+
+.sidebar .sidebar-nav.navbar-collapse{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sidebar .sidebar-search {
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 6px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+.sidebar ul li a{
+    color: black;
+}
+
+
+.sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+.sidebar .fa.arrow:before {
+    content: "\f104";
+}
+
+.sidebar .active>a>.fa.arrow:before {
+    content: "\f107";
+}
+
+
+.sidebar .nav-second-level li{
+    border-bottom: 0!important;
+}
+.sidebar .nav-second-level li a {
+    padding-left: 45px;
+    color: black;
+}
+
+@media(min-width: 768px){
+    .sidebar{
+        z-index: 1;
+        position:absolute;
+        width: 250px;
+        margin-top: 51px;
+    }
+
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+
+#page-wrapper{
+    padding: 0 15px;
+    min-height: 568px;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        margin-top:-20px;     /*自己修改*/
+        padding: 0 30px;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+
+
+#page-wrapper .page-header{   /*每张页面的头颜色*/
+    color: black;
+}

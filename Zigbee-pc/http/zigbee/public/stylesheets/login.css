@@ -1,0 +1,34 @@
+body{
+    font-family:"Microsoft YaHei";
+    background-color: #f8f8f8;
+}
+
+
+div#login{
+    background-image: url(../images/login.jpg);
+    background-color: white;
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 3%;
+}
+
+
+div#login h1{
+    text-align: center;
+    color: black;
+    margin-top: 5%;
+}
+
+div#login .login-pannel{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    width: 70%;
+}
+
+
+
+
