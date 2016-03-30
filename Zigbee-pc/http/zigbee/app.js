@@ -14,7 +14,7 @@ var bodyParser = require('body-parser');    //把POST请求振文中的JSON数�
 var cookieParser = require('cookie-parser');    //cookie 请求解析cookie，并将它们作为一个JS对象存储在req.cookies属性中
 //var cookieSession = require('cookie-session');
 var expressSession = require('express-session');    //session会话
-var mongoStore = require('connect-mongo')({session:expressSession});    //把mongoDB连接作为已通过分身验证的会话的持久性存储来注册
+var mongoStore = require('connect-mongo')({session:expressSession}); //把mongoDB连接作为已通过分身验证的会话的持久性存储来注册
 
 var crypto = require('crypto');   //加密算法
 
@@ -40,15 +40,15 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(cookieParser());    //开启cookie
-
+app.use(cookieParser('MAGICString'));    //开启cookie
+app.use(expressSession());
 
 //在req对象中添加了一个session属性，session对象是直接绑在MongoDB的sessions集合中
 //当会话更改时，会话被保存在了数据库中
-app.use(expressSession({
+/*app.use(expressSession({
   secret:'SECRET',
   key:'zigbee',
-  cookie:{maxAge: 60*60*1000},    //session和相应的cookie生存时间1小时,如果不设置,默认为null,这样expire的时间就是浏览器的关闭时间
+  //cookie:{maxAge: 60*1000},    //session和相应的cookie生存时间1小时,如果不设置,默认为null,这样expire的时间就是浏览器的关闭时间
 
   store:  new mongoStore({        //创建新的mongodb数据库
     db:'zigbee',
@@ -57,7 +57,7 @@ app.use(expressSession({
     url:"mongodb://localhost/web",
     collection:'sessions'
   })
-}));  //开启session,自动存入mongodb数据库，而非内存中
+}));  //开启session,自动存入mongodb数据库，而非内存中*/
 
 app.use(express.static(path.join(__dirname, 'public')));
 

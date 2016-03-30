@@ -34,15 +34,15 @@ module.exports = {
         if((user.name == req.body.name) &&
            (user.password == hashPW(req.body.password.toString()))){
             //创建新的会话
-            req.session.regenerate(function(){
+            //req.session.regenerate(function(){
                 req.session.user = user;
                 req.session.success = 'login success!';
                 res.redirect('home');    //重定向到主页
-            });
+            //});
         } else{
-            req.session.regenerate(function(){
+            //req.session.regenerate(function(){
                 req.session.error = 'login failed!';
-            });
+            //});
             //res.json({msg:'账号密码错误!'});
             //res.send('login','账号密码错误!');          //重定向到首页
             res.redirect('/');    //重定向到主页
