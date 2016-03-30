@@ -1,6 +1,6 @@
 # Zigbee
 -------------------
-**Zigbee**项目是一个涉及智能家居的无线门锁项目。主要包括PC端的服务器、网页和下位机中的基站和门锁。
+**Zigbee**项目是一个涉及智能家居的无线门锁项目。主要包括上位机的tcp、http服务器、网页客户端和下位机中的基站和门锁。
  
 ## 目录
 -------------------
@@ -8,12 +8,13 @@
 * [门锁特点](#门锁特点)
 * [文件组成](#文件组成)
 * [使用工具](#使用工具)
+* [项目进度](#项目进度)
 * [版本](#版本)
 * [开发者](#开发者)
 
 ###Zigbee简介
 -------------------
-Zigbee是基于IEEE802.15.4标准的低功耗局域网协议。ZigBee技术是一种短距离、低功耗的无线通信技术。下位机/基站和无线门锁之间就是通过Zigbee进行星型组网。基站和PC之间则是通过TCP/IP协议进行通讯，从而可以实时采集门锁数据和对门锁的进行远程控制，该无线门锁涉及智能家居中电锁门禁和智能家居软件两大方面。
+Zigbee是基于IEEE802.15.4标准的低功耗局域网协议。ZigBee技术是一种短距离、低功耗的无线通信技术。下位机中的基站和无线门锁之间就是通过Zigbee进行星型组网。基站和PC之间则是通过TCP/IP协议进行通讯，从而可以实时采集门锁数据和对门锁的进行远程控制。
 
 ###门锁特点
 -------------------
@@ -27,37 +28,31 @@ Zigbee是基于IEEE802.15.4标准的低功耗局域网协议。ZigBee技术是�
 -------------------
 ``` python
 Zigbee/
-├── circuit
-│   ├── CC2530
-│   └── MFRC522
-├── datasheet
-│   ├── CC2530
-│   ├── EEPROM
-│   ├── IPORT
-│   ├── RFID
-│   └── RTC
-├── nodejs/
-│   ├── NodeJs Doc
-│   └── NodeJs Program
-├── Program/
-│   ├── Base
-│   └── Lock
-├── Tools
-│   ├── ZnetCom
-│   ├── NetAssist
-│   └── UartAssist
-├── Protocol
-│   └── WirelessDoor_Protocol_Rev1_0
-└── ppt
+| 
+├── Zigbee-mcu/[下位机]
+│   ├── Circuit[电路]
+│   ├── datasheet[手册]
+│   ├── Program[程序]
+│   └── Tools[工具]
+├── Zigbee-pc/[上位机]
+│   ├── doc[文档]
+│   ├── http[服务器]
+│   └── tcp[服务器]
+├── Zigbee-protocol/[通信协议]
+└── Based on the Zigbee wireless access control design and implementation[PPT]
 ```
+###使用工具
 -------------------
-`circuit`硬件设计图
-`datasheet`器件手册	
-`nodejs`针对下位机/基站的TCP服务器和针对网页设计的HTTP服务器
-`Program`基站和门锁的程序设计
-`Tools`网络调试小工具
-`Protocol`自行设计的通信协议
-`ppt`项目简单说明
+- **IAR** ：CC2530环境IDE；
+-  **ZnetCom2** ：下位机TCP/IP参数配置工具;
+-  **NetAssist** ：网络调试助手;
+- **WebStorm** ：TCP/HTTP服务器、网页设计IDE;
+- **Google Chrome** ：网页调试工具;
+- **Node-inspector** ：TCP/HTTP服务器调试工具;
+-  **Grunt** ：代码压缩器；
+- **pm2** ：Node应用程序管理器;
+- **WebStrom-MongoDB** ：数据库可视化管理工具;
+- **git** ：版本控制;
 
 ### 项目进度
 -------------------
