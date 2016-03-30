@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="18" />
+<command resetdev="0" download="0" />
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="CANET-100" comment="" />
+	<item id="2" name="Firmware Version" readonly="1" cmd="VERSION" />
+	<item id="3" name="Name" readonly="0" cmd="NAME" />
+</root>
+<root name="Password Operation">
+	<item id="4" name="Password" readonly="2" cmd="" />
+	<item id="5" name="Modify Password" readonly="2" cmd="" defaultval="0">
+		<option name="No" value="0" disableitem="6|7" />
+		<option name="Yes" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="New Password" readonly="2" cmd="PASS" checktype="5" comment="The max availabal length is 10"/>
+	<item id="7" name="Confirm New Password" readonly="2" cmd="" />
+</root>
+<root name="IP Information">
+	<item id="8" name="IP" readonly="0" cmd="IP" />
+	<item id="9" name="Mask" readonly="0" cmd="MASK" />
+	<item id="10" name="Gateway" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="MAC" readonly="1" cmd="MAC" />
+	<item id="12" name="IP Type" readonly="0" cmd="IP_MODE">
+		<option name="Dynamic" value="0" disableitem="8|9|10" />
+		<option name="Static" value="1" enableitem="8|9|10" />
+	</item>
+</root>
+<root name="Network Settings">
+	<item id="13" name="Work Port" readonly="0" cmd="C1_PORT" />
+	<item id="14" name="Target IP" readonly="0" cmd="CANDESIP1" />
+	<item id="15" name="Target Port" readonly="0" cmd="CANDESPORT1" />
+</root>
+
+<root name="CAN Settings">
+	<item id="16" name="CAN Baudrate(HEX)" readonly="0" cmd="CANBAUD1" showhex="1" comboedit="1">
+		<option name="140002(1000K)" value="140002" />
+		<option name="160002(800K)" value="160002" />
+		<option name="1c0002(500K)" value="1c0002" />
+		<option name="1c0005(250K)" value="1c0005" />
+		<option name="1c000b(125K)" value="1c000b" />
+		<option name="1c000e(100K)" value="1c000e" />
+		<option name="1c001d(50K)" value="1c001d" />
+		<option name="1c004a(20K)" value="1c004a" />
+		<option name="1c0095(10K)" value="1c0095" />
+		<option name="1c012b(5K)" value="1c012b" />
+	</item>
+	<item id="17" name="Mode" readonly="0" cmd="CANLISTENMD1">
+		<option name="Normal" value="0" />
+		<option name="Listen Only" value="1" />
+	</item>
+</root>
+

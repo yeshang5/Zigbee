@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="3200" />
+<command resetdev="1" download="0" updatefirm="1" test="1" />
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="NETCOM-3200" comment="" />
+	<item id="2" name="Description" readonly="1" cmd="" defaultval="napped by four NETCOM-800A" />
+</root>

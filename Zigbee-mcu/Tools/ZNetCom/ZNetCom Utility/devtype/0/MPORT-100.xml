@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="40" />
+<command resetdev="1" download="0" updatefirm="1" test="1" />
+<root name="»ù±¾ÐÅÏ¢">
+	<item id="1" name="Éè±¸ÐÍºÅ" readonly="1" cmd="" defaultval="MPORT-100" comment="" />
+	<item id="2" name="Éè±¸¹Ì¼þ°æ±¾" readonly="1" cmd="VERSION" />
+	<item id="3" name="Éè±¸Ãû³Æ" readonly="0" cmd="NAME" />
+</root>
+<root name="ÃÜÂë²Ù×÷">
+	<item id="4" name="µ±Ç°ÃÜÂë" readonly="2" cmd="" />
+	<item id="5" name="ÊÇ·ñ¸ü¸ÄÃÜÂë" readonly="2" cmd="" defaultval="0">
+		<option name="·ñ" value="0" disableitem="6|7" />
+		<option name="ÊÇ" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="ÐÂÃÜÂë" readonly="2" cmd="PASS" />
+	<item id="7" name="È·ÈÏÐÂÃÜÂë" readonly="2" cmd="" />
+</root>
+<root name="IPµØÖ·ÐÅÏ¢">
+	<item id="8" name="Éè±¸IP" readonly="0" cmd="IP" />
+	<item id="9" name="Éè±¸×ÓÍøÑÚÂë" readonly="0" cmd="MASK" />
+	<item id="10" name="Éè±¸Íø¹ØIP" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="Éè±¸MACµØÖ·" readonly="1" cmd="MAC" />
+	<item id="12" name="»ñÈ¡IP·½Ê½" readonly="0" cmd="IP_MODE">
+		<option name="¶¯Ì¬»ñÈ¡" value="0" disableitem="8|9|10" />
+		<option name="¾²Ì¬»ñÈ¡" value="1" enableitem="8|9|10" />
+	</item>
+</root>
+<root name="ÍøÂç²ÎÊý">
+	<item id="13" name="DNS·þÎñÆ÷" readonly="0" cmd="DNS" unuseval="invalid" comment="µ±Éè±¸ÐèÒªÓÃµ½ÓòÃû½âÎö£¨DNS£©Ê±£¬±ØÐëÌíÈëDNS·þÎñÆ÷µÄIPµØÖ·" />
+	<item id="16" name="IP¹ýÂËÏî1" readonly="0" cmd="IPF1" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="17" name="IP¹ýÂËÏî2" readonly="0" cmd="IPF2" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="18" name="IP¹ýÂËÏî3" readonly="0" cmd="IPF3" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="19" name="IP¹ýÂËÏî4" readonly="0" cmd="IPF4" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="20" name="IP¹ýÂËÏî5" readonly="0" cmd="IPF5" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="21" name="IP¹ýÂËÏî6" readonly="0" cmd="IPF6" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="22" name="IP¹ýÂËÏî7" readonly="0" cmd="IPF7" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="23" name="IP¹ýÂËÏî8" readonly="0" cmd="IPF8" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+</root>
+<root name="´®¿Ú²ÎÊý">
+	<item id="24" name="Ê¹ÓÃ±ê×¼²¨ÌØÂÊ" readonly="0" cmd="STAND_BAUD" comment="Ñ¡Ôñ¡°ÊÇ¡±£¬Ôò´®¿Ú²¨ÌØÂÊÓÉÏÂÃæµÄ¡°±ê×¼²¨ÌØÂÊ¡±¾ö¶¨£»Ñ¡Ôñ¡°·ñ¡±£¬Ôò´®¿Ú²¨ÌØÂÊÓÉÏÂÃæµÄ¡°ÓÃ»§Éè¶¨²¨ÌØÂÊ¡±¾ö¶¨" >
+		<option name="ÊÇ" value="1" enableitem="25" disableitem="26" />
+		<option name="·ñ" value="0"  enableitem="26" disableitem="25" />
+	</item>
+	<item id="25" name="±ê×¼²¨ÌØÂÊ" readonly="0" cmd="PORT_BAUD" >
+		<option name="300" value="1" />
+		<option name="600" value="2" />
+		<option name="1200" value="3" />
+		<option name="2400" value="4" />
+		<option name="4800" value="5" />
+		<option name="9600" value="6" />
+		<option name="19200" value="7" />
+		<option name="38400" value="8" />
+		<option name="57600" value="9" />
+		<option name="115200" value="10" />
+		<option name="230400" value="11" />
+	</item>
+	<item id="26" name="ÓÃ»§Éè¶¨²¨ÌØÂÊ" readonly="0" cmd="USER_BAUD" comment="ÓÃ»§Éè¶¨µÄ²¨ÌØÂÊµÄÓÐÐ§·¶Î§Îª300--1152000bps£¬RS-232Ä£Ê½×î¸ßËÙÂÊÎª1.5Kbps£¬RS485»òRS422Ä£Ê½×î¸ßËÙÂÊ1.15Mbps¡£×¢£ºÓÐÐ©²¨ÌØÂÊ£¬¿ÉÄÜÆ«²î±È½Ï´ó£¬Ðë²âÊÔÎª×¼¡£" />
+	<item id="27" name="Êý¾ÝÎ»" readonly="0" cmd="DATA_BIT" comment="´®¿ÚµÄÊý¾ÝÎ»³¤¶È£¬¿ÉÑ¡Ôñ5~8Î»" >
+		<option name="5" value="5" />
+		<option name="6" value="6" />
+		<option name="7" value="7" />
+		<option name="8" value="8" />
+	</item>
+	<item id="28" name="Í£Ö¹Î»" readonly="0" cmd="STOP_BIT" comment="´®¿ÚµÄÍ£Ö¹Î»³¤¶È£¬¿ÉÑ¡Ôñ1~2Î»" >
+		<option name="1" value="1" />
+		<option name="2(Êý¾ÝÎ»Îª5Ê±£¬´ËÏî±íÊ¾1.5¸öÍ£Ö¹Î»)" value="2" />
+	</item>
+	<item id="29" name="Ð§ÑéÎ»" readonly="0" cmd="PARITY_BIT" comment="ÉèÖÃ´®¿ÚÊý¾ÝµÄÐ§Ñé·½Ê½£¬¿ÉÑ¡ÔñÅ¼Ð§Ñé¡¢ÆæÐ§Ñé¡¢Ç¿ÖÆÎª0ºÍÇ¿ÖÆÎª1" >
+		<option name="ÎÞ" value="0" />
+		<option name="ÆæÐ£Ñé" value="1" />
+		<option name="Å¼Ð£Ñé" value="2" />
+		<option name="Ç¿ÖÆÎª1" value="3" />
+		<option name="Ç¿ÖÆÎª0" value="4" />
+	</item>
+</root>
+
+<root name="Íø¹ØÉèÖÃ" >
+	
+	<item id="30" name="¹¤×÷·½Ê½" readonly="0" cmd="PORT_WORKTYPE" caustrepeat="4" caustrepeatind="1" comment="MPort-100IEµÄ¹¤×÷Ä£Ê½ÊÇÓÃËüµÄÒÔÌ«ÍøºÍ´®ÐÐ½Ó¿ÚËùÁ¬½ÓµÄÉè±¸µÄ¹¤×÷×´Ì¬À´¶¨ÒåµÄ£¬¾Ù¸öÀý×Ó£¬µ±ÓÃ»§Òª½«ËûµÄModbusTCPÖ÷»úÉè±¸ÓëModbusRTUÉè±¸ÊµÏÖÏà»¥Í¨Ñ¶£¬ÄÇÃ´¾Í±ØÐë½«MPortµÄ¹¤×÷Ä£Ê½ÉèÎªTCP_Master--RTU_Slaver¡£">
+		<option name="RTU_Master--TCP_Slaver" value="0" disableitem="37|38|39|40|41" enableitem="42|43|44|45|46|47" />
+		<option name="TCP_Master--RTU_Slaver" value="1" disableitem="42|43|44|45|46|47" enableitem="37|38|39|40|41" />
+		<option name="ASCII_Master--TCP_Slaver" value="2" disableitem="37|38|39|40|41" enableitem="42|43|44|45|46|47" />
+		<option name="TCP_Master--ASCII_Slaver" value="3" disableitem="42|43|44|45|46|47" enableitem="37|38|39|40|41" />
+	</item>
+	<item id="31" name="³õÊ¼»¯ÑÓÊ±Ê±¼ä(ms)" readonly="0" cmd="DEFAULT_TIMEOUT" comment="ÓÐÐ©Modbus´Ó»úÉè±¸µÄ³õÊ¼»¯Ê±¼ä±È½Ï³¤£¬Îª±ÜÃâÔÚËüÃÇ»¹Ã»ÓÐ³õÊ¼»¯Íê³ÉÖ®Ç°£¬¾Í·¢³öÇëÇóÖ¡·ÃÎÊ£¬Òò´ËÔÚMPort-100IEÉè±¸ÖÐÉè¶¨ÁË³õÊ¼»¯ÑÓÊ±Ê±¼äÀ´¾ö¶¨³õÊ¼»¯µ½¿ÉÒÔ·¢³öµÚÒ»¸öÇëÇóÖ¡µÄÊ±¼äÑÓÊ±£¬ÉèÖÃµÄÓÐÐ§ÖµÎª0~65535ms¡£" />
+	<item id="32" name="×Ö·û³¬Ê±×Ô¶¯ÊÊÓ¦" readonly="0" cmd="DEFAULT_TIMEOUT_MIXTURE" refid="33" comment="µ±ÓÃ»§½«ËüÊ¹ÄÜÊ±£¬MPort-100IE»á½øÈëµ½×Ô¶¯ÊÊÓ¦×Ö·û³¬Ê±Ê±¼ä×´Ì¬£¬×îÖÕÕÒµ½Ò»¸ö×î¼ÑµÄ×Ö·û³¬Ê±Ê±¼ä¡£" >
+		<option name="ÊÇ" value="1" disableitem="33" />
+		<option name="·ñ" value="0" enableitem="33" />
+	</item>
+	<item id="33" name="ÓÃ»§Éè¶¨×Ö·û³¬Ê±Ê±¼ä(ms)" readonly="0" cmd="CHAR_TIMEOUT_MIXTURE" comment="³¬Ê±ÉèÖÃÎª5-32767£¬Èç¹û³¬¹ý32767ÔòÉèÖÃ³ÉÊ¹ÓÃ³¬Ê±×Ô¶¯ÊÊÓ¦"/>
+	<item id="34" name="ÏûÏ¢³¬Ê±Ê±¼ä(ms)" readonly="0" cmd="MSG_TIMEOUT" comment="ModbusÊÇÒ»¸öÖ÷´ÓÐ­Òé£¬Ö÷»úÔÚ·ÃÎÊ´Ó»úÊ±ÐèÒªÒ»¸öÏìÓ¦³¬Ê±Ê±¼ä£¬Õâ¸öÊ±¼ä¾ÍÊÇMPort-100IEÉè±¸µÄ¡°ÏûÏ¢³¬Ê±Ê±¼ä¡±¡£¸Ã²ÎÊýµÄÓÐÐ§ÉèÖÃ·¶Î§Îª100--65535ms" />
+	<item id="35" name="TCPÁ¬½Ó³¬Ê±Ê±¼ä(s)" readonly="0" cmd="TCP_TIMEOUT" comment="¸Ã²ÎÊýµÄÓÐÐ§ÉèÖÃ·¶Î§Îª0--65535s£¬ÉèÎª0±íÊ¾¹Ø±Õ´Ë¹¦ÄÜ" />
+	<item id="36" name="ÐÄÌø°ü¼ä¸ôÊ±¼ä(s)" readonly="0" cmd="TCPAT" comment="¸Ã²ÎÊýµÄÓÐÐ§ÉèÖÃ·¶Î§Îª0--65535s£¬ÉèÎª0±íÊ¾¹Ø±Õ´Ë¹¦ÄÜ" />
+</root>
+
+<root name="TCP_MasterÄ£Ê½ÏÂµÄ´Ó»úÉèÖÃ">
+	<item id="37" name="´Ó»ú¶Ë¿Ú£¨Á¬½Ó¶Ë¿Ú£©" readonly="0" cmd="SLAVER_PORT" comment="ModbusTCP´Ó»úµÄÄ¬ÈÏ¶Ë¿ÚÎª502£¬ÓÃ»§¿É¸ù¾ÝÐèÒª¶ÔMPort-100IEµÄ´Ë´Ó»ú¶Ë¿Ú½øÐÐÐÞ¸Ä¡£" />
+	<item id="38" name="×î´óÁ¬½ÓÊý" readonly="0" cmd="SER_MAX_CONNECT" comment="MPort-100IEµÄModbusTCP´Ó»úµÄ×î´óÁ¬½ÓÊýÎª4£¬ÓÃ»§¿É¸ù¾ÝÊµ¼ÊÓ¦ÓÃ¶Ô´Ë²ÎÊý½øÐÐµ÷½Ú¡£" />
+	<item id="39" name="µ¥¸öIP×î´óÁ¬½ÓÊý" readonly="0" cmd="IP_MAX_CONNECT" comment="Îª·ÀÖ¹×ÊÔ´±»¶ÀÕ¼£¬MPort-100IEÌá¹©ÁËµ¥¸öIP×î´óÁ¬½ÓÊýµÄÉèÖÃ£¬ÓÃ»§Í¨¹ýÉèÖÃËü£¬¿ÉÏÞ¶¨µ¥¸öIPµÄ×î´óÁ¬½ÓÊýÄ¿¡£¸Ã²ÎÊýµÄÓÐÐ§·¶Î§Îª1~×î´óÁ¬½ÓÊý" />
+	<item id="40" name="×Ô¶¯IDÊ¹ÄÜ" readonly="0" cmd="DYNAMIC_ID" comment="Ñ¡ÔñÊ¹ÄÜ£¬±íÊ¾IDºÅ²»×öÈÎºÎ¸Ä¶¯£¬Ö±½Ó½«ModbusTCPÖ÷»ú·¢ËÍ¹ýÀ´µÄÇëÇóÖ¡·¢Ïò´®¿Ú´Ó»úÉè±¸£»µ±Ñ¡Ôñ½ûÖ¹£¬Ôò½«ModbusTCPÖ÷»ú·¢ËÍ¹ýÀ´µÄÇëÇóÖ¡µÄIDºÅ¹Ì¶¨ÎªÏÂÃæÉè¶¨µÄ¡°¹Ì¶¨IDºÅ¡±£¬ÔÙ·¢Ïò´®¿Ú´Ó»úÉè±¸£¬Í¬Ê±½«½ÓÊÜµ½»ØÓ¦Ö¡µÄIDºÅ×ª»»»Ø·ÃÎÊµÄIDºÅ¡£" >
+		<option name="·ñ" value="0" enableitem="41" />
+		<option name="ÊÇ" value="1" disableitem="41" />
+	</item>
+	<item id="41" name="¹Ì¶¨IDºÅ" readonly="0" cmd="STATIC_ID" comment="¹Ì¶¨IDºÅµÄÉèÖÃ·¶Î§Îª1--247¡£" />
+</root>
+
+
+<root name="TCP_SlaverÄ£Ê½ÏÂµÄÖ÷»úÉèÖÃ" >
+	<catalog name="Ö÷»ú%d" repeat="4" startind="1">
+		<item id="42" name="Ä¿±êÖ÷»úÊ¹ÄÜ" readonly="0" cmd="ENABLE_IP%d" defaultval="0" comment="" >
+			<option name="·ñ" value="0" disableitem="43|44|45|46|47" />
+			<option name="ÊÇ" value="1" enableitem="43|44|45|46|47" />
+		</item>
+		<item id="43" name="Ä¿±êIPµØÖ·£¨¶Ô·½IP£©" readonly="0" cmd="DST_IP%d" comment="Á¬½ÓMPort-100IEµÄModbusTCP´Ó»úÉè±¸µÄIPµØÖ·" />
+		<item id="44" name="Ä¿±ê¶Ë¿Ú£¨¶Ô·½¶Ë¿Ú£©" readonly="0" cmd="DST_PORT%d" comment="Á¬½ÓMPort-100IEµÄModbusTCP´Ó»úÉè±¸µÄ¶Ë¿Ú" />
+		<item id="45" name="ID×îÐ¡Öµ" readonly="0" cmd="PORT_MIN%d" comment="Á¬½ÓMPort-100IEµÄModbusCP´Ó»úÉè±¸µÄID·¶Î§×îÐ¡Öµ£¬ÉèÖÃµÄÓÐÐ§·¶Î§Îª1--247" />
+		<item id="46" name="ID×î´óÖµ" readonly="0" cmd="PORT_MAX%d" comment="Á¬½ÓMPort-100IEµÄModbusCP´Ó»úÉè±¸µÄID·¶Î§×îÐ¡Öµ£¬ÉèÖÃµÄÓÐÐ§·¶Î§Îª×îÐ¡Öµ--247" />
+		<item id="47" name="IDÆ«ÒÆÁ¿" readonly="0" cmd="ID_OFFSET%d" comment="ÊµÏÖIDÓ³ÉäµÄIDÆ«ÒÆÁ¿£¬ÉèÖÃµÄÓÐÐ§·¶Î§Îª-127--127" />
+	</catalog>
+</root>

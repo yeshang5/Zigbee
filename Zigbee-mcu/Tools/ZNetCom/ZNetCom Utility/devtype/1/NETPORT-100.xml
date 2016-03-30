@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="40" />
+<command resetdev="1" download="0" updatefirm="1" test="1" />
+
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="MPORT-100" comment="" />
+	<item id="2" name="Firmware Version" readonly="1" cmd="VERSION" />
+	<item id="3" name="Name" readonly="0" cmd="NAME" />
+</root>
+<root name="Password Operation">
+	<item id="4" name="Password" readonly="2" cmd="" />
+	<item id="5" name="Modify Password" readonly="2" cmd="" defaultval="0">
+		<option name="No" value="0" disableitem="6|7" />
+		<option name="Yes" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="New Password" readonly="2" cmd="PASS" />
+	<item id="7" name="Confirm New Password" readonly="2" cmd="" />
+</root>
+<root name="IP Information">
+	<item id="8" name="IP" readonly="0" cmd="IP" />
+	<item id="9" name="Mask" readonly="0" cmd="MASK" />
+	<item id="10" name="Gateway" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="MAC" readonly="1" cmd="MAC" />
+	<item id="12" name="IP Type" readonly="0" cmd="IP_MODE">
+		<option name="Dynamic" value="0" disableitem="8|9|10" />
+		<option name="Static" value="1" enableitem="8|9|10" />
+	</item>
+</root>
+<root name="Network Settings">
+	<item id="13" name="DNS Server" readonly="0" cmd="DNS" />
+	<item id="16" name="IP Filter 1" readonly="0" cmd="IPF1" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="17" name="IP Filter 2" readonly="0" cmd="IPF2" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="18" name="IP Filter 3" readonly="0" cmd="IPF3" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="19" name="IP Filter 4" readonly="0" cmd="IPF4" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="20" name="IP Filter 5" readonly="0" cmd="IPF5" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="21" name="IP Filter 6" readonly="0" cmd="IPF6" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="22" name="IP Filter 7" readonly="0" cmd="IPF7" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="23" name="IP Filter 8" readonly="0" cmd="IPF8" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+</root>
+
+
+
+<root name="Gateway Setting" >
+	<item id="24" name="WORK TYPE" readonly="0" cmd="PORT_WORKTYPE" caustrepeat="4" caustrepeatind="1" >
+		<option name="RTU_SLAVER_MODE" value="0" disableitem="33|34|35|36|37" enableitem="38|39|40|41|42|43"/>
+		<option name="RTU_MASTER_MODE" value="1" disableitem="38|39|40|41|42|43" enableitem="33|34|35|36|37"/>
+		<option name="ASCII_SLAVER_MODE" value="2" disableitem="33|34|35|36|37" enableitem="38|39|40|41|42|43" />
+		<option name="ASCII_MASTER_MODE" value="3" disableitem="38|39|40|41|42|43" enableitem="33|34|35|36|37"/>
+	</item>
+	<item id="25" name="Character Timeout" readonly="0" cmd="CHAR_TIMEOUT" />
+	<item id="26" name="Message Timeout" readonly="0" cmd="MSG_TIMEOUT" />
+	<item id="27" name="Tcp Conn Timeout" readonly="0" cmd="TCP_TIMEOUT" />
+	<item id="28" name="Space Timeout" readonly="0" cmd="TCPAT" />
+	<item id="29" name="Baudrate" readonly="0" cmd="PORT_BAUD" >
+		<option name="300" value="1" />
+		<option name="600" value="2" />
+		<option name="1200" value="3" />
+		<option name="2400" value="4" />
+		<option name="4800" value="5" />
+		<option name="9600" value="6" />
+		<option name="19200" value="7" />
+		<option name="38400" value="8" />
+		<option name="57600" value="9" />
+		<option name="115200" value="10" />
+		<option name="230400" value="11" />
+	</item>
+	<item id="30" name="Data Bits" readonly="0" cmd="DATA_BIT" >
+		<option name="5" value="5" />
+		<option name="6" value="6" />
+		<option name="7" value="7" />
+		<option name="8" value="8" />
+	</item>
+	<item id="31" name="Stop Bits" readonly="0" cmd="STOP_BIT" >
+		<option name="1" value="1" />
+		<option name="2(When Data Bits is 5,it means 1.5 Stop Bits)" value="2" />
+	</item>
+	<item id="32" name="Parity" readonly="0" cmd="PARITY_BIT" >
+		<option name="None" value="0" />
+		<option name="Odd" value="1" />
+		<option name="Even" value="2" />
+		<option name="Mark" value="3" />
+		<option name="Space" value="4" />
+	</item>
+</root>
+
+<root name="Slaver Setting">
+	<item id="33" name="Slaver Port" readonly="0" cmd="SLAVER_PORT" />
+	<item id="34" name="Slaver Port" readonly="0" cmd="SER_MAX_CONNECT" />
+	<item id="35" name="Slaver Port" readonly="0" cmd="IP_MAX_CONNECT" />
+	<item id="36" name="DYNAMIC ID" readonly="0" cmd="DYNAMIC_ID" >
+		<option name="NO" value="0" enableitem="37" />
+		<option name="YES" value="1" disableitem="37" />
+	</item>
+	<item id="37" name="Static ID" readonly="0" cmd="STATIC_ID" />
+</root>
+
+
+<root name="Masert Setting" >
+	<catalog name="Masert%d" repeat="4" startind="1">
+		<item id="38" name="Ip Enable" readonly="0" cmd="ENABLE_IP%d" defaultval="0" >
+			<option name="NO" value="0" disableitem="39|40|41|42|43" />
+			<option name="YES" value="1" enableitem="39|40|41|42|43" />
+		</item>
+		<item id="39" name="Ip Addr" readonly="0" cmd="DST_IP%d" />
+		<item id="40" name="Port" readonly="0" cmd="DST_PORT%d" />
+		<item id="41" name="Min ID" readonly="0" cmd="PORT_MIN%d" />
+		<item id="42" name="Max ID" readonly="0" cmd="PORT_MAX%d" />
+		<item id="43" name="ID_OFFSET" readonly="0" cmd="ID_OFFSET%d" />
+	</catalog>
+</root>

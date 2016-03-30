@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="7" />
+<command test="1" />
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="ZNE-10T" comment="" />
+	<item id="2" name="Firmware Version" readonly="1" cmd="VERSION" />
+	<item id="3" name="Name" readonly="0" cmd="NAME" />
+</root>
+<root name="Password Operation">
+	<item id="4" name="Password" readonly="2" cmd="" />
+	<item id="5" name="Modify Password" readonly="2" cmd="" defaultval="0">
+		<option name="No" value="0" disableitem="6|7" />
+		<option name="Yes" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="New Password" readonly="2" cmd="PASS" />
+	<item id="7" name="Confirm New Password" readonly="2" cmd="" />
+</root>
+<root name="IP Information">
+	<item id="8" name="IP" readonly="0" cmd="IP" />
+	<item id="9" name="Mask" readonly="0" cmd="MASK" />
+	<item id="10" name="Gateway" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="MAC" readonly="1" cmd="MAC" />
+	<item id="12" name="IP Type" readonly="0" cmd="IP_MODE">
+		<option name="Dynamic" value="0" disableitem="8|9|10" />
+		<option name="Static" value="1" enableitem="8|9|10" />
+	</item>
+</root>
+<root name="Network Settings">
+	<item id="13" name="Work Type" readonly="0" cmd="C1_OP">
+		<option name="TCP Server" value="1" disableitem="15|16" />
+		<option name="UDP" value="2" enableitem="15|16" />
+		<option name="TCP Client" value="3" enableitem="15|16" />
+	</item>
+	<item id="14" name="Work Port" readonly="0" cmd="C1_PORT" />
+	<item id="15" name="Target IP" readonly="0" cmd="C1_CLI_IP1" />
+	<item id="16" name="Target Port" readonly="0" cmd="C1_CLI_PP1" />
+</root>
+
+<root name="COM Settings">
+	<item id="17" name="Baudrate" readonly="0" cmd="C1_BAUD">
+		<option name="300" value="0" />
+		<option name="600" value="1" />
+		<option name="1200" value="2" />
+		<option name="2400" value="3" />
+		<option name="4800" value="4" />
+		<option name="9600" value="5" />
+		<option name="19200" value="6" />
+		<option name="38400" value="7" />
+		<option name="57600" value="8" />
+		<option name="115200" value="9" />
+	</item>
+	<item id="18" name="Data Bits" readonly="0" cmd="C1_DATAB">
+		<option name="8" value="8" />
+	</item>
+	<item id="19" name="Stop Bits" readonly="0" cmd="C1_STOPB">
+		<option name="1" value="1" />
+	</item>
+	<item id="20" name="Parity" readonly="0" cmd="C1_PARITY">
+		<option name="None" value="0" />
+		<option name="Even" value="1" />
+		<option name="Odd" value="2" />
+	</item>
+</root>
+<root name="IO Config">
+	<item id="21" name="IO Level" readonly="1" cmd="10TIO" />
+	<item id="22" name="IO Control" readonly="2" cmd="10TCTRLIO" />
+</root>

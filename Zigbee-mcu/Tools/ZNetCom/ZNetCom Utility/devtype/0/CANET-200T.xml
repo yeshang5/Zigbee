@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="21" />
+<command resetdev="1" download="0" updatefirm="1" />
+<root name="»ù±¾ÐÅÏ¢">
+	<item id="1" name="Éè±¸ÐÍºÅ" readonly="1" cmd="" defaultval="CANET-200T" comment="" />
+	<item id="2" name="Éè±¸¹Ì¼þ°æ±¾" readonly="1" cmd="VERSION" />
+	<item id="3" name="Éè±¸Ãû³Æ" readonly="0" cmd="NAME" />
+</root>
+<root name="ÃÜÂë²Ù×÷">
+	<item id="4" name="µ±Ç°ÃÜÂë" readonly="2" cmd="" />
+	<item id="5" name="ÊÇ·ñ¸ü¸ÄÃÜÂë" readonly="2" cmd="" defaultval="0">
+		<option name="·ñ" value="0" disableitem="6|7" />
+		<option name="ÊÇ" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="ÐÂÃÜÂë" readonly="2" cmd="PASS" checktype="5" comment="ÉèÖÃµÄÃÜÂë×î´óÓÐÐ§³¤¶ÈÎª10"/>
+	<item id="7" name="È·ÈÏÐÂÃÜÂë" readonly="2" cmd="" />
+</root>
+<root name="IPµØÖ·ÐÅÏ¢">
+	<item id="8" name="Éè±¸IP" readonly="0" cmd="IP" />
+	<item id="9" name="Éè±¸×ÓÍøÑÚÂë" readonly="0" cmd="MASK" />
+	<item id="10" name="Éè±¸Íø¹ØIP" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="DNS" readonly="0" cmd="DNS" />
+	<item id="12" name="Éè±¸MACµØÖ·" readonly="1" cmd="MAC" />
+	<item id="13" name="»ñÈ¡IP·½Ê½" readonly="0" cmd="IP_MODE">
+		<option name="¶¯Ì¬»ñÈ¡" value="1" disableitem="8|9|10" />
+		<option name="¾²Ì¬»ñÈ¡" value="0" enableitem="8|9|10" />
+	</item>
+	<item id="14" name="TCPÁ¬½Ó¶Ï¿ª" readonly="0" cmd="CANTCPDISCON">
+		<option name="Ó²¼þ¶Ï¿ªÔò¶Ï¿ª" value="0" disableitem="" />
+		<option name="²»¶Ï¿ª" value="1" enableitem="" />
+	</item>	
+	<item id="15" name="ÒÔÌ«ÍøÈßÓà" readonly="0" cmd="TCP_REDUNDANCE" comment="" >
+		<option name="ÆôÓÃ" value="1" />
+		<option name="½ûÓÃ" value="0"  />
+	</item>	
+	<item id="16" name="CANÈßÓà" readonly="0" cmd="CANREDUNDANCE" caustrepeatSect="1" >
+		<option name="½ûÓÃ" value="0" disableitem="17|18" enableitem="19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|40|41|42|43|44|45|46|47|48|49|50|51|52|53"/>
+		<option name="ÈßÓà·½°¸1" value="1" disableitem="17|18|36|37|38|40|41|42|43|44|45|46|47|48|49|50|51|52|53"/>
+		<option name="ÈßÓà·½°¸2" value="2" enableitem="17|18" disableitem="36|37|38|40|41|42|43|44|45|46|47|48|49|50|51|52|53"/>
+	</item>
+	<item id="17" name="×î´óÖ¡Êý²î" readonly="0" cmd="CAN_MAX_PSPACE" comment="·¶Î§£º2-255" />
+	<item id="18" name="×î´óÖ¡Ê±²î" readonly="0" cmd="CAN_MAX_TSPACE" comment="·¶Î§£º1-255,µ¥Î»Îª£º5ms" />
+</root>
+<root name="CAN1ÅäÖÃ">
+	<item id="19" name="TCP¹¤×÷·½Ê½" readonly="0" cmd="CAN1_TCPWORK_MD" comment=" ">
+		<option name="TCP SERVER" value="1"  disableitem="30|31|32|33|34|35" enableitem=""/>
+		<option name="UDP" value="2" enableitem="30|31|32|33|34|35" disableitem=""/>
+		<option name="TCP CLIENT" value="3" enableitem="30|31|32|33|34|35"/>
+	</item>
+	<item id="20" name="¹¤×÷¶Ë¿Ú£¨Á¬½Ó¶Ë¿Ú£©" readonly="0" cmd="CAN1_WORK_PORT" />
+	<item id="21" name="TCP Á¬½ÓÊý(UDPÄ¿µÄIP¶Î¸öÊý)" readonly="0" cmd="CAN1_TCP_CONN" caustrepeat="1"   comment="ÔÚTCPSever/client·½Ê½ÏÂµÄ·¶Î§Îª£º0£­2£»ÔÚUCP·½Ê½ÏÂµÄ·¶Î§Îª£º0-3" >
+		<option name="0" value="0" disableitem="19|20|22|23|24|25|26|27|28|29|30|31|32|33|34|35"/>
+		<option name="1" value="1" enableitem= "19|20|22|23|24|25|26|27|28|29|30|31" disableitem="32|33|34|35" />
+		<option name="2" value="2" enableitem= "19|20|22|23|24|25|26|27|28|29|30|31|32|33" disableitem="34|35"/>
+		<option name="3" value="3" enableitem= "19|20|22|23|24|25|26|27|28|29|30|31|32|33|34|35" />
+	</item>	
+	<item id="22" name="³¬Ê±¶Ï¿ªÊ±¼ä(10ms)" readonly="0" cmd="CAN1_TIMEOUT" comment="ÅäÖÃÓÐÐ§·¶Î§Îª£º100-65525,µ¥Î»Îª£º10ms¡£ ÀýÈç£º500±íÊ¾Ê±¼äÎª5000ms£» 1000±íÊ¾Ê±¼äÎª10s"/>
+	<item id="23" name="ÐÄÌøÊ±¼ä(10ms)" readonly="0" cmd="CAN1_AT" comment="ÅäÖÃÓÐÐ§·¶Î§Îª£º100-65525,µ¥Î»Îª£º10ms¡£ ÀýÈç£º500±íÊ¾Ê±¼äÎª5000ms£» 1000±íÊ¾Ê±¼äÎª10s"/>	
+	<item id="24" name="CAN²¨ÌØÂÊ(HEX)" readonly="0" cmd="CAN1_BAUD" showhex="1" comboedit="1">
+		<option name="1C0001(1000K)" 	value="1C0001" />
+		<option name="1E0001(900K)" 		value="1E0001" />
+		<option name="2F0001(800K)" 	value="2F0001" />
+		<option name="1B0002(700K)" 	value="1B0002" />
+		<option name="1E0002(600K)" 	value="1E0002" />
+		<option name="1C0003(500K)" 	value="1C0003" />
+		<option name="1C0007(250K)" 	value="1C0007" />
+		<option name="1C000F(125K)" 	value="1C000F" />
+		<option name="1C0013(100K)" 	value="1C0013" />
+		<option name="1C0018(80K)" 	value="1C0018" />
+		<option name="1C0027(50K)" 	value="1C0027" />
+		<option name="1C0031(40K)"	value="1C0031" />
+		<option name="1C0042(30K)" 	value="1C0042" />
+		<option name="1C0063(20K)" 	value="1C0063" />
+		<option name="1C00C7(10K)" 	value="1C00C7" />
+		<option name="1C018F(5K)" 	value="1C018F" />
+	</item>
+	<item id="25" name="CAN¹¤×÷Ä£Ê½" readonly="0" cmd="CAN1_LISTEN_MD" >
+		<option name="Õý³£" value="0" />
+		<option name="Ö»Ìý" value="2" />
+		<option name="×Ô²â" value="4" />
+	</item>
+	<item id="26" name="·Ö°üÖ¡Êý" readonly="0" cmd="CAN1_PACK" comment="·¶Î§Îª£º1µ½50 " />
+	<item id="27" name="·Ö°üÊ±¼ä¼ä¸ô" readonly="0" cmd="CAN1_PACKTS" comment="1-254ms"/>
+	<item id="28" name="Çå¿ÕCANBuffer" readonly="0" cmd="CAN1_BUF_CLEAR" >
+		<option name="´Ó²»Çå¿Õ" value="0" />
+		<option name="TCPÁ¬½ÓÊ±Çå¿Õ" value="1" />
+	</item>
+	<item id="29" name="ÆôÓÃTCP Trubo" readonly="0" cmd="CAN1_TCP_TURBO" >
+		<option name="½ûÖ¹" value="0" />
+		<option name="ÆôÓÃ" value="255" />
+	</item>	
+	<item id="30" name="Ä¿±ê(1)¶Ë¿Ú£¨¶Ô·½¶Ë¿Ú£©" readonly="0" cmd="CAN1_DES_PORT1" />
+	<item id="31" name="Ä¿±ê(1)IPµØÖ·£¨¶Ô·½IP£©" readonly="0" cmd="CAN1_DES_IP1" comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7£»»òÓòÃû£¬Èçwww.embedcontrol.com¡£ µ±Ä¿±êIPÎªIPµØÖ·¶ÎÊ±,ÓÃÓÚÈ·¶¨IPµØÖ·¶ÎµÄÁ½¸öIP µØÖ·µÄÇ°Èý¸ö×Ö½Ú±ØÐëÏàÍ¬£¬²¢ÇÒµÚÒ»¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú±ØÐëÐ¡ÓÚ»òµÈÓÚµÚ¶þ¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú" />
+	<item id="32" name="Ä¿±ê(2)¶Ë¿Ú£¨¶Ô·½¶Ë¿Ú£©"  readonly="0" cmd="CAN1_DES_PORT2" />
+	<item id="33" name="Ä¿±ê(2)IPµØÖ·£¨¶Ô·½IP£©" readonly="0" cmd="CAN1_DES_IP2" comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7£»»òÓòÃû£¬Èçwww.embedcontrol.com ¡£ µ±Ä¿±êIPÎªIPµØÖ·¶ÎÊ±,ÓÃÓÚÈ·¶¨IPµØÖ·¶ÎµÄÁ½¸öIP µØÖ·µÄÇ°Èý¸ö×Ö½Ú±ØÐëÏàÍ¬£¬²¢ÇÒµÚÒ»¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú±ØÐëÐ¡ÓÚ»òµÈÓÚµÚ¶þ¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú"/>
+	<item id="34" name="Ä¿±ê(3)¶Ë¿Ú£¨¶Ô·½¶Ë¿Ú£©"  readonly="0" cmd="CAN1_DES_PORT3" />
+	<item id="35" name="Ä¿±ê(3)IPµØÖ·£¨¶Ô·½IP£©" readonly="0" cmd="CAN1_DES_IP3" comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7 ¡£ µ±Ä¿±êIPÎªIPµØÖ·¶ÎÊ±,ÓÃÓÚÈ·¶¨IPµØÖ·¶ÎµÄÁ½¸öIP µØÖ·µÄÇ°Èý¸ö×Ö½Ú±ØÐëÏàÍ¬£¬²¢ÇÒµÚÒ»¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú±ØÐëÐ¡ÓÚ»òµÈÓÚµÚ¶þ¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú"/>
+</root>
+<root name="CAN2ÅäÖÃ">
+	<item id="36" name="TCP¹¤×÷·½Ê½" readonly="0" cmd="CAN2_TCPWORK_MD" comment="µ±¹¤×÷·½Ê½ÎªUDPÊ±£¬IP¶Î¸öÊýÎª3£¬µ±¹¤×÷·½Ê½ÎªTCP SERVERÊ±£¬TCPÁ¬½ÓÊýÎª2 ">
+		<option name="TCP SERVER" value="1"  disableitem="48|49|50|51|52|53" />
+		<option name="UDP" value="2" enableitem="48|49|50|51|52|53"/>
+		<option name="TCP CLIENT" value="3" enableitem="48|49|50|51|52|53"/>
+	</item>
+	<item id="37" name="¹¤×÷¶Ë¿Ú" readonly="0" cmd="CAN2_WORK_PORT" />
+	<item id="38" name="TCP Á¬½ÓÊý(UDPÄ¿µÄIP¶Î¸öÊý)" readonly="0" cmd="CAN2_TCP_CONN" caustrepeat="1"  comment="ÔÚTCPSever/client·½Ê½ÏÂµÄ·¶Î§Îª£º0£­2£»ÔÚUCP·½Ê½ÏÂµÄ·¶Î§Îª£º0-3">
+		<option name="0" value="0" disableitem="36|37|40|41|42|43|44|45|46|47|48|49|50|51|52|53"/>
+		<option name="1" value="1" enableitem="36|37|40|41|42|43|44|45|46|47|48|49" disableitem="50|51|52|53" />
+		<option name="2" value="2" enableitem="36|37|40|41|42|43|44|45|46|47|48|49|50|51" disableitem="52|53" />
+		<option name="3" value="3" enableitem="36|37|40|41|42|43|44|45|46|47|48|49|50|51|52|53" />		
+	</item>
+	<item id="40" name="³¬Ê±¶Ï¿ªÊ±¼ä(10ms)" readonly="0" cmd="CAN2_TIMEOUT" comment="ÅäÖÃÓÐÐ§·¶Î§Îª£º100-65525,µ¥Î»Îª£º10ms¡£ ÀýÈç£º500±íÊ¾Ê±¼äÎª5000ms£» 1000±íÊ¾Ê±¼äÎª10s"/>
+	<item id="41" name="ÐÄÌøÊ±¼ä(10ms)" readonly="0" cmd="CAN2_AT" comment="ÅäÖÃÓÐÐ§·¶Î§Îª£º100-65525,µ¥Î»Îª£º10ms¡£ ÀýÈç£º500±íÊ¾Ê±¼äÎª5000ms£» 1000±íÊ¾Ê±¼äÎª10s"/>	
+	<item id="42" name="CAN²¨ÌØÂÊ(HEX)" readonly="0" cmd="CAN2_BAUD" showhex="1" comboedit="1">
+		<option name="1C0001(1000K)" 	value="1C0001" />
+		<option name="1E0001(900K)" 		value="1E0001" />
+		<option name="2F0001(800K)" 	value="2F0001" />
+		<option name="1B0002(700K)" 	value="1B0002" />
+		<option name="1E0002(600K)" 	value="1E0002" />
+		<option name="1C0003(500K)" 	value="1C0003" />
+		<option name="1C0007(250K)" 	value="1C0007" />
+		<option name="1C000F(125K)" 	value="1C000F" />
+		<option name="1C0013(100K)" 	value="1C0013" />
+		<option name="1C0018(80K)" 	value="1C0018" />
+		<option name="1C0027(50K)" 	value="1C0027" />
+		<option name="1C0031(40K)"	value="1C0031" />
+		<option name="1C0042(30K)" 	value="1C0042" />
+		<option name="1C0063(20K)" 	value="1C0063" />
+		<option name="1C00C7(10K)" 	value="1C00C7" />
+		<option name="1C018F(5K)" 	value="1C018F" />
+	</item>
+	<item id="43" name="CAN¹¤×÷Ä£Ê½" readonly="0" cmd="CAN2_LISTEN_MD" >
+		<option name="Õý³£" value="0" />
+		<option name="Ö»Ìý" value="2" />
+		<option name="×Ô²â" value="4" />
+	</item>
+	<item id="44" name="·Ö°üÖ¡Êý" readonly="0" cmd="CAN2_PACK" comment="·¶Î§Îª£º1µ½50 " />								
+	<item id="45" name="·Ö°üÊ±¼ä¼ä¸ô" readonly="0" cmd="CAN2_PACKTS" comment="1-254ms"/>
+	<item id="46" name="Çå¿ÕCANBuffer" readonly="0" cmd="CAN2_BUF_CLEAR" >
+		<option name="´Ó²»Çå¿Õ" value="0" />
+		<option name="TCPÁ¬½ÓÊ±Çå¿Õ" value="1" />
+	</item>
+	<item id="47" name="ÆôÓÃTCP Trubo" readonly="0" cmd="CAN2_TCP_TURBO" >
+		<option name="½ûÖ¹" value="0" />
+		<option name="ÆôÓÃ" value="255" />
+	</item>	
+	<item id="48" name="Ä¿±ê(1)¶Ë¿Ú£¨¶Ô·½¶Ë¿Ú£©" readonly="0" cmd="CAN2_DES_PORT1" />
+	<item id="49" name="Ä¿±ê(1)IPµØÖ·£¨¶Ô·½IP£©" readonly="0" cmd="CAN2_DES_IP1"  comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7£»»òÓòÃû£¬Èçwww.embedcontrol.com ¡£ µ±Ä¿±êIPÎªIPµØÖ·¶ÎÊ±,ÓÃÓÚÈ·¶¨IPµØÖ·¶ÎµÄÁ½¸öIP µØÖ·µÄÇ°Èý¸ö×Ö½Ú±ØÐëÏàÍ¬£¬²¢ÇÒµÚÒ»¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú±ØÐëÐ¡ÓÚ»òµÈÓÚµÚ¶þ¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú"/>
+	<item id="50" name="Ä¿±ê(2)¶Ë¿Ú£¨¶Ô·½¶Ë¿Ú£©"  readonly="0" cmd="CAN2_DES_PORT2" />
+	<item id="51" name="Ä¿±ê(2)IPµØÖ·£¨¶Ô·½IP£©" readonly="0" cmd="CAN2_DES_IP2"  comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7£»»òÓòÃû£¬Èçwww.embedcontrol.com ¡£ µ±Ä¿±êIPÎªIPµØÖ·¶ÎÊ±,ÓÃÓÚÈ·¶¨IPµØÖ·¶ÎµÄÁ½¸öIP µØÖ·µÄÇ°Èý¸ö×Ö½Ú±ØÐëÏàÍ¬£¬²¢ÇÒµÚÒ»¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú±ØÐëÐ¡ÓÚ»òµÈÓÚµÚ¶þ¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú"/>
+	<item id="52" name="Ä¿±ê(3)¶Ë¿Ú£¨¶Ô·½¶Ë¿Ú£©"  readonly="0" cmd="CAN2_DES_PORT3" />
+	<item id="53" name="Ä¿±ê(3)IPµØÖ·£¨¶Ô·½IP£©" readonly="0" cmd="CAN2_DES_IP3"  comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7¡£ µ±Ä¿±êIPÎªIPµØÖ·¶ÎÊ±,ÓÃÓÚÈ·¶¨IPµØÖ·¶ÎµÄÁ½¸öIP µØÖ·µÄÇ°Èý¸ö×Ö½Ú±ØÐëÏàÍ¬£¬²¢ÇÒµÚÒ»¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú±ØÐëÐ¡ÓÚ»òµÈÓÚµÚ¶þ¸öIPµØÖ·µÄµÚËÄ¸ö×Ö½Ú"/>
+</root>
+
+
+

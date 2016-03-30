@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="22" />
+<command resetdev="0" download="0" updatefirm="1" />
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="CANET-E+" comment="" />
+	<item id="2" name="Firmware Version" readonly="1" cmd="VERSION" />
+	<item id="3" name="Name" readonly="0" cmd="NAME" />
+</root>
+<root name="Password Operation">
+	<item id="4" name="Password" readonly="2" cmd="" />
+	<item id="5" name="Modify Password" readonly="2" cmd="" defaultval="0">
+		<option name="No" value="0" disableitem="6|7" />
+		<option name="Yes" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="New Password" readonly="2" cmd="PASS" checktype="5" comment="The max availabal length is 10"/>
+	<item id="7" name="Confirm New Password" readonly="2" cmd="" />
+</root>
+<root name="IP Information">
+	<item id="8" name="IP" readonly="0" cmd="IP" />
+	<item id="9" name="Mask" readonly="0" cmd="MASK" />
+	<item id="10" name="Gateway" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="DNS" readonly="0" cmd="DNS" />
+	<item id="12" name="MAC" readonly="1" cmd="MAC" />
+	<item id="13" name="IP Type" readonly="0" cmd="IP_MODE">
+		<option name="Dynamic" value="1" disableitem="8|9|10" />
+		<option name="Static" value="0" enableitem="8|9|10" />
+	</item>
+
+	<item id="15" name="Redundance" readonly="0" cmd="TCP_REDUNDANCE" comment="" >
+		<option name="Enable" value="1" />
+		<option name="Disable" value="0"  />
+	</item>	
+</root>
+
+<root name="CAN Setting">
+	<item id="18" name="Work Mode" readonly="1" cmd="CAN1_TCPWORK_MD" >
+		<?--<option name="TCP SERVER" value="1" disableitem="29|30|31|32|33|34" enableitem=""/>--?>
+		<option name="UDP" value="2" enableitem="29|30|31|32|33|34" disableitem=""/>
+		<?--<option name="TCP CLIENT" value="3" enableitem="29|30|31|32|33|34"/>--?>
+	</item>
+	<item id="19" name="Work Port" readonly="0" cmd="CAN1_WORK_PORT" />	
+	<item id="20" name="UDP Num(IP Num)" readonly="0" cmd="CAN1_TCP_CONN" caustrepeat="1" comment=" " >
+		<option name="0" value="0" disableitem="18|19|21|22|23|24|25|26|27|28|29|30|31|32|33|34"/>
+		<option name="1" value="1" enableitem= "18|19|21|22|23|24|25|26|27|28|29|30" disableitem="31|32|33|34" />
+		<option name="2" value="2" enableitem= "18|19|21|22|23|24|25|26|27|28|29|30|31|32" disableitem="33|34"/>
+		<option name="3" value="3" enableitem= "18|19|21|22|23|24|25|26|27|28|29|30|31|32|33|34" />
+	</item>
+	<item id="21" name="Discon TimeOut(10ms)" readonly="0" cmd="CAN1_TIMEOUT" comment="region£º100-65525,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>
+	<item id="22" name="AT(10ms)" readonly="0" cmd="CAN1_AT" comment="region£º100-65525,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>	
+	<item id="23" name="CAN Baud(HEX)" readonly="0" cmd="CAN1_BAUD" showhex="1" comboedit="1">
+		<option name="1C0001(1000K)" 	value="1C0001" />
+		<option name="1E0001(900K)" 		value="1E0001" />
+		<option name="2F0001(800K)" 	value="2F0001" />
+		<option name="1B0002(700K)" 	value="1B0002" />
+		<option name="1E0002(600K)" 	value="1E0002" />
+		<option name="1C0003(500K)" 	value="1C0003" />
+		<option name="1C0007(250K)" 	value="1C0007" />
+		<option name="1C000F(125K)" 	value="1C000F" />
+		<option name="1C0013(100K)" 	value="1C0013" />
+		<option name="1C0018(80K)" 	value="1C0018" />
+		<option name="1C0027(50K)" 	value="1C0027" />
+		<option name="1C0031(40K)"	value="1C0031" />
+		<option name="1C0042(30K)" 	value="1C0042" />
+		<option name="1C0063(20K)" 	value="1C0063" />
+		<option name="1C00C7(10K)" 	value="1C00C7" />
+		<option name="1C018F(5K)" 	value="1C018F" />
+	</item>
+	
+	<item id="24" name="CAN Mode" readonly="0" cmd="CAN1_LISTEN_MD" >
+		<option name="Normal" value="0" />
+		<option name="Listen only" value="2" />
+		<option name="Atuo" value="4" />
+	</item>
+	
+	<item id="25" name="Packs Frame" readonly="0" cmd="CAN1_PACK" comment="region£º1-50 " />								
+	<item id="26" name="Packs Time space" readonly="0" cmd="CAN1_PACKTS" comment="1-254ms"/>
+	<item id="27" name="Clear CAN Buffer" readonly="1" cmd="CAN1_BUF_CLEAR" >
+		<option name="Never" value="0" />
+		<?-- <option name="clear when TCP Conn" value="1" /> --?>
+	</item>
+
+	<item id="29" name="Target(1)Port" readonly="0" cmd="CAN1_DES_PORT1" />
+	<item id="30" name="Target(1)IP" readonly="0" cmd="CAN1_DES_IP1" comment=" e.g. 192.168.0.1 or 192.168.0.1-192.168.0.7 or www.embedcontrol.com" />
+	<item id="31" name="Target(2)Port" readonly="0" cmd="CAN1_DES_PORT2" />
+	<item id="32" name="Target(2)IP" readonly="0" cmd="CAN1_DES_IP2" comment=" e.g. 192.168.0.1 or 192.168.0.1-192.168.0.7 or www.embedcontrol.com" />
+	<item id="33" name="Target(3)Port" readonly="0" cmd="CAN1_DES_PORT3" />
+	<item id="34" name="Target(3)IP" readonly="0" cmd="CAN1_DES_IP3" comment=" e.g. 192.168.0.1 or 192.168.0.1-192.168.0.7 not support DNS" />
+</root>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="36" />
+<command resetdev="1" download="0" updatefirm="1" test="1" />
+<notsamevalue>
+	<items value="WEB_PORT|CMD_PORT|C1_PORT" />
+</notsamevalue>
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="ZNE-100TL" comment="" />
+	<item id="2" name="Firmware Version" readonly="1" cmd="VERSION" />
+	<item id="3" name="Name" readonly="0" cmd="NAME" />
+</root>
+<root name="Password Operation">
+	<item id="4" name="Password" readonly="2" cmd="" />
+	<item id="5" name="Modify Password" readonly="2" cmd="" defaultval="0">
+		<option name="No" value="0" disableitem="6|7" />
+		<option name="Yes" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="New Password" readonly="2" cmd="PASS" />
+	<item id="7" name="Confirm New Password" readonly="2" cmd="" />
+</root>
+<root name="IP Information">
+	<item id="8" name="IP" readonly="0" cmd="IP" />
+	<item id="9" name="Mask" readonly="0" cmd="MASK" />
+	<item id="10" name="Gateway" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="MAC" readonly="1" cmd="MAC" />
+	<item id="12" name="IP Type" readonly="0" cmd="IP_MODE">
+		<option name="Dynamic" value="0" disableitem="8|9|10" />
+		<option name="Static" value="1" enableitem="8|9|10" />
+	</item>
+</root>
+<root name="Network Settings">
+	<item id="13" name="DNS Server" readonly="0" cmd="DNS" />
+	<item id="14" name="Web Port" readonly="0" cmd="WEB_PORT" />
+	<item id="15" name="Command Port" readonly="0" cmd="CMD_PORT" />
+</root>
+
+<root name="COM%d Settings" repeat="1" startind="1">
+	<item id="51" name="Set the other COMs same with this." readonly="0" cmd="%d_USESAMECFG"  button="1" startid="24" comment="Set the other COMs same with this, except Work Port." />
+	
+	<item id="16" name="Work Type" readonly="0" cmd="C%d_OP">
+		<option name="TCP Server" value="0" disableitem="33|34" />
+		<option name="TCP Client" value="1" enableitem="33|34" />
+		<option name="UDP" value="3" enableitem="33|34" />
+		<option name="Disable" value="4" />
+	</item>
+	<item id="17" name="Work Port" readonly="0" cmd="C%d_PORT" />
+	<item id="18" name="Timeout to Disconnect(10ms)" readonly="0" cmd="C%d_IT" comment="10ms per uint,from 0 to 60000" />
+	<item id="19" name="TCP Alive Check Time(s)" readonly="0" cmd="C%d_TCPAT" comment="from 0 to 60000s" />
+	<item id="20" name="The First Byte of a Frame(HEX)" readonly="0" cmd="C%d_D1" showhex="1" unuseval="invalid" comment="Select to enable it." />
+	<item id="21" name="The Last Byte of a Frame(HEX)" readonly="0" cmd="C%d_D2" showhex="1" unuseval="invalid" comment="Select to enable it." />
+
+	<item id="22" name="Baudrate" readonly="0" cmd="C%d_BAUD">
+		<option name="300" value="300" />
+		<option name="600" value="600" />
+		<option name="1200" value="1200" />
+		<option name="2400" value="2400" />
+		<option name="4800" value="4800" />
+		<option name="9600" value="9600" />
+		<option name="19200" value="19200" />
+		<option name="38400" value="38400" />
+		<option name="57600" value="57600" />
+		<option name="115200" value="115200" />
+	</item>
+	<item id="23" name="Data Bits" readonly="0" cmd="C%d_DATAB">
+		<option name="5" value="5" />
+		<option name="6" value="6" />
+		<option name="7" value="7" />
+		<option name="8" value="8" />
+	</item>
+	<item id="24" name="Stop Bits" readonly="0" cmd="C%d_STOPB">
+		<option name="1" value="1" />
+		<option name="2(When Data Bits is 5,it means 1.5 Stop Bits)" value="2" />
+	</item>
+	<item id="25" name="Parity" readonly="0" cmd="C%d_PARITY">
+		<option name="None" value="0" />
+		<option name="Odd" value="1" />
+		<option name="Even" value="2" />
+		<option name="Mark" value="3" />
+		<option name="Space" value="4" />
+	</item>
+	<item id="26" name="Frame Length" readonly="0" cmd="C%d_SER_LEN" comment="Max 1478 Bytes" />
+	<item id="27" name="Frame Interval(ms)" readonly="0" cmd="C%d_SER_T" comment="Max 5000ms" />
+	<item id="28" name="Clear COM Buffer" readonly="0" cmd="C%d_BUF_CLS">
+		<option name="Never" value="0" />
+		<option name="Clear when TCP Connect" value="1" />
+	</item>
+	<item id="29" name="TCP Turbo" readonly="0" cmd="C%d_TCP_TURBO" comment="The transfer speed can be improved by enabling this option.">
+		<option name="Enable" value="0" />
+		<option name="Disable" value="1" />
+	</item>
+	<item id="30" name="TCP Disconnect" readonly="0" cmd="C%d_TCP_CLS">
+		<option name="Keep Connection" value="0" />
+		<option name="Disconnect when Hardware Disconnect" value="1" />
+	</item>
+	<item id="31" name="TCP Connection Condition" readonly="0" cmd="C%d_LINK_T" comment="Only use in TCP CLIENT.">
+		<option name="None" value="0" />
+		<option name="When receive any data from COM" value="1" />
+		<option name="DSR On/DSR Off" value="2" />
+	</item>
+	<item id="32" name="TCP Connection Count" readonly="0" cmd="C%d_LINK_NUM" comment="From 0 to 4" />
+	<item id="33" name="Target Port 1" readonly="0" cmd="C%d_CLI_PP1" />
+	<item id="34" name="Target IP 1" readonly="0" cmd="C%d_CLI_IP1" comment="Target IP can be IP Address, e.g. 192.168.0.1; or IP Address Section(Only Use in UDP), e.g. 192.168.0.1-192.168.0.7; or Domain, e.g. www.embedcontrol.com." />
+</root>
+<root name="dev IO Set">
+	<item id="51" name="IO function set(Hex)" readonly="0" cmd="IOSTASETTOE" comment="IO function set(Hex)" />
+</root>

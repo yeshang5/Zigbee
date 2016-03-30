@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="gb2312"?>
+<resource CompactMode="1" Language="Chinese (PRC)" LANGID="2052">
+	<string id="128" value="ZNetCom V2.89\n\nZNetCo\n\n\nZNetCom2.Document\nZNetCo Document"/>
+	<string id="32772" value="提交更改\n提交更改"/>
+	<string id="32773" value="搜索设备\n搜索设备"/>
+	<string id="32774" value="指定搜索\n指定搜索"/>
+	<string id="32775" value="获取设备详细信息\n获取信息"/>
+	<string id="32776" value="复位设备\n复位设备"/>
+	<string id="32777" value="下载数据\n下载数据"/>
+	<string id="32779" value="清空设备列表\n清空设备"/>
+	<string id="32781" value="刷新设备\n刷新"/>
+	<string id="32782" value="收缩/展开所有数据项\n收缩/展开"/>
+	<string id="32783" value="导入配置\n导入"/>
+	<string id="32784" value="导出配置\n导出"/>
+	<string id="32790" value="可以搜索到已经进入升级模式，但是没有完成升级的设备"/>
+	<string id="32792" value="指定IP和MAC复位设备"/>
+	<string id="32793" value="使用UDP设置IO3管脚的高低电平"/>
+	<string id="32794" value="使用TCP设置IO3管脚的高低电平"/>
+	<string id="32795" value="有多张网卡时刻指定绑定一张"/>
+	<string id="57344" value="ZNetCom V2.89"/>
+	<string id="57345" value="就绪"/>
+	<string id="57600" value="建立新文档\n新建"/>
+	<string id="57601" value="打开一个现有文档\n打开"/>
+	<string id="57602" value="关闭活动文档\n关闭"/>
+	<string id="57603" value="保存活动文档\n保存"/>
+	<string id="57604" value="将活动文档以一个新文件名保存\n另存为"/>
+	<string id="57616" value="打开该文档"/>
+	<string id="57617" value="打开该文档"/>
+	<string id="57618" value="打开该文档"/>
+	<string id="57619" value="打开该文档"/>
+	<string id="57620" value="打开该文档"/>
+	<string id="57621" value="打开该文档"/>
+	<string id="57622" value="打开该文档"/>
+	<string id="57623" value="打开该文档"/>
+	<string id="57624" value="打开该文档"/>
+	<string id="57625" value="打开该文档"/>
+	<string id="57626" value="打开该文档"/>
+	<string id="57627" value="打开该文档"/>
+	<string id="57628" value="打开该文档"/>
+	<string id="57629" value="打开该文档"/>
+	<string id="57630" value="打开该文档"/>
+	<string id="57631" value="打开该文档"/>
+	<string id="57632" value="删除被选对象\n删除"/>
+	<string id="57633" value="全部删除\n全部删除"/>
+	<string id="57634" value="复制被选对象并将其置于剪贴板上\n复制"/>
+	<string id="57635" value="剪切被选对象并将其置于剪贴板上\n剪切"/>
+	<string id="57636" value="查找指定的正文\n查找"/>
+	<string id="57637" value="插入剪贴板内容\n粘贴"/>
+	<string id="57640" value="重复上一步操作\n重复"/>
+	<string id="57641" value="用不同的正文替换指定的正文\n替换"/>
+	<string id="57642" value="选择整个文档\n选择全部"/>
+	<string id="57643" value="撤消最后一步操作\n撤消"/>
+	<string id="57644" value="重新执行先前已撤消的操作\n重新执行"/>
+	<string id="57653" value="将活动的窗口分隔成窗格\n分隔"/>
+	<string id="57664" value="显示程序信息，版本号和版权\n关于"/>
+	<string id="57665" value="退出应用程序；提示保存文档\n退出"/>
+	<string id="57680" value="切换到下一个窗格\n下一窗格"/>
+	<string id="57681" value="切换回前一个窗格\n前一窗格"/>
+	<string id="59136" value="扩展名"/>
+	<string id="59137" value="大写"/>
+	<string id="59138" value="数字"/>
+	<string id="59139" value="滚动"/>
+	<string id="59140" value="改写"/>
+	<string id="59141" value="记录"/>
+	<string id="59392" value="显示或隐藏工具栏\n显隐工具栏"/>
+	<string id="59393" value="显示或隐藏状态栏\n显隐状态栏"/>
+	<string id="61184" value="改变窗口大小"/>
+	<string id="61185" value="改变窗口位置"/>
+	<string id="61186" value="将窗口缩小成图标"/>
+	<string id="61187" value="把窗口放大到最大尺寸"/>
+	<string id="61188" value="切换到下一个文档窗口"/>
+	<string id="61189" value="切换到先前的文档窗口"/>
+	<string id="61190" value="关闭活动的窗口并提示保存所有文档"/>
+	<string id="61202" value="把窗口恢复到正常大小"/>
+	<string id="61203" value="激活任务表"/>
+	<string id="61204" value="工具栏"/>
+	<string id="61205" value="属性栏"/>
+	<string id="61206" value=" "/>
+	<string id="61207" value=" "/>
+	<string id="61208" value=" "/>
+	<string id="61209" value=" "/>
+	<string id="61210" value="序号"/>
+	<string id="61211" value="模块型号"/>
+	<string id="61212" value="MAC地址"/>
+	<string id="61213" value="IP地址"/>
+	<string id="61214" value=" "/>
+	<string id="61215" value=" "/>
+	<string id="61216" value=" "/>
+	<string id="61217" value="获取设备信息失败！"/>
+	<string id="61218" value="正在获取设备信息，请稍候..."/>
+	<string id="61219" value="请先获取设备信息再更改设备配置。"/>
+	<string id="61220" value="设备配置信息没有被更改。"/>
+	<string id="61221" value="无法搜索到设备。"/>
+	<string id="61222" value="更改设备信息失败。"/>
+	<string id="61223" value="新密码不一致。"/>
+	<string id="61224" value="发送命令成功。"/>
+	<string id="61225" value="发送命令失败。"/>
+	<string id="61226" value="下载 - %s"/>
+	<string id="61227" value="注：文件1必须放置主页索引文件，也就是输入htttp://%s时将会映射到的文件。"/>
+	<string id="61228" value="正在下载数据，请稍候..."/>
+	<string id="61229" value="更改设备信息成功。"/>
+	<string id="61230" value="擦除数据成功。"/>
+	<string id="61231" value="擦除数据失败。"/>
+	<string id="61232" value="下载数据成功。"/>
+	<string id="61233" value="下载数据失败。"/>
+	<string id="61234" value="导入配置失败"/>
+	<string id="61235" value="创建文件失败"/>
+	<string id="61236" value="操作成功"/>
+	<string id="61237" value="导入配置失败,配置文件格式不对"/>
+	<string id="61238" value="密码不对"/>
+	<string id="61239" value=" "/>
+	<string id="61240" value="宋体"/>
+	<string id="61241" value="以下参数数值不能相同:\r\n\r\n"/>
+	<string id="61242" value="IP地址格式不对"/>
+	<string id="61243" value="正在更新固件，是否退出？"/>
+	<string id="61244" value="正在连接...\r\n"/>
+	<string id="61245" value="连接失败\r\n"/>
+	<string id="61246" value="开始发送数据...\r\n"/>
+	<string id="61247" value="更新固件成功"/>
+	<string id="61248" value="无法打开文件"/>
+	<string id="61249" value="无法登录设备，请检查设备密码是否正确或设备是否工作正常。"/>
+	<string id="61250" value="发送数据失败"/>
+	<string id="61251" value="初始密钥长度不对（=%d），应该为64字节字符, 即32字节16进制数"/>
+	<string id="61252" value="初始密钥中包含非法字符，字符应该在 '0'到'9', 'a'到'f', 'A'到'F' 之间"/>
+	<string id="61253" value="输入格式不对"/>
+	<string id="61254" value="RRRR"/>
+	<string id="61255" value="工作模式"/>
+	<string id="61256" value="正常模式"/>
+	<string id="61257" value="Firmware Update"/>
+	<string id="61258" value="升级失败，请重试"/>
+	<string id="61259" value="无法搜索，可能搜索端口被占用"/>	
+	<menu id="128">
+		<menuitem caption="配置(&amp;S)">
+			<menuitem id="32795" caption="绑定网卡"/>
+			<menuitem id="32773" caption="搜索设备(&amp;B)"/>
+			<menuitem id="32774" caption="指定IP搜索设备(&amp;S)"/>
+			<menuitem/>
+			<menuitem id="32779" caption="清空设备列表(&amp;C)"/>
+			<menuitem/>
+			<menuitem id="32775" caption="获取设备详细信息(&amp;G)"/>
+			<menuitem id="32788" caption="指定IP获取设备详细信息(&amp;P)"/>
+
+			<menuitem/>
+			<menuitem id="32792" caption="指定IP复位"/>
+			<menuitem id="32776" caption="复位设备(&amp;R)"/>
+			<menuitem/>
+			<menuitem id="32777" caption="下载数据(&amp;D)"/>
+			<menuitem/>
+			<menuitem id="32785" caption="升级固件(&amp;U)"/>
+			<menuitem id="32790" caption="搜索升级模式设备(&amp;M)"/>
+			<menuitem/>
+			<menuitem id="32787" caption="读取密钥(&amp;E)"/>
+			<menuitem/>
+			<menuitem id="32789" caption="恢复出厂设置(&amp;F)"/>
+			<menuitem/>
+			<menuitem id="57665" caption="退出(&amp;X)"/>
+		</menuitem>
+		<menuitem caption="视图(&amp;V)">
+			<menuitem id="32778" caption="属性栏(&amp;P)"/>
+			<menuitem id="59392" caption="工具栏(&amp;T)"/>
+			<menuitem id="59393" caption="状态栏(&amp;S)"/>
+		</menuitem>
+		<menuitem caption="帮助(&amp;H)">
+			<menuitem id="57664" caption="关于 ZNetCom(&amp;A)..."/>
+		</menuitem>
+		<menuitem id="32786" caption="测试(&amp;T)"/>
+	</menu>
+	<menu id="133">
+		<menuitem caption="1">
+			<menuitem id="32782" caption="收缩/展开"/>
+			<menuitem id="32783" caption="导入配置"/>
+			<menuitem id="32784" caption="导出配置"/>
+		</menuitem>
+	</menu>
+	<dialog id="100" caption="关于 ZNetCOM" fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 252, 111">
+		<control resource="128" style="1342177283" position="11, 17, 20, 20"/>
+		<control caption="ZNetCOM V2.89 版" style="1342308480" position="43, 13, 119, 8"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342373889" position="185, 10, 50, 16"/>
+		<control caption="版权所有 (C) 2012, 广州致远电子股份有限公司" position="33, 91, 181, 8"/>
+		<control style="1342177288" position="7, 83, 237, 1"/>
+		<control caption="电话: (020) 28267800 22644382" position="45, 33, 150, 8"/>
+		<control caption="邮箱:" position="45, 49, 25, 8"/>
+		<control caption="主页:" position="45, 67, 23, 8"/>
+		<control id="1022" caption="app@zlg.cn" position="73, 49, 118, 8"/>
+		<control id="1023" caption="http://www.embedcontrol.com" position="73, 67, 128, 8"/>
+	</dialog>
+	<dialog id="129" caption="Dialog" fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 218, 43">
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="77, 22, 50, 14"/>
+		<control id="1000" class="msctls_progress32" caption="Progress1" style="1350565889" position="7, 6, 204, 10"/>
+	</dialog>
+	<dialog id="135" caption="升级固件" fontsize="9" fontface="宋体" style="-2134245184" position="0, 0, 326, 103">
+		<control caption="设备型号:" position="17, 11, 37, 8"/>
+		<control id="1001" caption="NETCOM-400" position="58, 11, 44, 8"/>
+		<control caption="IP:" position="115, 11, 13, 8"/>
+		<control id="1008" caption="192.168.0.1" position="132, 11, 72, 8"/>
+		<control caption="升级文件:" position="20, 32, 37, 8"/>
+		<control id="1003" class="EDIT" style="1350631552" position="59, 29, 210, 14"/>
+		<control id="1004" class="BUTTON" caption="..." style="1342242816" position="274, 29, 16, 14"/>
+		<control id="2009" caption="" position="18,48,139,8"/>
+		<control id="1000" class="msctls_progress32" caption="Progress1" style="1350565889" position="13, 57, 292, 14"/>
+		<control id="1005" class="BUTTON" caption="升级固件" style="1342242816" position="127, 80, 50, 16"/>
+		<control caption="密码:" position="209, 11, 21, 8"/>
+		<control id="1007" class="EDIT" style="1350631584" position="234, 7, 74, 14"/>
+	</dialog>
+	<dialog id="136" caption="搜索可升级设备" fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 297, 143">
+		<control id="1019" class="SysListView32" caption="List1" style="1350631425" position="7, 7, 283, 79"/>
+		<control id="1017" class="BUTTON" caption="退出" style="1342242816" position="240, 119, 50, 17"/>
+		<control id="1018" class="msctls_progress32" caption="Progress1" style="1350565888" position="7, 100, 283, 12"/>
+	</dialog>
+	<dialog id="137" caption="叠加型设备定义" fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 369, 331">
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="257, 310, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Cancel" style="1342242816" position="312, 310, 50, 14"/>
+		<control id="1024" class="" caption="Custom1" style="1342242816" position="7, 153, 355, 141"/>
+		<control id="1026" class="" caption="Custom2" style="1342242816" position="75, 31, 212, 100"/>
+		<control caption="搜索到的设备" position="7, 32, 49, 8"/>
+		<control id="1084" class="BUTTON" caption="搜索可叠加型设备" style="1342242816" position="7, 7, 104, 14"/>
+	</dialog>
+	<dialog id="138" caption="LEDCfg" fontsize="9" fontface="宋体" style="-2134900544" position="0, 0, 286, 171">
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="224, 149, 43, 14"/>
+		<control class="BUTTON" caption="配置屏幕特性" style="1342177287" position="7, 26, 267, 58"/>
+		<control caption="宽度" position="13, 49, 17, 8"/>
+		<control caption="高度" position="14, 71, 17, 8"/>
+		<control id="1033" class="EDIT" style="1350631552" position="53, 43, 97, 14"/>
+		<control id="1034" class="EDIT" style="1350631552" position="53, 67, 97, 14"/>
+		<control id="1027" class="BUTTON" caption="读取" style="1342242816" position="224, 45, 43, 14"/>
+		<control id="1028" class="BUTTON" caption="设置" style="1342242816" position="224, 66, 43, 14"/>
+		<control class="BUTTON" caption="时间设置" style="1342177287" position="7, 89, 267, 55"/>
+		<control caption="屏幕时间" position="14, 108, 33, 8"/>
+		<control caption="电脑时间" position="13, 128, 33, 8"/>
+		<control id="1036" class="EDIT" style="1350631552" position="53, 104, 147, 14"/>
+		<control id="1037" class="EDIT" style="1350631552" position="54, 125, 147, 14"/>
+		<control id="1029" class="BUTTON" caption="设置" style="1342242816" position="224, 125, 43, 14"/>
+		<control id="1030" class="BUTTON" caption="读取" style="1342242816" position="224, 104, 43, 14"/>
+		<control id="1031" class="BUTTON" caption="连接" style="1342242816" position="53, 7, 50, 14"/>
+		<control id="1032" class="BUTTON" caption="断开连接" style="1342242816" position="150, 7, 50, 14"/>
+		<control caption="波特率" style="1073872896" position="125, 72, 25, 8"/>
+		<control id="1035" class="COMBOBOX" style="1075904770" position="150, 67, 70, 68"/>
+	</dialog>
+	<dialog id="140" caption="指定IP" fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 187, 140">
+		<control id="1" class="BUTTON" caption="复位" style="1342242817" position="25, 119, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="101, 119, 50, 14"/>
+		<control caption="IP" position="37, 40, 9, 8"/>
+		<control caption="MAC" position="33, 59, 13, 8"/>
+		<control id="1039" class="EDIT" style="1350631552" position="55, 57, 100, 12"/>
+		<control caption="类型" position="29, 21, 17, 8"/>
+		<control id="1041" class="COMBOBOX" style="1344339971" position="55, 19, 100, 170"/>
+		<control id="1010" class="EDIT" style="1350631552" position="55, 38, 100, 12"/>
+		<control id="1043" caption="命令端口" position="13, 78, 33, 8"/>
+		<control id="1040" class="EDIT" style="1350631552" position="55, 76, 100, 12"/>
+		<control id="1044" caption="登录密码" position="13, 97, 33, 8"/>
+		<control id="1042" class="EDIT" style="1350631584" position="55, 95, 100, 12"/>
+	</dialog>
+	<dialog id="141" caption="选择网卡" fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 217, 121">
+		<control id="1" class="BUTTON" caption="确定" style="1342242817" position="43, 100, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="118, 100, 50, 14"/>
+		<control id="1045" class="BUTTON" caption="不选择网卡" style="1342308361" position="20, 23, 56, 10"/>
+		<control id="1046" class="BUTTON" caption="选择网卡" style="1342177289" position="17, 53, 48, 10"/>
+		<control id="1047" class="COMBOBOX" style="1344339971" position="71, 51, 139, 137"/>
+	</dialog>
+	<dialog id="156" caption="搜索..." fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 311, 227" dialogex="1">
+		<control id="2" class="BUTTON" caption="停止" style="1342242816" position="223, 203, 50, 14"/>
+		<control caption="正在搜索网络中的设备" position="9, 9, 81, 8"/>
+		<control caption="剩余搜索时间:" position="126, 24, 53, 8"/>
+		<control id="1043" class="msctls_progress32" caption="Progress1" style="1350565889" position="96, 5, 201, 14"/>
+		<control id="1047" caption="5" position="183, 24, 8, 8"/>
+		<control caption="秒" position="192, 24, 8, 8"/>
+		<control caption="搜索到" position="9, 209, 25, 8"/>
+		<control id="1046" caption="0" style="1342308353" position="38, 209, 14, 8"/>
+		<control caption="个设备" position="54, 209, 25, 8"/>
+		<control id="1023" class="XTPReport" style="1342242817" styleex="131076" position="10, 46, 292, 152"/>
+	</dialog>
+	<dialog id="158" caption="指定IP搜索" fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 233, 107">
+		<control id="1049" class="SysIPAddress32" caption="IPAddress1" style="1342242816" position="80, 25, 100, 15"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342242817" position="54, 85, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="128, 86, 50, 14"/>
+		<control caption="请输入指定IP地址:" position="17, 8, 69, 8"/>
+		<control caption="起始地址" position="17, 29, 33, 8"/>
+		<control caption="结束地址" position="17, 53, 33, 8"/>
+		<control id="1038" class="SysIPAddress32" caption="IPAddress2" style="1342242816" position="79, 48, 100, 15"/>
+	</dialog>
+	<dialog id="161" caption="下载" fontsize="9" fontface="宋体" style="-2134376256" position="0, 0, 313, 159">
+		<control caption="文件1:" position="14, 30, 25, 8"/>
+		<control id="1083" class="EDIT" style="1350631552" position="42, 27, 232, 14"/>
+		<control id="1084" class="BUTTON" caption="..." style="1342242816" position="278, 27, 16, 14"/>
+		<control caption="文件2:" position="14, 52, 25, 8"/>
+		<control id="1085" class="EDIT" style="1350631552" position="42, 48, 232, 14"/>
+		<control id="1086" class="BUTTON" caption="..." style="1342242816" position="278, 48, 16, 14"/>
+		<control caption="文件3:" position="14, 72, 25, 8"/>
+		<control id="1087" class="EDIT" style="1350631552" position="42, 69, 232, 14"/>
+		<control id="1088" class="BUTTON" caption="..." style="1342242816" position="278, 69, 16, 14"/>
+		<control caption="文件4:" position="14, 94, 25, 8"/>
+		<control id="1089" class="EDIT" style="1350631552" position="42, 90, 232, 14"/>
+		<control id="1090" class="BUTTON" caption="..." style="1342242816" position="278, 90, 16, 14"/>
+		<control caption="文件5:" position="14, 115, 25, 8"/>
+		<control id="1091" class="EDIT" style="1350631552" position="42, 111, 232, 14"/>
+		<control id="1092" class="BUTTON" caption="..." style="1342242816" position="278, 111, 16, 14"/>
+		<control id="1093" class="BUTTON" caption="开始下载" style="1342242816" position="100, 134, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1073807360" position="263, 133, 40, 14"/>
+		<control id="1094" class="BUTTON" caption="擦除下载数据" style="1342242816" position="162, 134, 57, 14"/>
+		<control id="1042" caption="注：文件1必须放置主页索引文件，也就是输入htttp://%s时将会映射到的文件。" position="7, 4, 294, 20"/>
+	</dialog>
+	<dialog id="162" caption="读取初始密钥" fontsize="9" fontface="宋体" style="-2134245184" position="0, 0, 325, 177">
+		<control caption="设备型号：" position="19, 15, 41, 8"/>
+		<control id="1009" class="EDIT" style="1350633600" position="62, 11, 59, 14"/>
+		<control caption="IP：" position="139, 15, 17, 8"/>
+		<control id="1010" class="EDIT" style="1350633600" position="157, 11, 76, 14"/>
+		<control caption="登陆密码：" position="20, 39, 41, 8"/>
+		<control id="1007" class="EDIT" style="1350631584" position="62, 35, 59, 14"/>
+		<control id="1011" class="EDIT" style="1350633604" position="13, 69, 298, 33"/>
+		<control id="1012" class="BUTTON" caption="读取密钥" style="1342242816" position="166, 35, 52, 14"/>
+		<control class="BUTTON" caption="密钥" style="1342177287" position="8, 56, 309, 53"/>
+		<control class="BUTTON" caption="密钥更改为" style="1342177287" position="8, 113, 309, 53"/>
+		<control id="1013" class="EDIT" style="1350631556" position="14, 127, 297, 32"/>
+		<control id="1014" class="BUTTON" caption="更改密钥" style="1342242816" position="229, 35, 50, 14"/>
+	</dialog>
+	<dialog id="163" caption="恢复出厂设置" fontsize="9" fontface="宋体" style="-2134245184" position="0, 0, 180, 115">
+		<control id="1015" class="EDIT" style="1350631552" position="7, 23, 163, 14"/>
+		<control id="1" class="BUTTON" caption="恢复出厂设置" style="1342242816" position="45, 44, 74, 14"/>
+		<control caption="设备MAC地址：(比如00:11:22:33:44:AA)" position="6, 10, 145, 8"/>
+		<control caption="注：支持恢复出厂设置的设备为ZNE-200T(固件版本1.10以上)。" position="7, 70, 166, 34"/>
+	</dialog>
+</resource>

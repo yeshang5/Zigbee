@@ -1,0 +1,1850 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2948060629</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\Spi.r51</file>
+      <file>$PROJ_DIR$\App\Time.h</file>
+      <file>$PROJ_DIR$\Driver\Key.h</file>
+      <file>$PROJ_DIR$\Driver\Timer.h</file>
+      <file>$PROJ_DIR$\App\Door.c</file>
+      <file>$PROJ_DIR$\Driver\Adc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Sysclk.r51</file>
+      <file>$PROJ_DIR$\AppLow\CardData.h</file>
+      <file>$PROJ_DIR$\Driver.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Timer.pbi</file>
+      <file>$PROJ_DIR$\Driver\Sysclk.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Led.pbi</file>
+      <file>$PROJ_DIR$\Public\Handler.h</file>
+      <file>$PROJ_DIR$\Driver\Motor.h</file>
+      <file>$PROJ_DIR$\App\Delay.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Adc.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Handler.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\CC2530.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Wdt.pbi</file>
+      <file>$PROJ_DIR$\AppTop\CC2530.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Tip.pbi</file>
+      <file>$PROJ_DIR$\App\Delay.c</file>
+      <file>$PROJ_DIR$\AppLow\Tip.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Key.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Timer.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Rtc.r51</file>
+      <file>$PROJ_DIR$\App\Time.c</file>
+      <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\MFRC522.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Card.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Motor.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2c.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Buzzer.r51</file>
+      <file>$PROJ_DIR$\Driver\Rtc.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Key.r51</file>
+      <file>$PROJ_DIR$\App\Card.h</file>
+      <file>$PROJ_DIR$\Driver\Led.h</file>
+      <file>$PROJ_DIR$\Driver\Buzzer.h</file>
+      <file>$PROJ_DIR$\AppBottom\Tip.c</file>
+      <file>$PROJ_DIR$\AppHigh\CC2530.h</file>
+      <file>$PROJ_DIR$\AppTop\CC2530.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Sleep.r51</file>
+      <file>$PROJ_DIR$\Device\Buzzer.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Led.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\CardData.pbi</file>
+      <file>$PROJ_DIR$\App\Data.h</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxc-1e16x01.r51</file>
+      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Sysclk.pbi</file>
+      <file>$PROJ_DIR$\AppLow.h</file>
+      <file>$PROJ_DIR$\Driver\Rtc.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\Lock.hex</file>
+      <file>$PROJ_DIR$\Debug\Obj\Data.r51</file>
+      <file>$PROJ_DIR$\Device\CC2530.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Card.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Delay.pbi</file>
+      <file>$PROJ_DIR$\AppHigh.h</file>
+      <file>$PROJ_DIR$\AppHigh\Door.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Tip.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\PCF8563.r51</file>
+      <file>$PROJ_DIR$\AppLow\Warn.h</file>
+      <file>$PROJ_DIR$\AppLow\Tip.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Motor.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Delay.r51</file>
+      <file>$PROJ_DIR$\App\Data.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\CardData.r51</file>
+      <file>$PROJ_DIR$\App\CC2530.c</file>
+      <file>$PROJ_DIR$\Driver\Delay.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Lock.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\Door.pbi</file>
+      <file>$PROJ_DIR$\AppLow\CardData.c</file>
+      <file>$PROJ_DIR$\Driver\Handler.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\MFRC522.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Rf.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Warn.r51</file>
+      <file>$PROJ_DIR$\Driver\Card.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Spi.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Buzzer.pbi</file>
+      <file>$PROJ_DIR$\App\Port.c</file>
+      <file>$PROJ_DIR$\Device\MFRC522.h</file>
+      <file>$PROJ_DIR$\Device\PCF8563.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Time.pbi</file>
+      <file>$PROJ_DIR$\Driver\Rf.h</file>
+      <file>$PROJ_DIR$\AppLow\Data.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Door.r51</file>
+      <file>$PROJ_DIR$\App\Card.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\CC2530.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Rf.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Port.pbi</file>
+      <file>$PROJ_DIR$\Driver\Sleep.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\PCF8563.pbi</file>
+      <file>$PROJ_DIR$\App.h</file>
+      <file>$PROJ_DIR$\Driver\Handler.c</file>
+      <file>$PROJ_DIR$\App\CC2530.h</file>
+      <file>$PROJ_DIR$\AppHigh\Card.h</file>
+      <file>$PROJ_DIR$\App\Door.h</file>
+      <file>$PROJ_DIR$\Device\Buzzer.h</file>
+      <file>$PROJ_DIR$\Driver\Card.h</file>
+      <file>$PROJ_DIR$\Public\Delay.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2c.pbi</file>
+      <file>$PROJ_DIR$\Device.h</file>
+      <file>$PROJ_DIR$\App\Port.h</file>
+      <file>$PROJ_DIR$\Driver\I2c.h</file>
+      <file>$PROJ_DIR$\Driver\Delay.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Port.r51</file>
+      <file>$PROJ_DIR$\Driver\Wdt.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Wdt.r51</file>
+      <file>$PROJ_DIR$\Driver\Key.c</file>
+      <file>$PROJ_DIR$\Driver\Rf.c</file>
+      <file>$PROJ_DIR$\Driver\Wdt.c</file>
+      <file>$PROJ_DIR$\Congfig.h</file>
+      <file>$PROJ_DIR$\AppHigh\Door.c</file>
+      <file>$PROJ_DIR$\Driver\Spi.c</file>
+      <file>$PROJ_DIR$\Driver\Sleep.c</file>
+      <file>$PROJ_DIR$\AppHigh\Card.c</file>
+      <file>$PROJ_DIR$\Device\AT24C256.c</file>
+      <file>$PROJ_DIR$\Driver\Timer.c</file>
+      <file>$PROJ_DIR$\AppHigh\CC2530.c</file>
+      <file>$PROJ_DIR$\Driver\Led.c</file>
+      <file>$PROJ_DIR$\Driver\Motor.c</file>
+      <file>$PROJ_DIR$\Driver\Adc.c</file>
+      <file>$PROJ_DIR$\Driver\Buzzer.c</file>
+      <file>$PROJ_DIR$\AppLow\Warn.c</file>
+      <file>$PROJ_DIR$\Device\PCF8563.c</file>
+      <file>$PROJ_DIR$\Driver\I2c.c</file>
+      <file>$PROJ_DIR$\Driver\Sysclk.c</file>
+      <file>$PROJ_DIR$\AppLow\Data.c</file>
+      <file>$PROJ_DIR$\Device\MFRC522.c</file>
+      <file>$PROJ_DIR$\Device\AT24C256.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$PROJ_DIR$\Public.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Sleep.pbi</file>
+      <file>$PROJ_DIR$\Driver\Spi.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Warn.pbi</file>
+      <file>$PROJ_DIR$\App\Handler.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\AT24C256.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\Lock.d51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Data.pbi</file>
+      <file>$PROJ_DIR$\Public\Handler.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Rtc.pbi</file>
+      <file>$PROJ_DIR$\Public\Delay.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Handler.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Adc.pbi</file>
+      <file>$PROJ_DIR$\App\Handler.h</file>
+      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_cc2530F256_banked.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\Time.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\AT24C256.r51</file>
+      <file>$PROJ_DIR$\main.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\App\Door.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 87</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 98 8 37 49 12 103 83 105 82 135 131 27 132 94 36 133 104 1 47 143 10 3 92 13 38 2 5 85 108 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 54 139</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Delay.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 49 74</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 14 49 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppLow\Tip.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64 8 10 49 37 13 38 2 5 105 135 3 85 92 108</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 64 8 10 49 37 13 38 2 5 105 135 3 85 92 108</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Time.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 148</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 8 37 49 12 103 83 105 82 135 131 27 132 94 98 133 36 104 47 143 10 3 92 13 38 2 5 85 108 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53 49</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 53 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppBottom\Tip.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppTop\CC2530.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 8 10 49 37 13 38 2 5 105 135 3 85 92 108 103 83 82 131 27 132</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Device\Buzzer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 99 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Device\CC2530.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 8 10 49 37 13 38 2 5 105 135 3 85 92</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Data.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 140</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47 8 37 49 12 103 83 105 82 135 131 27 132 94 98 133 36 104 1 143 10 3 92 13 38 2 5 85 108 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\CC2530.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 8 10 49 37 13 38 2 5 105 135 3 85 92 108 103 83 82 131 27 132</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 96 8 10 49 37 13 38 2 5 105 135 3 85 92 108 103 83 82 131 27 132</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Delay.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106 49</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 106 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\Lock.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 138 145 80 17 30 140 72 102 23 11 75 65 93 90 134 79 51 9 136 18 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppLow\CardData.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 131 105 49 27 132</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 7 131 105 49 27 132</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Card.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100 8 37 49 12 85 143 10 105 3 92 135 13 38 2 5 113 103 83 82 131 27 132 133</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Port.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104 8 37 49 12 103 83 105 82 135 131 27 132 94 98 133 36 1 47 143 10 3 92 13 38 2 5 85 108 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Card.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Handler.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 144</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 49</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 74 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Public\Delay.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143 49 12 8 37 10 105 3 92 135 13 38 2 5 85 108 113 103 83 82 131 27 132 94 98 133 36 104 1 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Key.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 2 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Rf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 76</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 85 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Wdt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 109</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 108 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppHigh\Door.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 87</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60 103 83 105 49 113 82 135 131 27 132 8 10 37 13 38 2 5 3 108 85 92 63</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 60 103 83 105 49 82 135 131 27 132 8 10 37 13 38 2 5 3 108 85 92 63</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 135 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 135 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Sleep.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 134</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 92 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppHigh\Card.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97 52 63 8 10 49 113 37 13 38 2 5 105 135 3 108 85 92 86 131 27 132 103 83 82</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 97 52 63 8 10 49 37 13 38 2 5 105 135 3 108 85 92 86 131 27 132 113 103 83 82</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Device\AT24C256.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 149</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131 105 49 113 27 132</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 131 105 49 27 132</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Timer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3 49 113 108</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 3 49 108</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppHigh\CC2530.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 8 10 49 113 37 13 38 2 5 105 135 3 108 85 92 103 83 82 131 27 132</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 40 8 10 49 37 13 38 2 5 105 135 3 108 85 92 103 83 82 131 27 132</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Led.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 37 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Motor.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 13 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Adc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 145</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 5 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Buzzer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 38 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppLow\Warn.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 77</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63 8 10 49 113 37 13 38 2 5 105 135 3 108 85 92</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 63 8 10 49 37 13 38 2 5 105 135 3 108 85 92</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Device\PCF8563.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 93</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83 105 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 83 105 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\I2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 105 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Sysclk.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 10 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppLow\Data.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 140</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86 131 105 49 113 27 132</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 86 131 105 49 27 132 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Device\MFRC522.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82 135 49 113</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 82 135 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Handler.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 144</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 146 49</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 146 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Lock.d51</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 147 149 15 33 89 57 55 87 32 35 45 29 31 62 76 43 0 6 24 77 109 42 48</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Public\Handler.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 8 37 49 143 10 105 3 92 135 13 38 2 5 85 108 113 103 83 82 131 27 132 94 98 133 36 104 1 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28 49 113 8 10 37 13 38 2 5 105 135 3 108 85 92 103 83 82 131 27 132 59 40 60 63 97 52 86</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 28 49 8 10 37 13 38 2 5 105 135 3 108 85 92 103 83 82 131 27 132 59 40 60 63 97 52 86 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\Driver\Handler.c</name>
+      <tool>ICC8051</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\App\Time.h</file>
+      <file>$PROJ_DIR$\Driver\Key.h</file>
+      <file>$PROJ_DIR$\Driver\Timer.h</file>
+      <file>$PROJ_DIR$\App\Door.c</file>
+      <file>$PROJ_DIR$\Driver\Adc.h</file>
+      <file>$PROJ_DIR$\Driver.h</file>
+      <file>$PROJ_DIR$\Driver\Sysclk.h</file>
+      <file>$PROJ_DIR$\Public\Handler.h</file>
+      <file>$PROJ_DIR$\Driver\Motor.h</file>
+      <file>$PROJ_DIR$\App\Time.c</file>
+      <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$PROJ_DIR$\App\Card.h</file>
+      <file>$PROJ_DIR$\Driver\Led.h</file>
+      <file>$PROJ_DIR$\Driver\Buzzer.h</file>
+      <file>$PROJ_DIR$\AppHigh\CC2530.h</file>
+      <file>$PROJ_DIR$\App\Data.h</file>
+      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+      <file>$PROJ_DIR$\AppLow.h</file>
+      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Timer.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Handler.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Rf.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Motor.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Port.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Spi.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Rf.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Time.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Timer.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Wdt.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Spi.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Buzzer.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Adc.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Sysclk.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\PCF8563.pbi</file>
+      <file>$PROJ_DIR$\Release\Exe\Lock.a51</file>
+      <file>$PROJ_DIR$\Release\Obj\I2c.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Key.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Card.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Buzzer.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\AT24C256.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Handler.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Lock.pbd</file>
+      <file>$PROJ_DIR$\Release\Obj\Door.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Key.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\I2c.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Delay.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Data.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\CC2530.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Wdt.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Delay.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Motor.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Warn.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\MFRC522.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Led.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Sleep.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\Adc.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Sysclk.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Sleep.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\Led.pbi</file>
+      <file>$PROJ_DIR$\AppHigh.h</file>
+      <file>$PROJ_DIR$\AppHigh\Door.h</file>
+      <file>$PROJ_DIR$\AppLow\Warn.h</file>
+      <file>$PROJ_DIR$\App\Data.c</file>
+      <file>$PROJ_DIR$\Driver\Delay.c</file>
+      <file>$PROJ_DIR$\Driver\Handler.h</file>
+      <file>$PROJ_DIR$\Driver\Card.c</file>
+      <file>$PROJ_DIR$\App\Port.c</file>
+      <file>$PROJ_DIR$\Device\MFRC522.h</file>
+      <file>$PROJ_DIR$\Device\PCF8563.h</file>
+      <file>$PROJ_DIR$\Driver\Rf.h</file>
+      <file>$PROJ_DIR$\AppLow\Data.h</file>
+      <file>$PROJ_DIR$\App\Card.c</file>
+      <file>$PROJ_DIR$\Driver\Sleep.h</file>
+      <file>$PROJ_DIR$\Driver\Handler.c</file>
+      <file>$PROJ_DIR$\AppHigh\Card.h</file>
+      <file>$PROJ_DIR$\App\Door.h</file>
+      <file>$PROJ_DIR$\Driver\Card.h</file>
+      <file>$PROJ_DIR$\Public\Delay.c</file>
+      <file>$PROJ_DIR$\Device.h</file>
+      <file>$PROJ_DIR$\App\Port.h</file>
+      <file>$PROJ_DIR$\Driver\I2c.h</file>
+      <file>$PROJ_DIR$\Driver\Delay.h</file>
+      <file>$PROJ_DIR$\Driver\Wdt.h</file>
+      <file>$PROJ_DIR$\Driver\Key.c</file>
+      <file>$PROJ_DIR$\Driver\Rf.c</file>
+      <file>$PROJ_DIR$\Driver\Wdt.c</file>
+      <file>$PROJ_DIR$\AppHigh\Door.c</file>
+      <file>$PROJ_DIR$\Driver\Spi.c</file>
+      <file>$PROJ_DIR$\Driver\Sleep.c</file>
+      <file>$PROJ_DIR$\AppHigh\Card.c</file>
+      <file>$PROJ_DIR$\Device\AT24C256.c</file>
+      <file>$PROJ_DIR$\Driver\Timer.c</file>
+      <file>$PROJ_DIR$\AppHigh\CC2530.c</file>
+      <file>$PROJ_DIR$\Driver\Led.c</file>
+      <file>$PROJ_DIR$\Driver\Motor.c</file>
+      <file>$PROJ_DIR$\Driver\Adc.c</file>
+      <file>$PROJ_DIR$\Driver\Buzzer.c</file>
+      <file>$PROJ_DIR$\AppLow\Warn.c</file>
+      <file>$PROJ_DIR$\Device\PCF8563.c</file>
+      <file>$PROJ_DIR$\Driver\I2c.c</file>
+      <file>$PROJ_DIR$\Driver\Sysclk.c</file>
+      <file>$PROJ_DIR$\AppLow\Data.c</file>
+      <file>$PROJ_DIR$\Device\MFRC522.c</file>
+      <file>$PROJ_DIR$\Device\AT24C256.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$PROJ_DIR$\Driver\Spi.h</file>
+      <file>$PROJ_DIR$\Public\Handler.c</file>
+      <file>$PROJ_DIR$\Public\Delay.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\App\Door.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Time.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Obj\Lock.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 40 32 31 48 38 47 43 36 44 59 53 51 34 26 55 30 33 20 52 49 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Data.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Delay.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82 17 65</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 82 17 65</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Card.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 10 105</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 77</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Port.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\App\Card.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 10 105</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Handler.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 65 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Public\Delay.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108 17 7</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 108 17 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Key.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 1 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Rf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 70 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Wdt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 83 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppHigh\Door.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 106 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Sleep.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 73 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppHigh\Card.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75 10 105</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 75</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Device\AT24C256.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104 10 105</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Timer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 17 83</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 2 17 83</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppHigh\CC2530.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Led.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 13 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Motor.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 8 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Adc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 4 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Buzzer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 14 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppLow\Warn.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Device\PCF8563.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 69</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\I2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 81 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\Sysclk.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 17</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 6 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AppLow\Data.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Device\MFRC522.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 68</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Public\Handler.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 17 5 79 60 18 10 105</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 11 17 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

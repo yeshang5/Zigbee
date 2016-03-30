@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="128" />
+<command resetdev="1" download="0" updatefirm="1" />
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="CANET-4E-U" comment="" />
+	<item id="2" name="Firmware Version" readonly="1" cmd="VERSION" />
+	<item id="3" name="Name" readonly="0" cmd="NAME" />
+</root>
+<root name="Password Operation">
+	<item id="4" name="Password" readonly="2" cmd="" />
+	<item id="5" name="Modify Password" readonly="2" cmd="" defaultval="0">
+		<option name="No" value="0" disableitem="6|7" />
+		<option name="Yes" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="New Password" readonly="2" cmd="PASS" checktype="5" min="0" max="10" comment="The max available length of the password is 10"/>
+	<item id="7" name="Confirm New Password" readonly="2" cmd="" />
+</root>
+<root name="IP Information">
+	<item id="8" name="IP" readonly="0" cmd="IP" checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="9" name="Mask" readonly="0" cmd="MASK" checktype ="4" min="0" max="32" datarule="(255|254|252|248|240|224|192|128|0).(255|254|252|248|240|224|192|128|0).(255|254|252|248|240|224|192|128|0).(255|254|252|248|240|224|192|128|0)" comment="²ÉÓÃÁ½ÖÖÊäÈë·¨£ºµã·Ö·¨£¨±ÈÈç255.255.255.0£©£»Êý×Ö±íÊ¾·¨£¨·¶Î§Îª0-32£»±ÈÈç255.255.255.0±íÊ¾Îª24£©"/>
+	<item id="10" name="GATEWAY" readonly="0" cmd="GATEWAY" checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="11" name="DNS" readonly="0" cmd="DNS" checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="12" name="MAC" readonly="1" cmd="MAC" />
+	<item id="13" name="IP_MODE" readonly="0" cmd="IP_MODE">
+		<option name="Dynamic" value="1" disableitem="8|9|10" />
+		<option name="Static" value="0" enableitem="8|9|10" />
+	</item>
+	<item id="14" name="WEB_PORT" readonly="1" cmd="WEB_PORT"/>
+	<item id="15" name="CMD_PORT" readonly="1" cmd="CMD_PORT"/>
+	<item id="16" name="CANTCPDISCON" readonly="0" cmd="CANTCPDISCON">
+		<option name="Discon when hardware discon" value="0" disableitem="" />
+		<option name="NOT Discon" value="1" enableitem="" />
+	</item>
+	<item id="17" name="RESERVE" readonly="1"/>
+</root>
+
+<root name="CAN0 Setting">
+	<item id="17" name="copy the config to other CAN" readonly="0" cmd="1_USESAMECFG"  button="1" itemcounts="36" comment="copy the config to other CAN except the attribute of port " />
+	<item id="19" name="CAN1_TCPWORK_MD" readonly="0" cmd="CAN1_TCPWORK_MD" startitem="1">
+		<option name="TCP SERVER" value="1" disableitem="21|32|53|33|34|35|54|36|37|38|55|39|40|41|56|42|43|44|57|45|46|47|58|48|49" enableitem=""/>
+		<option name="UDP" value="2" enableitem="21" disableitem=""/>
+		<option name="TCP CLIENT" value="3" enableitem="21"/>
+	</item>
+	<item id="207" name="CAN1_IfFastenPort" readonly="0" cmd="CAN1_IfFastenPort" comment="When the TCP work model is TCP Client£¬the value shows if fasten the device's connect port.1 means FASTEN,0 means NO FASTEN">
+		<option name="FASTEN" value="1" />
+		<option name="NO FASTEN" value="0" />
+	</item>
+	<item id="20" name="CAN1_WORK_PORT" readonly="0" cmd="CAN1_WORK_PORT" />
+	<item id="59" name="TCP_NOTIFY_PORT" readonly="1" cmd="CAN1_NOTIFY_PORT" />
+	
+	<item id="22" name="CAN1_TIMEOUT(10ms)" readonly="0" cmd="CAN1_TIMEOUT" checktype ="6" min="100" max="65535" comment="region£º0£¬100-65525£¨0 set for disable£©,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>
+	<item id="23" name="CAN1_AT(10ms)" readonly="0" cmd="CAN1_AT" checktype ="1" min="100" max="65535" comment="region£º0£¬100-65525£¨0 set for disable£©,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>
+	<item id="24" name="CAN1_BAUD(kbps)" readonly="0" cmd="CAN1_BAUD" checktype="11" min="1" max="15000" comment="precision:0.1kbps"/>
+	<item id="25" name="CAN1_LISTEN_MD" readonly="0" cmd="CAN1_LISTEN_MD" >
+		<option name="Normal" value="0" />
+		<option name="Listen only" value="2" />
+		<option name="Atuo" value="4" />
+	</item>	
+	<item id="26" name="CAN1_PACK" readonly="0" cmd="CAN1_PACK" checktype="1" min="1" max="50" comment="1-50" />
+										
+	<item id="27" name="CAN1_PACKTS" readonly="0" cmd="CAN1_PACKTS" checktype="1" min="1" max="254" comment="1-254ms"/>
+	<item id="28" name="CAN1_BUF_CLEAR" readonly="0" cmd="CAN1_BUF_CLEAR" >
+		<option name="Never" value="0" />
+		<option name="Clear when TCP Conn" value="1" />
+	</item>
+	<item id="29" name="CAN0_AF" readonly="0" cmd="CAN1_AF" caustrepeat="1">
+		<option name="Disable" value="0" disableitem="310|311|312|313"/>
+		<option name="Enable" value="1" enableitem="310|311|312|313"/>
+	</item>
+	<item id="310" name="CAN0_STANDARD_TOP" readonly="0" cmd="CAN1_STANDARD_TOP" checktype="7" min="0" max="2047" showhex="1" comment="Region:0-7FF,Show and Set in HEX"/>
+	<item id="311" name="CAN0_STANDARD_LOW" readonly="0" cmd="CAN1_STANDARD_LOW" checktype="8" min="0" max="2047" showhex="1" comment="Region:0-7FF,Show and Set in HEX"/>
+	<item id="312" name="CAN0_EXTEND_TOP" readonly="0" cmd="CAN1_EXTEND_TOP" checktype="9" min="0" max="536870911" showhex="1" comment="Region:0-1FFFFFFF,Show and Set in HEX"/>
+	<item id="313" name="CAN0_EXTEND_LOW" readonly="0" cmd="CAN1_EXTEND_LOW" checktype="10" min="0" max="536870911" showhex="1" comment="Region:0-1FFFFFFF,Show and Set in HEX"/>
+	<item id="301" name="CAN0_SENDBUFF_FRAMNUM£¨10£©" readonly="0" cmd="CAN1_SEND_BUFF" checktype="1" min="1" max="65535" comment="region:1-65535"/>
+	<item id="302" name="CAN0_SENDBUFF_STRATEGY" readonly="0" cmd="CAN1_SENDBUFF_STRATEGY" comment="">
+		<option name="Discard the new data" value="0" />
+		<option name="Discard the old data" value="1" />
+	</item>
+	<item id="21" name="CAN1_TCP_CONN" readonly="0" cmd="CAN1_TCP_CONN" caustrepeat="1" >
+		<option name="0" value="0" disableitem="32|53|33|34|35|54|36|37|38|55|39|40|41|56|42|43|44|57|45|46|47|58|48|49"/>
+		<option name="1" value="1" enableitem= "32|53|33|34" disableitem="35|54|36|37|38|55|39|40|41|56|42|43|44|57|45|46|47|58|48|49" />
+		<option name="2" value="2" enableitem= "32|53|33|34|35|54|36|37" disableitem="38|55|39|40|41|56|42|43|44|57|45|46|47|58|48|49" />
+		<option name="3" value="3" enableitem= "32|53|33|34|35|54|36|37|38|55|39|40" disableitem="41|56|42|43|44|57|45|46|47|58|48|49" />
+		<option name="4" value="4" enableitem= "32|53|33|34|35|54|36|37|38|55|39|40|41|56|42|43" disableitem="44|57|45|46|47|58|48|49" />
+		<option name="5" value="5" enableitem= "32|53|33|34|35|54|36|37|38|55|39|40|41|56|42|43|44|57|45|46" disableitem="47|58|48|49" />
+		<option name="6" value="6" enableitem= "32|53|33|34|35|54|36|37|38|55|39|40|41|56|42|43|44|57|45|46|47|58|48|49" />
+		
+	</item>
+	<item id="32" name="CAN1_DES_PORT1" readonly="0" cmd="CAN1_DES_PORT1" comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="53" name="CAN1_MASK1" readonly="0" cmd="CAN1_MASK1" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©"/>
+	<item id="33" name="CAN1_DES_START_IP1" readonly="0" cmd="CAN1_DES_START_IP1" checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="34" name="CAN1_DES_END_IP1" readonly="0" cmd="CAN1_DES_END_IP1"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="35" name="CAN1_DES_PORT2" readonly="0" cmd="CAN1_DES_PORT2" comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="54" name="CAN1_MASK2" readonly="0" cmd="CAN1_MASK2" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="36" name="CAN1_DES_START_IP2" readonly="0" cmd="CAN1_DES_START_IP2"   checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="37" name="CAN1_DES_END_IP2" readonly="0" cmd="CAN1_DES_END_IP2"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="38" name="CAN1_DES_PORT3" readonly="0" cmd="CAN1_DES_PORT3"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="55" name="CAN1_MASK3" readonly="0" cmd="CAN1_MASK3" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="39" name="CAN1_DES_START_IP3" readonly="0" cmd="CAN1_DES_START_IP3"   checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="40" name="CAN1_DES_END_IP3" readonly="0" cmd="CAN1_DES_END_IP3"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="41" name="CAN1_DES_PORT4" readonly="0" cmd="CAN1_DES_PORT4"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="56" name="CAN1_MASK4" readonly="0" cmd="CAN1_MASK4" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="42" name="CAN1_DES_START_IP4" readonly="0" cmd="CAN1_DES_START_IP4"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="43" name="CAN1_DES_END_IP4" readonly="0" cmd="CAN1_DES_END_IP4"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="44" name="CAN1_DES_PORT5" readonly="0" cmd="CAN1_DES_PORT5" comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="57" name="CAN1_MASK5" readonly="0" cmd="CAN1_MASK5" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="45" name="CAN1_DES_START_IP5" readonly="0" cmd="CAN1_DES_START_IP5"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="46" name="CAN1_DES_END_IP5" readonly="0" cmd="CAN1_DES_END_IP5"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="47" name="CAN1_DES_PORT6" readonly="0" cmd="CAN1_DES_PORT6" comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="58" name="CAN1_MASK6" readonly="0" cmd="CAN1_MASK6" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="48" name="CAN1_DES_START_IP6" readonly="0" cmd="CAN1_DES_START_IP6"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="49" name="CAN1_DES_END_IP6" readonly="0" cmd="CAN1_DES_END_IP6"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+</root>
+
+<root name="CAN1 Setting">
+	<item id="201" name="copy the config to other CAN" readonly="0" cmd="2_USESAMECFG"  button="1" itemcounts="36" comment="copy the config to other CAN except the attribute of port " />
+	<item id="60" name="CAN2_TCPWORK_MD" readonly="0" cmd="CAN2_TCPWORK_MD" startitem="1">
+		<option name="TCP SERVER" value="1" disableitem="62|73|94|74|75|76|95|77|78|79|96|80|81|82|97|83|84|85|98|86|87|88|99|89|90" enableitem=""/>
+		<option name="UDP" value="2" enableitem="62" disableitem=""/>
+		<option name="TCP CLIENT" value="3" enableitem="62"/>
+	</item>
+	<item id="206" name="CAN2_IfFastenPort" readonly="0" cmd="CAN2_IfFastenPort" comment="When the TCP work model is TCP Client£¬the value shows if fasten the device's connect port.1 means FASTEN,0 means NO FASTEN">
+		<option name="FASTEN" value="1" />
+		<option name="NO FASTEN" value="0" />
+	</item>
+	<item id="61" name="CAN2_WORK_PORT" readonly="0" cmd="CAN2_WORK_PORT" />
+	<item id="100" name="TCP_NOTIFY_PORT" readonly="1" cmd="CAN2_NOTIFY_PORT" />
+	
+	<item id="63" name="CAN2_TIMEOUT(10ms)" readonly="0" cmd="CAN2_TIMEOUT" checktype ="6" min="100" max="65535" comment="region£º0£¬100-65525£¨0 set for disable£©,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>
+	<item id="64" name="CAN2_AT(10ms)" readonly="0" cmd="CAN2_AT" checktype ="1" min="100" max="65535" comment="region£º0£¬100-65525£¨0 set for disable£©,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>	
+	<item id="65" name="CAN2_BAUD(kbps)" readonly="0" cmd="CAN2_BAUD" checktype="11" min="1" max="15000" comment="precision:0.1kbps"/>
+	<item id="66" name="CAN2_LISTEN_MD" readonly="0" cmd="CAN2_LISTEN_MD" >
+		<option name="Normal" value="0" />
+		<option name="Listen only" value="2" />
+		<option name="Atuo" value="4" />
+	</item>	
+	<item id="67" name="CAN2_PACK" readonly="0" cmd="CAN2_PACK" checktype="1" min="1" max="50" comment="1-50" />
+										
+	<item id="68" name="CAN2_PACKTS" readonly="0" cmd="CAN2_PACKTS" checktype="1" min="1" max="254" comment="1-254ms"/>
+	<item id="69" name="CAN2_BUF_CLEAR" readonly="0" cmd="CAN2_BUF_CLEAR" >
+		<option name="Never" value="0" />
+		<option name="Clear when TCP Conn" value="1" />
+	</item>
+	<item id="314" name="CAN1_AF" readonly="0" cmd="CAN2_AF" caustrepeat="1">
+		<option name="Disable" value="0" disableitem="315|316|317|318"/>
+		<option name="Enable" value="1" enableitem="315|316|317|318"/>
+	</item>
+	<item id="315" name="CAN1_STANDARD_TOP" readonly="0" cmd="CAN2_STANDARD_TOP" checktype="7" min="0" max="2047" showhex="1" comment="Region:0-7FF,Show and Set in HEX"/>
+	<item id="316" name="CAN1_STANDARD_LOW" readonly="0" cmd="CAN2_STANDARD_LOW" checktype="8" min="0" max="2047" showhex="1" comment="Region:0-7FF,Show and Set in HEX"/>
+	<item id="317" name="CAN1_EXTEND_TOP" readonly="0" cmd="CAN2_EXTEND_TOP" checktype="9" min="0" max="536870911" showhex="1" comment="Region:0-1FFFFFFF,Show and Set in HEX"/>
+	<item id="318" name="CAN1_EXTEND_LOW" readonly="0" cmd="CAN2_EXTEND_LOW" checktype="10" min="0" max="536870911" showhex="1" comment="Region:0-1FFFFFFF,Show and Set in HEX"/>
+	<item id="304" name="CAN1_SENDBUFF_FRAMNUM£¨10£©" readonly="0" cmd="CAN2_SEND_BUFF" checktype="1" min="1" max="65535" comment="region:1-65535"/>
+	<item id="305" name="CAN1_SENDBUFF_STRATEGY" readonly="0" cmd="CAN2_SENDBUFF_STRATEGY" comment="">
+		<option name="Discard the new data" value="0" />
+		<option name="Discard the old data" value="1" />
+	</item>
+	<item id="62" name="CAN2_TCP_CONN" readonly="0" cmd="CAN2_TCP_CONN" caustrepeat="1"  >
+		<option name="0" value="0" disableitem="73|94|74|75|76|95|77|78|79|96|80|81|82|97|83|84|85|98|86|87|88|99|89|90"/>
+		<option name="1" value="1" enableitem= "73|94|74|75" disableitem="76|95|77|78|79|96|80|81|82|97|83|84|85|98|86|87|88|99|89|90" />
+		<option name="2" value="2" enableitem= "73|94|74|75|76|95|77|78" disableitem="79|96|80|81|82|97|83|84|85|98|86|87|88|99|89|90"/>
+		<option name="3" value="3" enableitem= "73|94|74|75|76|95|77|78|79|96|80|81" disableitem="82|97|83|84|85|98|86|87|88|99|89|90"/>
+		<option name="4" value="4" enableitem= "73|94|74|75|76|95|77|78|79|96|80|81|82|97|83|84" disableitem="85|98|86|87|88|99|89|90" />
+		<option name="5" value="5" enableitem= "73|94|74|75|76|95|77|78|79|96|80|81|82|97|83|84|85|98|86|87" disableitem="88|99|89|90" />
+		<option name="6" value="6" enableitem= "73|94|74|75|76|95|77|78|79|96|80|81|82|97|83|84|85|98|86|87|88|99|89|90" />
+		
+	</item>
+	<item id="73" name="CAN2_DES_PORT1" readonly="0" cmd="CAN2_DES_PORT1"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="94" name="CAN2_MASK1" readonly="0" cmd="CAN2_MASK1" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="74" name="CAN2_DES_START_IP1" readonly="0" cmd="CAN2_DES_START_IP1"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="75" name="CAN2_DES_END_IP1" readonly="0" cmd="CAN2_DES_END_IP1" checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="76" name="CAN2_DES_PORT2" readonly="0" cmd="CAN2_DES_PORT2"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="95" name="CAN2_MASK2" readonly="0" cmd="CAN2_MASK2" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="77" name="CAN2_DES_START_IP2" readonly="0" cmd="CAN2_DES_START_IP2"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="78" name="CAN2_DES_END_IP2" readonly="0" cmd="CAN2_DES_END_IP2"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="79" name="CAN2_DES_PORT3" readonly="0" cmd="CAN2_DES_PORT3"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="96" name="CAN2_MASK3" readonly="0" cmd="CAN2_MASK3" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="80" name="CAN2_DES_START_IP3" readonly="0" cmd="CAN2_DES_START_IP3"   checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="81" name="CAN2_DES_END_IP3" readonly="0" cmd="CAN2_DES_END_IP3"   checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="82" name="CAN2_DES_PORT4" readonly="0" cmd="CAN2_DES_PORT4"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="97" name="CAN2_MASK4" readonly="0" cmd="CAN2_MASK4" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="83" name="CAN2_DES_START_IP4" readonly="0" cmd="CAN2_DES_START_IP4"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="84" name="CAN2_DES_END_IP4" readonly="0" cmd="CAN2_DES_END_IP4"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="85" name="CAN2_DES_PORT5" readonly="0" cmd="CAN2_DES_PORT5"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="98" name="CAN2_MASK5" readonly="0" cmd="CAN2_MASK5" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="86" name="CAN2_DES_START_IP5" readonly="0" cmd="CAN2_DES_START_IP5"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="87" name="CAN2_DES_END_IP5" readonly="0" cmd="CAN2_DES_END_IP5"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="88" name="CAN2_DES_PORT6" readonly="0" cmd="CAN2_DES_PORT6"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="99" name="CAN2_MASK6" readonly="0" cmd="CAN2_MASK6" checktype="3" min="0" max="32" datarule="(((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="89" name="CAN2_DES_START_IP6" readonly="0" cmd="CAN2_DES_START_IP6"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="90" name="CAN2_DES_END_IP6" readonly="0" cmd="CAN2_DES_END_IP6"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+</root>
+
+<root name="CAN2 Setting">
+	<item id="202" name="copy the config to other CAN" readonly="0" cmd="3_USESAMECFG"  button="1" itemcounts="36" comment="copy the config to other CAN except the attribute of port " />
+	<item id="101" name="CAN3_TCPWORK_MD" readonly="0" cmd="CAN3_TCPWORK_MD" startitem="1">
+		<option name="TCP SERVER" value="1" disableitem="103|115|136|116|117|118|137|119|120|121|138|122|123|124|139|125|126|127|140|128|129|130|141|131|132" enableitem=""/>
+		<option name="UDP" value="2" enableitem="103" disableitem=""/>
+		<option name="TCP CLIENT" value="3" enableitem="103"/>
+	</item>
+	<item id="205" name="CAN3_IfFastenPort" readonly="0" cmd="CAN3_IfFastenPort" comment="When the TCP work model is TCP Client£¬the value shows if fasten the device's connect port.1 means FASTEN,0 means NO FASTEN">
+		<option name="FASTEN" value="1" />
+		<option name="NO FASTEN" value="0" />
+	</item>
+	<item id="102" name="CAN3_WORK_PORT" readonly="0" cmd="CAN3_WORK_PORT" />
+	<item id="142" name="TCP_NOTIFY_PORT" readonly="1" cmd="CAN3_NOTIFY_PORT" />
+	
+	<item id="104" name="CAN4_TIMEOUT(10ms)" readonly="0" cmd="CAN3_TIMEOUT" checktype ="6" min="100" max="65535" comment="region£º0£¬100-65525£¨0 set for disable£©,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>
+	<item id="105" name="CAN3_AT(10ms)" readonly="0" cmd="CAN3_AT" checktype ="1" min="100" max="65535" comment="region£º0£¬100-65525£¨0 set for disable£©,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>	
+	<item id="106" name="CAN2_BAUD(kbps)" readonly="0" cmd="CAN2_BAUD" checktype="11" min="1" max="15000" comment="precision:0.1kbps"/>
+	<item id="107" name="CAN3_LISTEN_MD" readonly="0" cmd="CAN3_LISTEN_MD" >
+		<option name="Normal" value="0" />
+		<option name="Listen only" value="2" />
+		<option name="Atuo" value="4" />
+	</item>	
+	<item id="108" name="CAN3_PACK" readonly="0" cmd="CAN3_PACK" checktype="1" min="1" max="50" comment="1-50" />
+										
+	<item id="109" name="CAN3_PACKTS" readonly="0" cmd="CAN3_PACKTS" checktype="1" min="1" max="254" comment="1-254ms"/>
+	<item id="110" name="CAN3_BUF_CLEAR" readonly="0" cmd="CAN3_BUF_CLEAR" >
+		<option name="Never" value="0" />
+		<option name="Clear when TCP Conn" value="1" />
+	</item>
+	<item id="324" name="CAN3_AF" readonly="0" cmd="CAN3_AF" caustrepeat="1">
+		<option name="Disable" value="0" disableitem="325|326|327|328"/>
+		<option name="Enable" value="1" enableitem="325|326|327|328"/>
+	</item>
+	<item id="325" name="CAN3_STANDARD_TOP" readonly="0" cmd="CAN3_STANDARD_TOP" checktype="7" min="0" max="2047" showhex="1" comment="Region:0-7FF,Show and Set in HEX"/>
+	<item id="326" name="CAN3_STANDARD_LOW" readonly="0" cmd="CAN3_STANDARD_LOW" checktype="8" min="0" max="2047" showhex="1" comment="Region:0-7FF,Show and Set in HEX"/>
+	<item id="327" name="CAN3_EXTEND_TOP" readonly="0" cmd="CAN3_EXTEND_TOP" checktype="9" min="0" max="536870911" showhex="1" comment="Region:0-1FFFFFFF,Show and Set in HEX"/>
+	<item id="328" name="CAN3_EXTEND_LOW" readonly="0" cmd="CAN3_EXTEND_LOW" checktype="10" min="0" max="536870911" showhex="1" comment="Region:0-1FFFFFFF,Show and Set in HEX"/>
+	<item id="324" name="CAN3_SENDBUFF_FRAMNUM£¨10£©" readonly="0" cmd="CAN3_SEND_BUFF" checktype="1" min="1" max="65535" comment="region:1-65535"/>
+	<item id="325" name="CAN3_SENDBUFF_STRATEGY" readonly="0" cmd="CAN3_SENDBUFF_STRATEGY" comment="">
+		<option name="Discard the new data" value="0" />
+		<option name="Discard the old data" value="1" />
+	</item>
+	<item id="103" name="CAN3_TCP_CONN" readonly="0" cmd="CAN3_TCP_CONN" caustrepeat="1"  >
+		<option name="0" value="0" disableitem="115|136|116|117|118|137|119|120|121|138|122|123|124|139|125|126|127|140|128|129|130|141|131|132"/>
+		<option name="1" value="1" enableitem= "115|136|116|117" disableitem="118|137|119|120|121|138|122|123|124|139|125|126|127|140|128|129|130|141|131|132" />
+		<option name="2" value="2" enableitem= "115|136|116|117|118|137|119|120" disableitem="121|138|122|123|124|139|125|126|127|140|128|129|130|141|131|132"/>
+		<option name="3" value="3" enableitem= "115|136|116|117|118|137|119|120|121|138|122|123" disableitem="124|139|125|126|127|140|128|129|130|141|131|132"/>
+		<option name="4" value="4" enableitem= "115|136|116|117|118|137|119|120|121|138|122|123|124|139|125|126" disableitem="127|140|128|129|130|141|131|132" />
+		<option name="5" value="5" enableitem= "115|136|116|117|118|137|119|120|121|138|122|123|124|139|125|126|127|140|128|129" disableitem="130|141|131|132" />
+		<option name="6" value="6" enableitem= "115|136|116|117|118|137|119|120|121|138|122|123|124|139|125|126|127|140|128|129|130|141|131|132" />
+		
+	</item>
+	<item id="115" name="CAN3_DES_PORT1" readonly="0" cmd="CAN3_DES_PORT1"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="136" name="CAN3_MASK1" readonly="0" cmd="CAN3_MASK1" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="116" name="CAN3_DES_START_IP1" readonly="0" cmd="CAN3_DES_START_IP1"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="117" name="CAN3_DES_END_IP1" readonly="0" cmd="CAN3_DES_END_IP1" checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="118" name="CAN3_DES_PORT2" readonly="0" cmd="CAN3_DES_PORT2"   comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="137" name="CAN3_MASK2" readonly="0" cmd="CAN3_MASK2" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="119" name="CAN3_DES_START_IP2" readonly="0" cmd="CAN3_DES_START_IP2"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="120" name="CAN3_DES_END_IP2" readonly="0" cmd="CAN3_DES_END_IP2"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="121" name="CAN3_DES_PORT3" readonly="0" cmd="CAN3_DES_PORT3"   comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="138" name="CAN3_MASK3" readonly="0" cmd="CAN3_MASK3" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="122" name="CAN3_DES_START_IP3" readonly="0" cmd="CAN3_DES_START_IP3"   checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="123" name="CAN3_DES_END_IP3" readonly="0" cmd="CAN3_DES_END_IP3"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])" />
+	<item id="124" name="CAN3_DES_PORT4" readonly="0" cmd="CAN3_DES_PORT4"   comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="139" name="CAN3_MASK4" readonly="0" cmd="CAN3_MASK4" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="125" name="CAN3_DES_START_IP4" readonly="0" cmd="CAN3_DES_START_IP4"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="126" name="CAN3_DES_END_IP4" readonly="0" cmd="CAN3_DES_END_IP4"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="127" name="CAN3_DES_PORT5" readonly="0" cmd="CAN3_DES_PORT5"   comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="140" name="CAN3_MASK5" readonly="0" cmd="CAN3_MASK5" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="128" name="CAN3_DES_START_IP5" readonly="0" cmd="CAN3_DES_START_IP5"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="129" name="CAN3_DES_END_IP5" readonly="0" cmd="CAN3_DES_END_IP5"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="130" name="CAN3_DES_PORT6" readonly="0" cmd="CAN3_DES_PORT6"   comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="141" name="CAN3_MASK6" readonly="0" cmd="CAN3_MASK6" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="131" name="CAN3_DES_START_IP6" readonly="0" cmd="CAN3_DES_START_IP6"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="132" name="CAN3_DES_END_IP6" readonly="0" cmd="CAN3_DES_END_IP6"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+</root>
+
+<root name="CAN3 Setting">
+	<item id="203" name="copy the config to other CAN" readonly="0" cmd="4_USESAMECFG"  button="1" itemcounts="36" comment="copy the config to other CAN except the attribute of port " />
+	<item id="143" name="CAN4_TCPWORK_MD" readonly="0" cmd="CAN4_TCPWORK_MD" startitem="1">
+		<option name="TCP SERVER" value="1" disableitem="145|156|177|157|158|159|178|160|161|162|179|163|164|165|180|166|167|168|181|169|170|171|182|172|173" enableitem=""/>
+		<option name="UDP" value="2" enableitem="145" disableitem=""/>
+		<option name="TCP CLIENT" value="3" enableitem="145"/>
+	</item>
+	<item id="204" name="CAN4_IfFastenPort" readonly="0" cmd="CAN4_IfFastenPort" comment="When the TCP work model is TCP Client£¬the value shows if fasten the device's connect port.1 means FASTEN,0 means NO FASTEN">
+		<option name="FASTEN" value="1" />
+		<option name="NO FASTEN" value="0" />
+	</item>
+	<item id="144" name="CAN4_WORK_PORT" readonly="0" cmd="CAN4_WORK_PORT" />
+	<item id="183" name="TCP_NOTIFY_PORT" readonly="1" cmd="CAN4_NOTIFY_PORT" />
+	
+	<item id="146" name="CAN4_TIMEOUT(10ms)" readonly="0" cmd="CAN4_TIMEOUT" checktype ="6" min="100" max="65535" comment="region£º0£¬100-65525£¨0 set for disable£©,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>
+	<item id="147" name="CAN4_AT(10ms)" readonly="0" cmd="CAN4_AT" checktype ="1" min="100" max="65535" comment="region£º0£¬100-65525£¨0 set for disable£©,Unit:10ms. e.g 500 menas 5000ms,1000 menas 10s"/>
+	<item id="148" name="CAN2_BAUD(kbps)" readonly="0" cmd="CAN2_BAUD" checktype="11" min="1" max="15000" comment="precision:0.1kbps"/>
+	<item id="149" name="CAN4_LISTEN_MD" readonly="0" cmd="CAN4_LISTEN_MD" >
+		<option name="Normal" value="0" />
+		<option name="Listen only" value="2" />
+		<option name="Atuo" value="4" />
+	</item>	
+	<item id="150" name="CAN4_PACK" readonly="0" cmd="CAN4_PACK" checktype="1" min="1" max="50" comment="1-50" />
+										
+	<item id="151" name="CAN4_PACKTS" readonly="0" cmd="CAN4_PACKTS" checktype="1" min="1" max="254" comment="1-254ms"/>
+	<item id="152" name="CAN4_BUF_CLEAR" readonly="0" cmd="CAN4_BUF_CLEAR" >
+		<option name="Never" value="0" />
+		<option name="Clear when TCP Conn" value="1" />
+	</item>
+	<item id="334" name="CAN4_AF" readonly="0" cmd="CAN4_AF" caustrepeat="1">
+		<option name="Disable" value="0" disableitem="335|336|337|338"/>
+		<option name="Enable" value="1" enableitem="335|336|337|338"/>
+	</item>
+	<item id="335" name="CAN4_STANDARD_TOP" readonly="0" cmd="CAN4_STANDARD_TOP" checktype="7" min="0" max="2047" showhex="1" comment="Region:0-7FF,Show and Set in HEX"/>
+	<item id="336" name="CAN4_STANDARD_LOW" readonly="0" cmd="CAN4_STANDARD_LOW" checktype="8" min="0" max="2047" showhex="1" comment="Region:0-7FF,Show and Set in HEX"/>
+	<item id="337" name="CAN4_EXTEND_TOP" readonly="0" cmd="CAN4_EXTEND_TOP" checktype="9" min="0" max="536870911" showhex="1" comment="Region:0-1FFFFFFF,Show and Set in HEX"/>
+	<item id="338" name="CAN4_EXTEND_LOW" readonly="0" cmd="CAN4_EXTEND_LOW" checktype="10" min="0" max="536870911" showhex="1" comment="Region:0-1FFFFFFF,Show and Set in HEX"/>
+	<item id="334" name="CAN4_SENDBUFF_FRAMNUM£¨10£©" readonly="0" cmd="CAN4_SEND_BUFF" checktype="1" min="1" max="65535" comment="region:1-65535"/>
+	<item id="335" name="CAN4_SENDBUFF_STRATEGY" readonly="0" cmd="CAN4_SENDBUFF_STRATEGY" comment="">
+		<option name="Discard the new data" value="0" />
+		<option name="Discard the old data" value="1" />
+	</item>
+	<item id="145" name="CAN4_TCP_CONN" readonly="0" cmd="CAN4_TCP_CONN" caustrepeat="1"  >
+		<option name="0" value="0" disableitem="156|177|157|158|159|178|160|161|162|179|163|164|165|180|166|167|168|181|169|170|171|182|172|173"/>
+		<option name="1" value="1" enableitem= "156|177|157|158" disableitem="159|178|160|161|162|179|163|164|165|180|166|167|168|181|169|170|171|182|172|173" />
+		<option name="2" value="2" enableitem= "156|177|157|158|159|178|160|161" disableitem="162|179|163|164|165|180|166|167|168|181|169|170|171|182|172|173"/>
+		<option name="3" value="3" enableitem= "156|177|157|158|159|178|160|161|162|179|163|164" disableitem="165|180|166|167|168|181|169|170|171|182|172|173"/>
+		<option name="4" value="4" enableitem= "156|177|157|158|159|178|160|161|162|179|163|164|165|180|166|167" disableitem="168|181|169|170|171|182|172|173" />
+		<option name="5" value="5" enableitem= "156|177|157|158|159|178|160|161|162|179|163|164|165|180|166|167|168|181|169|170" disableitem="171|182|172|173" />
+		<option name="6" value="6" enableitem= "156|177|157|158|159|178|160|161|162|179|163|164|165|180|166|167|168|181|169|170|171|182|172|173" />
+		
+	</item>
+	<item id="156" name="CAN4_DES_PORT1" readonly="0" cmd="CAN4_DES_PORT1"   comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="177" name="CAN4_MASK1" readonly="0" cmd="CAN4_MASK1" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="157" name="CAN4_DES_START_IP1" readonly="0" cmd="CAN4_DES_START_IP1"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="158" name="CAN4_DES_END_IP1" readonly="0" cmd="CAN4_DES_END_IP1" checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="159" name="CAN4_DES_PORT2" readonly="0" cmd="CAN4_DES_PORT2"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="178" name="CAN4_MASK2" readonly="0" cmd="CAN4_MASK2" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="160" name="CAN4_DES_START_IP2" readonly="0" cmd="CAN4_DES_START_IP2"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="161" name="CAN4_DES_END_IP2" readonly="0" cmd="CAN4_DES_END_IP2"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="162" name="CAN4_DES_PORT3" readonly="0" cmd="CAN4_DES_PORT3"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="179" name="CAN4_MASK3" readonly="0" cmd="CAN4_MASK3" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="163" name="CAN4_DES_START_IP3" readonly="0" cmd="CAN4_DES_START_IP3"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])" />
+	<item id="164" name="CAN4_DES_END_IP3" readonly="0" cmd="CAN4_DES_END_IP3"   checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="165" name="CAN4_DES_PORT4" readonly="0" cmd="CAN4_DES_PORT4"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="180" name="CAN4_MASK4" readonly="0" cmd="CAN4_MASK4" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="166" name="CAN4_DES_START_IP4" readonly="0" cmd="CAN4_DES_START_IP4"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="167" name="CAN4_DES_END_IP4" readonly="0" cmd="CAN4_DES_END_IP4"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="168" name="CAN4_DES_PORT5" readonly="0" cmd="CAN4_DES_PORT5"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="181" name="CAN4_MASK5" readonly="0" cmd="CAN4_MASK5" checktype="3" min="0" max="32" datarule="((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="169" name="CAN4_DES_START_IP5" readonly="0" cmd="CAN4_DES_START_IP5"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="170" name="CAN4_DES_END_IP5" readonly="0" cmd="CAN4_DES_END_IP5"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="171" name="CAN4_DES_PORT6" readonly="0" cmd="CAN4_DES_PORT6"  comment="DES_PORT" checktype="1" min="1" max="65535"/>
+	<item id="182" name="CAN4_MASK6" readonly="0" cmd="CAN4_MASK6" checktype="3" min="0" max="32" datarule="(((255|254|252|248|240|224|192|128|0)\.){3}(255|254|252|248|240|224|192|128|0)" comment="Using two kinds of input methods£ºdotted£¨eg.255.255.255.0£©£»digital representation£¨range as:0-32£»eg.255.255.255.0 expressed as 24£©" />
+	<item id="172" name="CAN4_DES_START_IP6" readonly="0" cmd="CAN4_DES_START_IP6"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+	<item id="173" name="CAN4_DES_END_IP6" readonly="0" cmd="CAN4_DES_END_IP6"  checktype="2" datarule="((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])"/>
+</root>
+

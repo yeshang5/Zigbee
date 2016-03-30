@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="32" />
+<command resetdev="1" download="0" updatefirm="1" test="1" />
+<notsamevalue>
+	<items value="WEB_PORT|CMD_PORT|C1_PORT" />
+</notsamevalue>
+<root name="»ù±¾ÐÅÏ¢">
+	<item id="1" name="Éè±¸ÐÍºÅ" readonly="1" cmd="" defaultval="ZNE-300T" comment="" />
+	<item id="2" name="Éè±¸¹Ì¼þ°æ±¾" readonly="1" cmd="VERSION" />
+	<item id="3" name="Éè±¸Ãû³Æ" readonly="0" cmd="NAME" />
+</root>
+<root name="ÃÜÂë²Ù×÷">
+	<item id="4" name="µ±Ç°ÃÜÂë" readonly="2" cmd="" />
+	<item id="5" name="ÊÇ·ñ¸ü¸ÄÃÜÂë" readonly="2" cmd="" defaultval="0">
+		<option name="·ñ" value="0" disableitem="6|7" />
+		<option name="ÊÇ" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="ÐÂÃÜÂë" readonly="2" cmd="PASS" />
+	<item id="7" name="È·ÈÏÐÂÃÜÂë" readonly="2" cmd="" />
+</root>
+<root name="IPµØÖ·ÐÅÏ¢">
+	<item id="8" name="Éè±¸IP" readonly="0" cmd="IP" />
+	<item id="9" name="Éè±¸×ÓÍøÑÚÂë" readonly="0" cmd="MASK" />
+	<item id="10" name="Éè±¸Íø¹ØIP" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="Éè±¸MACµØÖ·" readonly="1" cmd="MAC" />
+	<item id="12" name="»ñÈ¡IP·½Ê½" readonly="0" cmd="IP_MODE">
+		<option name="¶¯Ì¬»ñÈ¡" value="0" disableitem="8|9|10" />
+		<option name="¾²Ì¬»ñÈ¡" value="1" enableitem="8|9|10" />
+	</item>
+</root>
+<root name="ÍøÂç²ÎÊý">
+	<item id="13" name="DNS·þÎñÆ÷" readonly="0" cmd="DNS" />
+	<item id="14" name="ÍøÒ³¶Ë¿Ú" readonly="0" cmd="WEB_PORT" />
+	<item id="15" name="ÅäÖÃ¶Ë¿Ú£¨ÃüÁî¶Ë¿Ú£©" readonly="0" cmd="CMD_PORT" />
+	<item id="51" name="ÍøÂçËÙ¶ÈºÍÍ¨ÐÅ·½Ê½" readonly="0" cmd="SEEP_DUPLEX" >
+		<option name="×ÔÊÊÓ¦" value="0"  />
+		<option name="100Mb È«Ë«¹¤" value="1" />
+		<option name="100Mb °ëË«¹¤" value="2" />
+		<option name="10Mb   È«Ë«¹¤" value="3" />
+		<option name="10Mb   °ëË«¹¤" value="4" />
+	</item>
+	<item id="16" name="IP¹ýÂËÏî1" readonly="0" cmd="IPF1" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="17" name="IP¹ýÂËÏî2" readonly="0" cmd="IPF2" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="18" name="IP¹ýÂËÏî3" readonly="0" cmd="IPF3" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="19" name="IP¹ýÂËÏî4" readonly="0" cmd="IPF4" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="20" name="IP¹ýÂËÏî5" readonly="0" cmd="IPF5" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="21" name="IP¹ýÂËÏî6" readonly="0" cmd="IPF6" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="22" name="IP¹ýÂËÏî7" readonly="0" cmd="IPF7" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+	<item id="23" name="IP¹ýÂËÏî8" readonly="0" cmd="IPF8" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£ÊäÈë¸ñÊ½Îª192.168.0.100-255.255.255.255£¬ÆäÖÐ192.168.0.100ÎªIPµØÖ·£¬255.255.255.255ÎªÑÚÂë£¬ÏêÏ¸ÐÅÏ¢Çë²é¿´ËµÃ÷ÊÖ²á" />
+</root>
+<root name="PPPOE">
+	<item id="52" name="PPPOE" readonly="0" cmd="PPPOE">
+		<option name="ÆôÓÃ" value="1" enableitem="53|54|55"/>
+		<option name="²»ÆôÓÃ" value="0" disableitem="53|54|55"/>
+	</item>
+	<item id="53" name="ÓÃ»§Ãû" readonly="0" cmd="PPPOEUSERNAME" />
+	<item id="54" name="ÃÜÂë" readonly="0" cmd="PPPOEPWD" pwdedit="1" />
+	<item id="55" name="PPPOE IP" readonly="1" cmd="PPPOEIP" />
+</root>
+<root name="DDNS">
+	<item id="56" name="DDNSTYPE" readonly="0" cmd="DDNSTYPE">
+		<option name="½ûÖ¹" value="0" disableitem="57|58"/>
+		<option name="Ï£Íø" value="1" enableitem="57|58"/>
+		<option name="½ðÍòÎ¬" value="2" enableitem="57|58"/>
+	</item>
+	<item id="57" name="ÓÃ»§Ãû" readonly="0" cmd="DDNSNAME" comment="³¤¶ÈÎª1--31¸ö×Ö½Ú"/>
+	<item id="58" name="ÃÜÂë" readonly="0" cmd="DDNSPWD" pwdedit="1" comment="³¤¶ÈÎª1--31¸ö×Ö½Ú"/>
+</root>
+
+<root name="´®¿Ú%d" repeat="1" startind="1">
+	<item id="51" name="ÉèÖÃËùÓÐ´®¿ÚÅäÖÃºÍ´Ë´®¿ÚÏàÍ¬" readonly="0" cmd="%d_USESAMECFG"  button="1" startid="24" comment="ÆäËû´®¿Ú³ýÁË¹¤×÷¶Ë¿ÚÖ®ÍâµÄËùÓÐ²ÎÊý½«±»ÉèÖÃ³ÉºÍ´Ë´®¿ÚÒ»Ñù" />
+	
+	<item id="24" name="¹¤×÷·½Ê½" readonly="0" cmd="C%d_OP">
+		<option name="TCP Server" value="0" enableitem="30|31|32|33" disableitem="43|44|45|46|47|48|49|50" />
+		<option name="TCP Client" value="1" enableitem="30|31|32|33|43|44|45|46|47|48|49|50" />
+		<option name="Real COM" value="2" disableitem="30|31|32|33|43|44|45|46|47|48|49|50" />
+		<option name="UDP" value="3" enableitem="30|31|32|33|43|44|45|46|47|48|49|50" />
+		<option name="½ûÓÃ´Ë´®¿Ú" value="4" disableitem="30|31|32|33|43|44|45|46|47|48|49|50"/>
+	</item>
+	<item id="25" name="¹¤×÷¶Ë¿Ú£¨Á¬½Ó¶Ë¿Ú£©" readonly="0" cmd="C%d_PORT" />
+	<item id="26" name="³¬Ê±¶Ï¿ªÊ±¼ä" readonly="0" cmd="C%d_IT" comment="µ¥Î»10ºÁÃë£¬Ö¸¶¨Éè±¸³¬Ê±¶Ï¿ªÊ±¼ä, ·¶Î§0µ½60000" />
+	<item id="27" name="ÐÄÌø¼ì²âÊ±¼ä(s)" readonly="0" cmd="C%d_TCPAT" comment="ÔÚÖ¸¶¨Ê±¼äÄÚ·¢ËÍ¡°ÐÄÌø¼ì²â°ü¡±À´²âÊÔÁ¬½ÓÊÇ·ñ´æÔÚ£¬²»´æÔÚÔò×Ô¶¯¶Ï¿ªÁ¬½Ó£¬·¶Î§0µ½60000Ãë" />
+	<item id="28" name="Ö¡ÆðÊ¼×Ö½Ú(HEX)" readonly="0" cmd="C%d_D1" showhex="1" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£" />
+	<item id="29" name="Ö¡½áÊø×Ö½Ú(HEX)" readonly="0" cmd="C%d_D2" showhex="1" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£" />
+
+	<item id="30" name="´®¿Ú²¨ÌØÂÊ" readonly="0" cmd="C%d_BAUD">
+		<option name="300" value="300" />
+		<option name="600" value="600" />
+		<option name="1200" value="1200" />
+		<option name="2400" value="2400" />
+		<option name="4800" value="4800" />
+		<option name="9600" value="9600" />
+		<option name="19200" value="19200" />
+		<option name="38400" value="38400" />
+		<option name="57600" value="57600" />
+		<option name="115200" value="115200" />
+		<option name="230400" value="230400" />
+	</item>
+	<item id="31" name="´®¿ÚÊý¾ÝÎ»" readonly="0" cmd="C%d_DATAB">
+		<option name="5" value="5" />
+		<option name="6" value="6" />
+		<option name="7" value="7" />
+		<option name="8" value="8" />
+	</item>
+	<item id="32" name="´®¿ÚÍ£Ö¹Î»" readonly="0" cmd="C%d_STOPB">
+		<option name="1" value="1" />
+		<option name="2(Êý¾ÝÎ»Îª5Ê±£¬´ËÏî±íÊ¾1.5¸öÍ£Ö¹Î»)" value="2" />
+	</item>
+	<item id="33" name="´®¿ÚÐ£ÑéÎ»" readonly="0" cmd="C%d_PARITY">
+		<option name="ÎÞ" value="0" />
+		<option name="ÆæÐ£Ñé" value="1" />
+		<option name="Å¼Ð£Ñé" value="2" />
+		<option name="Ç¿ÖÆÎª1" value="3" />
+		<option name="Ç¿ÖÆÎª0" value="4" />
+	</item>
+	<item id="34" name="·Ö°ü³¤¶È" readonly="0" cmd="C%d_SER_LEN" comment="Á¬Ðø½ÓÊÕÊ±·Ö°ü³¤¶È£¬×î´ó1478×Ö½Ú" />
+	<item id="35" name="´®¿ÚÖ¡¼ä¸ô(ms)" readonly="0" cmd="C%d_SER_T" comment="×î´ó5000ms" />
+	<item id="36" name="Çå¿Õ´®¿ÚBuffer" readonly="0" cmd="C%d_BUF_CLS">
+		<option name="´Ó²»Çå¿Õ" value="0" />
+		<option name="TCPÁ¬½ÓÊ±Çå¿Õ" value="1" />
+	</item>
+	<item id="37" name="TCP Turbo" readonly="0" cmd="C%d_TCP_TURBO" comment="ÆôÓÃ´ËÑ¡Ïî¿É¼ÓËÙ´«ÊäËÙ¶È£¬²»¹ýÓÐ¿ÉÄÜ»áÓ°Ïì´®¿ÚÊý¾Ý·ÖÖ¡¡£">
+		<option name="½ûÓÃ" value="0" />
+		<option name="ÆôÓÃ" value="1" />
+	</item>
+	<item id="38" name="TCPÁ¬½Ó¶Ï¿ª" readonly="0" cmd="C%d_TCP_CLS">
+		<option name="²»¶Ï¿ª" value="0" />
+		<option name="Ó²¼þÁ¬½Ó¶Ï¿ªÔò¶Ï¿ª" value="1" />
+	</item>
+	<item id="39" name="TCPÁ¬½ÓÃÜÂë" readonly="0" cmd="C%d_LINK_P" comment="Á¬½ÓºóÐ£ÑéÃÜÂë¡£">
+		<option name="²»Ð£Ñé" value="0" />
+		<option name="ÐèÒªÑéÖ¤" value="1" />
+	</item>
+	<item id="40" name="TCPÁ¬½Ó·¢ËÍÐÅÏ¢" readonly="0" cmd="C%d_LINK_S" comment="Á¬½Óºó·¢ËÍÐÅÏ¢,¿ÉÑ¡Ôñ·¢ËÍIP»òÉè±¸Ãû³Æ">
+		<option name="ÎÞ" value="0" />
+		<option name="·¢ËÍÉè±¸Ãû³Æ" value="1" />
+		<option name="·¢ËÍÉè±¸IP" value="2" />
+	</item>
+	<item id="41" name="TCPÁ¬½ÓÌõ¼þ" readonly="0" cmd="C%d_LINK_T" comment="Ö»ÓÃÓÚTCP CLIENT£¬¿ÉÑ¡Ôñ½ÓÊÕµ½´®¿ÚÊý¾Ý²Å¿ªÊ¼Á¬½Ó£¬»òDTR±ä»¯ÁË²ÅÁ¬½Ó»òÉÏµç¾ÍÁ¬">
+		<option name="ÎÞÌõ¼þ,ÉÏµç¾ÍÁ¬" value="0" />
+		<option name="´®¿Ú½ÓÊÕµ½ÈÎºÎÊý¾Ý" value="1" />
+		<option name="DSR On/DSR Off" value="2" />
+	</item>
+	<item id="42" name="TCPÁ¬½ÓÊý" readonly="0" cmd="C%d_LINK_NUM" comment="TCPÄ£Ê½ÏÂµÄÁ¬½ÓÊýÁ¿¡£Ä¬ÈÏ1£¬·¶Î§0¡«4" />
+	<item id="43" name="Ä¿±ê¶Ë¿Ú1£¨¶Ô·½¶Ë¿Ú£©" readonly="0" cmd="C%d_CLI_PP1" />
+	<item id="44" name="Ä¿±êIP1£¨¶Ô·½IP£©" readonly="0" cmd="C%d_CLI_IP1" comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7£»»òÓòÃû£¬Èçwww.embedcontrol.com" />
+	<item id="45" name="Ä¿±ê¶Ë¿Ú2£¨¶Ô·½¶Ë¿Ú£©" readonly="0" cmd="C%d_CLI_PP2" />
+	<item id="46" name="Ä¿±êIP2£¨¶Ô·½IP£©" readonly="0" cmd="C%d_CLI_IP2" comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7£»»òÓòÃû£¬Èçwww.embedcontrol.com" />
+	<item id="47" name="Ä¿±ê¶Ë¿Ú3£¨¶Ô·½¶Ë¿Ú£©" readonly="0" cmd="C%d_CLI_PP3" />
+	<item id="48" name="Ä¿±êIP3£¨¶Ô·½IP£©" readonly="0" cmd="C%d_CLI_IP3" comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7£»»òÓòÃû£¬Èçwww.embedcontrol.com" />
+	<item id="49" name="Ä¿±ê¶Ë¿Ú4£¨¶Ô·½¶Ë¿Ú£©" readonly="0" cmd="C%d_CLI_PP4" />
+	<item id="50" name="Ä¿±êIP4£¨¶Ô·½IP£©" readonly="0" cmd="C%d_CLI_IP4" comment="Ä¿±êIP¿ÉÒÔÊÇIPµØÖ·£¬Èç192.168.0.1£»»òIPµØÖ·¶Î(Ö»ÊÊÓÃÓÚUDP·½Ê½)£¬Èç192.168.0.1-192.168.0.7£»»òÓòÃû£¬Èçwww.embedcontrol.com" />
+
+</root>
+

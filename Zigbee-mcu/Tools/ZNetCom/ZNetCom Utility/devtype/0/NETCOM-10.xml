@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="5" />
+<command resetdev="1" download="1" test="1" />
+<root name="»ù±¾ÐÅÏ¢">
+	<item id="1" name="Éè±¸ÐÍºÅ" readonly="1" cmd="" defaultval="NETCOM-10" comment="" />
+	<item id="2" name="Éè±¸¹Ì¼þ°æ±¾" readonly="1" cmd="VERSION" />
+	<item id="3" name="Éè±¸Ãû³Æ" readonly="0" cmd="NAME" />
+</root>
+<root name="ÃÜÂë²Ù×÷">
+	<item id="4" name="µ±Ç°ÃÜÂë" readonly="2" cmd="" />
+	<item id="5" name="ÊÇ·ñ¸ü¸ÄÃÜÂë" readonly="2" cmd="" defaultval="0">
+		<option name="·ñ" value="0" disableitem="6|7" />
+		<option name="ÊÇ" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="ÐÂÃÜÂë" readonly="2" cmd="PASS" />
+	<item id="7" name="È·ÈÏÐÂÃÜÂë" readonly="2" cmd="" />
+</root>
+<root name="IPµØÖ·ÐÅÏ¢">
+	<item id="8" name="Éè±¸IP" readonly="0" cmd="IP" />
+	<item id="9" name="Éè±¸×ÓÍøÑÚÂë" readonly="0" cmd="MASK" />
+	<item id="10" name="Éè±¸Íø¹ØIP" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="Éè±¸MACµØÖ·" readonly="1" cmd="MAC" />
+	<item id="12" name="»ñÈ¡IP·½Ê½" readonly="0" cmd="IP_MODE">
+		<option name="¶¯Ì¬»ñÈ¡" value="0" disableitem="8|9|10" />
+		<option name="¾²Ì¬»ñÈ¡" value="1" enableitem="8|9|10" />
+	</item>
+</root>
+<root name="ÍøÂç²ÎÊý">
+	<item id="13" name="¹¤×÷·½Ê½" readonly="0" cmd="C1_OP">
+		<option name="TCP Server" value="1" disableitem="15|16|17" />
+		<option name="UDP" value="2" enableitem="16|17" disableitem="15" />
+		<option name="TCP Client" value="3" enableitem="16|17" disableitem="15" />
+		<option name="Real COM" value="4" disableitem="15|16|17" />
+		<option name="Group Mode" value="5" enableitem="15|17" disableitem="16" />
+		<option name="TCP Auto" value="6" enableitem="16|17" disableitem="15" />
+	</item>
+	<item id="14" name="¹¤×÷¶Ë¿Ú£¨Á¬½Ó¶Ë¿Ú£©" readonly="0" cmd="C1_PORT" />
+	<item id="15" name="×é²¥µØÖ·" readonly="0" cmd="C1_GROUPIP" comment="·¶Î§´Ó224.0.0.1µ½239.255.255.254, Ö»ÓÐÔÚ¹¤×÷Ä£Ê½ÎªGroup ModeÊ±ÓÐÐ§" />
+	<item id="16" name="Ä¿±êIP£¨¶Ô·½IP£©" readonly="0" cmd="C1_CLI_IP1" />
+	<item id="17" name="Ä¿±ê¶Ë¿Ú" readonly="0" cmd="C1_CLI_PP1" />
+	<item id="19" name="³¬Ê±¶Ï¿ªÊ±¼ä(ms)" readonly="0" cmd="C1_IT" comment="Ö¸¶¨Éè±¸³¬Ê±¶Ï¿ªÊ±¼ä, ·¶Î§0µ½60000ºÁÃë" />
+	<item id="20" name="TCPÁ¬½Ó¶Ï¿ª" readonly="0" cmd="C1_TCP_CLS">
+		<option name="Ó²¼þÁ¬½Ó¶Ï¿ªÔò¶Ï¿ª" value="0" />
+		<option name="²»¶Ï¿ª" value="255" />
+	</item>
+	<item id="21" name="Çå¿Õ´®¿ÚBuffer" readonly="0" cmd="C1_BUF_CLS">
+		<option name="´Ó²»Çå¿Õ" value="0" />
+		<option name="TCPÁ¬½ÓÊ±Çå¿Õ" value="255" />
+	</item>
+	<item id="22" name="TCP Turbo" readonly="0" cmd="C1_TCP_TURBO" comment="ÆôÓÃ´ËÑ¡Ïî¿É¼ÓËÙ´«ÊäËÙ¶È£¬²»¹ýÓÐ¿ÉÄÜ»áÓ°Ïì´®¿ÚÊý¾Ý·ÖÖ¡¡£ÊÊÓÃÓÚZNE-200T,ZNE-100TI,NETCOM-10µÈ¡£">
+		<option name="ÆôÓÃ" value="0" />
+		<option name="½ûÓÃ" value="255" />
+	</item>
+	<item id="23" name="IO¿ØÖÆ¶Ë¿Ú" readonly="0" cmd="C1_IOPORT" comment="Ö¸¶¨IO¿ØÖÆ¶Ë¿Ú,±ØÐëÐ¡ÓÚ65536" />
+</root>
+
+<root name="´®¿Ú²ÎÊý">
+	<item id="24" name="´®¿Ú²¨ÌØÂÊ" readonly="0" cmd="C1_BAUD">
+		<option name="300" value="0" />
+		<option name="600" value="1" />
+		<option name="1200" value="2" />
+		<option name="2400" value="3" />
+		<option name="4800" value="4" />
+		<option name="9600" value="5" />
+		<option name="19200" value="6" />
+		<option name="38400" value="7" />
+		<option name="57600" value="8" />
+		<option name="115200" value="9" />
+		<option name="230400" value="10" />
+	</item>
+	<item id="25" name="´®¿ÚÊý¾ÝÎ»" readonly="0" cmd="C1_DATAB">
+		<option name="5" value="5" />
+		<option name="6" value="6" />
+		<option name="7" value="7" />
+		<option name="8" value="8" />
+	</item>
+	<item id="26" name="´®¿ÚÍ£Ö¹Î»" readonly="0" cmd="C1_STOPB">
+		<option name="1" value="1" />
+		<option name="2" value="2" />
+	</item>
+	<item id="27" name="´®¿ÚÐ£ÑéÎ»" readonly="0" cmd="C1_PARITY">
+		<option name="ÎÞ" value="0" />
+		<option name="ÆæÐ£Ñé" value="1" />
+		<option name="Å¼Ð£Ñé" value="2" />
+		<option name="Ç¿ÖÆÎª1" value="3" />
+		<option name="Ç¿ÖÆÎª0" value="4" />
+	</item>
+	<item id="28" name="Ö¡ÆðÊ¼×Ö½Ú(HEX)" readonly="0" cmd="C1_D1" showhex="1" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£" />
+	<item id="29" name="Ö¡½áÊø×Ö½Ú(HEX)" readonly="0" cmd="C1_D2" showhex="1" unuseval="invalid" comment="´ò¹´±íÊ¾ÆôÓÃ£¬·ñÔòÎª½ûÓÃ¡£" />
+</root>
+

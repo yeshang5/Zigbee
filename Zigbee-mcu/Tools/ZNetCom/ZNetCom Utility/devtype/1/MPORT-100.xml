@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="40" />
+<command resetdev="1" download="0" updatefirm="1" test="1" />
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="MPORT-100" comment="" />
+	<item id="2" name="Firmware Version" readonly="1" cmd="VERSION" />
+	<item id="3" name="Name" readonly="0" cmd="NAME" />
+</root>
+<root name="Password Operation">
+	<item id="4" name="Password" readonly="2" cmd="" />
+	<item id="5" name="Modify Password" readonly="2" cmd="" defaultval="0">
+		<option name="No" value="0" disableitem="6|7" />
+		<option name="Yes" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="New Password" readonly="2" cmd="PASS" />
+	<item id="7" name="Confirm New Password" readonly="2" cmd="" />
+</root>
+<root name="IP Information">
+	<item id="8" name="IP" readonly="0" cmd="IP" />
+	<item id="9" name="Mask" readonly="0" cmd="MASK" />
+	<item id="10" name="Gateway" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="MAC" readonly="1" cmd="MAC" />
+	<item id="12" name="IP Type" readonly="0" cmd="IP_MODE">
+		<option name="Dynamic" value="0" disableitem="8|9|10" />
+		<option name="Static" value="1" enableitem="8|9|10" />
+	</item>
+</root>
+<root name="Network Settings">
+	<item id="13" name="DNS" readonly="0" cmd="DNS" />
+	<item id="16" name="IP Filter 1" readonly="0" cmd="IPF1" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="17" name="IP Filter 2" readonly="0" cmd="IPF2" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="18" name="IP Filter 3" readonly="0" cmd="IPF3" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="19" name="IP Filter 4" readonly="0" cmd="IPF4" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="20" name="IP Filter 5" readonly="0" cmd="IPF5" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="21" name="IP Filter 6" readonly="0" cmd="IPF6" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="22" name="IP Filter 7" readonly="0" cmd="IPF7" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+	<item id="23" name="IP Filter 8" readonly="0" cmd="IPF8" unuseval="invalid" comment="Select to enable it. e.g. 192.168.0.100-255.255.255.255, 192.168.0.100 means IP£¬255.255.255.255 means Mask, more information please read the manual to get more information." />
+</root>
+<root name="COMM Setting">
+	<item id="24" name="Use Standard Baudrate" readonly="0" cmd="STAND_BAUD" comment="YES-use standard baudrate NO-use user define baudrate" >
+		<option name="YES" value="1" enableitem="25" disableitem="26" />
+		<option name="NO" value="0"  enableitem="26" disableitem="25" />
+	</item>
+	<item id="25" name="Standard Baudrate" readonly="0" cmd="PORT_BAUD" >
+		<option name="300" value="1" />
+		<option name="600" value="2" />
+		<option name="1200" value="3" />
+		<option name="2400" value="4" />
+		<option name="4800" value="5" />
+		<option name="9600" value="6" />
+		<option name="19200" value="7" />
+		<option name="38400" value="8" />
+		<option name="57600" value="9" />
+		<option name="115200" value="10" />
+		<option name="230400" value="11" />
+	</item>
+	<item id="26" name="User Define Baudrate" readonly="0" cmd="USER_BAUD" comment="it must be 300--1152000" />
+	<item id="27" name="Data Bit" readonly="0" cmd="DATA_BIT" >
+		<option name="5" value="5" />
+		<option name="6" value="6" />
+		<option name="7" value="7" />
+		<option name="8" value="8" />
+	</item>
+	<item id="28" name="Stop Bit" readonly="0" cmd="STOP_BIT" >
+		<option name="1" value="1" />
+		<option name="2(When Data Bits is 5,it means 1.5 Stop Bits)" value="2" />
+	</item>
+	<item id="29" name="Parity" readonly="0" cmd="PARITY_BIT" >
+		<option name="None" value="0" />
+		<option name="Odd" value="1" />
+		<option name="Even" value="2" />
+		<option name="Mark" value="3" />
+		<option name="Space" value="4" />
+	</item>
+</root>
+
+<root name="Gateway Setting" >
+	
+	<item id="30" name="WORK TYPE" readonly="0" cmd="PORT_WORKTYPE" caustrepeat="4" caustrepeatind="1" >
+		<option name="RTU_Master--TCP_Slaver" value="0" disableitem="37|38|39|40|41" enableitem="42|43|44|45|46|47" />
+		<option name="TCP_Master--RTU_Slaver" value="1" disableitem="42|43|44|45|46|47" enableitem="37|38|39|40|41" />
+		<option name="ASCII_Master--TCP_Slaver" value="2" disableitem="37|38|39|40|41" enableitem="42|43|44|45|46|47" />
+		<option name="TCP_Master--ASCII_Slaver" value="3" disableitem="42|43|44|45|46|47" enableitem="37|38|39|40|41" />
+	</item>
+	<item id="31" name="Init TimeOut(ms)" readonly="0" cmd="DEFAULT_TIMEOUT" />
+	<item id="32" name="Use Default Byte TimeOut" readonly="0" cmd="DEFAULT_TIMEOUT_MIXTURE" refid="33" >
+		<option name="YES" value="1" disableitem="33" />
+		<option name="NO" value="0" enableitem="33" />
+	</item>
+	<item id="33" name="User Define Byte TimeOut(ms)" readonly="0" cmd="CHAR_TIMEOUT_MIXTURE" comment="TiemOut must be 0-32767 If it big than 32767 it use default timeout"/>
+	<item id="34" name="MSG TimeOut(ms)" readonly="0" cmd="MSG_TIMEOUT" />
+	<item id="35" name="Tcp Connect TimeOut(s)" readonly="0" cmd="TCP_TIMEOUT" />
+	<item id="36" name="Space Timeout(s)" readonly="0" cmd="TCPAT" />
+</root>
+
+<root name="TCP_Master_Mode: Slaver_Setting">
+	<item id="37" name="Slaver Port" readonly="0" cmd="SLAVER_PORT" />
+	<item id="38" name="Max Connection" readonly="0" cmd="SER_MAX_CONNECT" />
+	<item id="39" name="Singal IP Max Connection" readonly="0" cmd="IP_MAX_CONNECT" />
+	<item id="40" name="Dynamic ID" readonly="0" cmd="DYNAMIC_ID" >
+		<option name="YES" value="0" enableitem="41" />
+		<option name="NO" value="1" disableitem="41" />
+	</item>
+	<item id="41" name="Static ID" readonly="0" cmd="STATIC_ID" />
+</root>
+
+
+<root name="TCP_Slaver_Mode: Master_Setting" >
+	<catalog name="Master%d" repeat="4" startind="1">
+		<item id="42" name="Enable" readonly="0" cmd="ENABLE_IP%d" defaultval="0" >
+			<option name="NO" value="0" disableitem="43|44|45|46|47" />
+			<option name="YES" value="1" enableitem="43|44|45|46|47" />
+		</item>
+		<item id="43" name="IP" readonly="0" cmd="DST_IP%d" />
+		<item id="44" name="Port" readonly="0" cmd="DST_PORT%d" />
+		<item id="45" name="ID Min" readonly="0" cmd="PORT_MIN%d" />
+		<item id="46" name="ID Max" readonly="0" cmd="PORT_MAX%d" />
+		<item id="47" name="ID Offset" readonly="0" cmd="ID_OFFSET%d" />
+	</catalog>
+</root>

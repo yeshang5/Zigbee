@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<version value="1" />
+<devtype value="8" />
+<command resetdev="1" download="0" test="1" />
+<root name="General">
+	<item id="1" name="Module" readonly="1" cmd="" defaultval="ZNE-100TI" comment="" />
+	<item id="2" name="Firmware Version" readonly="1" cmd="VERSION" />
+	<item id="3" name="Name" readonly="0" cmd="NAME" />
+</root>
+<root name="Password Operation">
+	<item id="4" name="Password" readonly="2" cmd="" />
+	<item id="5" name="Modify Password" readonly="2" cmd="" defaultval="0">
+		<option name="No" value="0" disableitem="6|7" />
+		<option name="Yes" value="1" enableitem="6|7" />
+	</item>
+	<item id="6" name="New Password" readonly="2" cmd="PASS" />
+	<item id="7" name="Confirm New Password" readonly="2" cmd="" />
+</root>
+<root name="IP Information">
+	<item id="8" name="IP" readonly="0" cmd="IP" />
+	<item id="9" name="Mask" readonly="0" cmd="MASK" />
+	<item id="10" name="Gateway" readonly="0" cmd="GATEWAY" />
+	<item id="11" name="MAC" readonly="1" cmd="MAC" />
+	<item id="12" name="IP Type" readonly="0" cmd="IP_MODE">
+		<option name="Dynamic" value="0" disableitem="8|9|10" />
+		<option name="Static" value="1" enableitem="8|9|10" />
+	</item>
+	<item id="13" name="DNS" readonly="0" cmd="DNS" />
+</root>
+
+<root name="PPPOE Setting">
+	<item id="14" name="Enable PPOE" readonly="0" cmd="PPOE">
+		<option name="disable" value="0" disableitem="15|16|17"/>
+		<option name="enable" value="255" enableitem="15|16|17"/>
+	</item>
+	<item id="15" name="PPOE IP" readonly="0" cmd="PPOEIP" />
+	<item id="16" name="PPOE User" readonly="0" cmd="PPOEUSERNAME" />
+	<item id="17" name="PPOE Password" readonly="0" cmd="PPOEPWD" pwdedit="1"/>
+</root>
+<root name="Network Settings">
+	<item id="18" name="Work Type" readonly="0" cmd="C1_OP">
+		<option name="TCP Server" value="1" disableitem="20|21|22|23|24" />
+		<option name="UDP" value="2" enableitem="21|22|23|24" disableitem="20" />
+		<option name="TCP Client" value="3" enableitem="21|22|23|24" disableitem="20" />
+		<option name="Real COM" value="4" disableitem="20|21|22|23|24" />
+		<option name="Group Mode" value="5" enableitem="20|24" disableitem="21|22|23" />
+		<option name="TCP Auto" value="6" enableitem="21|22|23|24" disableitem="20" />
+	</item>
+	<item id="19" name="Work Port" readonly="0" cmd="C1_PORT" />
+	<item id="20" name="Group Address" readonly="0" cmd="C1_GROUPIP" comment="From 224.0.0.1 to 239.255.255.254,Only use in Group Mode." />
+	<item id="21" name="Enabel Domain" readonly="0" cmd="C1_CLI_ENDOMAIN1" caustrepeat="1">
+		<option name="disable" value="0" disableitem="23" enableitem="22"/>
+		<option name="enable" value="1" disableitem="22" enableitem="23"/>
+	</item>
+	<item id="22" name="Target IP" readonly="0" cmd="C1_CLI_IP1" />
+	<item id="23" name="Target Domain" readonly="0" cmd="C1_CLI_DOMAIN1" />
+	<item id="24" name="Target Port" readonly="0" cmd="C1_CLI_PP1" />
+	<item id="25" name="Timeout to Disconnect(ms)" readonly="0" cmd="C1_IT" comment="from 0 to 60000ms." />
+	<item id="26" name="TCP Disconnect" readonly="0" cmd="C1_TCP_CLS">
+		<option name="Disconnect when Hardware Disconnect" value="0" />
+		<option name="Keep Connection" value="255" />
+	</item>
+	<item id="27" name="Clear COM Buffer" readonly="0" cmd="C1_BUF_CLS">
+		<option name="Never" value="0" />
+		<option name="Clear when TCP Connect" value="255" />
+	</item>
+	<item id="28" name="TCP Turbo" readonly="0" cmd="C1_TCP_TURBO" comment="The transfer speed can be improved by enabling this option. ">
+		<option name="Enable" value="0" />
+		<option name="Disable" value="255" />
+	</item>
+	<item id="29" name="IO Control Port" readonly="0" cmd="C1_IOPORT" comment="Less than 65536" />
+	<item id="30" name="IO Status(HEX)" readonly="0" cmd="C1_DEVIO" cmdpart="2" modifycheck="0" showhex="1" comment="1 byte, only the low 5 bits are available,(0 means input, 1 means output)." />
+	<item id="31" name="IO Level(HEX)" readonly="0" cmd="C1_DEVIO" modifycheck="0" showhex="1" comment="1 byte, only the low 5 bits are available." />
+</root>
+
+<root name="ADC Config">
+	<item id="32" name="ADC0(HEX)" readonly="1" cmd="C1_DEVADC" cmdpart="2" modifycheck="0" showhex="1" />
+	<item id="33" name="ADC1(HEX)" readonly="1" cmd="C1_DEVADC" modifycheck="0" showhex="1" />
+</root>
+
+<root name="COM Settings">
+	<item id="34" name="Baudrate" readonly="0" cmd="C1_BAUD">
+		<option name="300" value="0" />
+		<option name="600" value="1" />
+		<option name="1200" value="2" />
+		<option name="2400" value="3" />
+		<option name="4800" value="4" />
+		<option name="9600" value="5" />
+		<option name="19200" value="6" />
+		<option name="38400" value="7" />
+		<option name="57600" value="8" />
+		<option name="115200" value="9" />
+		<option name="230400" value="10" />
+		<option name="576000" value="11" />
+		<option name="1152000" value="12" />
+	</item>
+	<item id="35" name="Data Bits" readonly="0" cmd="C1_DATAB">
+		<option name="5" value="5" />
+		<option name="6" value="6" />
+		<option name="7" value="7" />
+		<option name="8" value="8" />
+	</item>
+	<item id="36" name="Stop Bits" readonly="0" cmd="C1_STOPB">
+		<option name="1" value="1" />
+		<option name="2" value="2" />
+	</item>
+	<item id="37" name="Parity" readonly="0" cmd="C1_PARITY">
+		<option name="None" value="0" />
+		<option name="Odd" value="1" />
+		<option name="Even" value="2" />
+		<option name="Mark" value="3" />
+		<option name="Space" value="4" />
+	</item>
+	<item id="38" name="The First Byte of a Frame(HEX)" readonly="0" cmd="C1_D1" showhex="1" unuseval="invalid" comment="Select to enable it." />
+	<item id="39" name="The Last Byte of a Frame(HEX)" readonly="0" cmd="C1_D2" showhex="1" unuseval="invalid" comment="Select to enable it." />
+</root>
+
