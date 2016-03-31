@@ -1,11 +1,8 @@
+var mongoose = require('mongoose');
+var crypto = require('crypto'); //加密算法
+var CONSTANT = require('../constant');  //常量
 
-//var mongoose = require('mongoose');
-
-//加密算法
-var crypto = require('crypto');
-
-//hash256算法
-function hashPW(pwd){
+function hashPW(pwd){   //hash256算法
     return crypto.createHash('sha256').update(pwd).digest('base64').toString();
 }
 
@@ -24,30 +21,34 @@ module.exports = {
     /*登录验证*/
     loginAuthen: function(req,res,next){
 
-        //console.log(req.body);
+        var User = mongoose.model('User');    //User Model已经发布，可以直接通过名字索引
 
-        var user = {
-            name:"admin1",
-            password:hashPW("222222")
-        };
+        User.findOne({username:req.body.name})
+            .exec(function(err,user){
+                //console.log('find');
+                if(!user){
+                    err = 'user not find!'
+                } else if(user.hashed_password === hashPW(req.body.password.toString())){
+                    req.session.user = user.id;
+                    req.session.username = user.username;
+                    req.session.usertype = user.usertype;
+                    //console.log('usertype：'+ user.usertype);
+                    res.redirect('home');    //重定向到主页
+                } else{
+                    err = 'Authentication failed!';
+                }
 
-        if((user.name == req.body.name) &&
-           (user.password == hashPW(req.body.password.toString()))){
-            //创建新的会话
-            //req.session.regenerate(function(){
-                req.session.user = user;
-                req.session.success = 'login success!';
-                res.redirect('home');    //重定向到主页
-            //});
-        } else{
-            //req.session.regenerate(function(){
-                req.session.error = 'login failed!';
-            //});
-            //res.json({msg:'账号密码错误!'});
-            //res.send('login','账号密码错误!');          //重定向到首页
-            res.redirect('/');    //重定向到主页
-        }
-        //res.render('home');
+                if(err){
+                    req.session.error = err;
+                    res.redirect('/');    //重定向到主页
+                }
+        });
     }
+
+
+
+
+
+
 
 };

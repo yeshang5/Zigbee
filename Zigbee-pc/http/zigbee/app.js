@@ -14,7 +14,7 @@ var bodyParser = require('body-parser');    //把POST请求振文中的JSON数�
 var cookieParser = require('cookie-parser');    //cookie 请求解析cookie，并将它们作为一个JS对象存储在req.cookies属性中
 //var cookieSession = require('cookie-session');
 var expressSession = require('express-session');    //session会话
-var mongoStore = require('connect-mongo')({session:expressSession}); //把mongoDB连接作为已通过分身验证的会话的持久性存储来注册
+//var mongoStore = require('connect-mongo')({session:expressSession}); //把mongoDB连接作为已通过分身验证的会话的持久性存储来注册
 
 var crypto = require('crypto');   //加密算法
 
@@ -42,6 +42,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cookieParser('MAGICString'));    //开启cookie
 app.use(expressSession());
+//app.use(cookieParser());
+//app.use(cookieSession({secret:'MAGICALEXPRESSKEY'}));
 
 //在req对象中添加了一个session属性，session对象是直接绑在MongoDB的sessions集合中
 //当会话更改时，会话被保存在了数据库中
@@ -68,6 +70,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 require('./app/routes/login.server.route')(app);
 require('./app/routes/home.server.route')(app);
 require('./app/routes/signup.server.route')(app);
+require('./app/routes/account.server.route')(app);
 
 
 

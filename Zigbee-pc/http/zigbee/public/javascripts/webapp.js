@@ -9,7 +9,4 @@ var webapp = angular.module("webapp", []);
     });
 });*/
 
-webapp.controller('homeController',function($scope,$http){
-
-});
 

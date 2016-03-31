@@ -6,7 +6,8 @@ angular.module("webapp")
 //常量
 var MSG = {
     USER_EXIST:1,
-    USER_SUCCESS:2
+    USER_SUCCESS:2,
+    USER_AUTHFAIL:3    //非管理员账号权限不够
 };
 
 
@@ -33,10 +34,15 @@ function signupController($scope,signupService){
                     $scope.msg = '用户名'+$scope.formDate.name+'注册成功!';
                     $scope.formDate.name = '';
                     $scope.formDate.password = '';
-                } else{
+                } else if(data.msg == MSG.USER_EXIST){
                     $scope.alertClass = "alert alert-danger";
                     $scope.msg = '用户名'+$scope.formDate.name+'已存在，注册失败!';
                     $scope.formDate.password = '';
+                } else if(data.msg == MSG.USER_AUTHFAIL){
+                    $scope.alertClass = "alert alert-danger";
+                    $scope.msg = '当前登录用户不是管理员，没有注册权限，注册失败!';
+                    $scope.formDate.password = '';
+                    $scope.formDate.name = '';
                 }
             },
             function(err){

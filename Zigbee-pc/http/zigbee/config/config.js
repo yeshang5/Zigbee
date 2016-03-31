@@ -1,3 +1,3 @@
 module.exports = {
-    mongodb:"mongodb://localhost/web"
+    mongodb:"mongodb://localhost/zigbee-pc"
 };

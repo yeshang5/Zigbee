@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=-637460342
+Checksum=-621917257
 [DisAssemblyWindow]
 NumStates=_ 1
 State 1=_ 1
@@ -49,11 +49,12 @@ Count=0
 Stop timers on halt=0
 Leave target running=1
 [Aliases]
-A0=_ "D:\program\github\Git\Zigee\Program\Lock\App\Door.c" ""
-A1=_ "D:\program\github\Git\Zigee\Program\Lock\Device\MFRC522.c" ""
-A2=_ "D:\program\github\Git\Zigee\Program\Lock\Driver\Buzzer.c" "C:\Victor\Program\Software\git\Git\Zigbee\Program\Lock\Driver\Buzzer.c"
-A3=_ "D:\program\github\Git\Zigee\Program\Lock\Driver\Card.c" ""
-A4=_ "D:\program\github\Git\Zigee\Program\Lock\Driver\Spi.c" ""
-A5=_ "D:\program\github\Git\Zigee\Program\Lock\main.c" ""
-Count=6
+A0=_ "D:\program\github\Git\Zigbee\Program\Lock\AppLow\Warn.c" ""
+A1=_ "D:\program\github\Git\Zigee\Program\Lock\App\Door.c" ""
+A2=_ "D:\program\github\Git\Zigee\Program\Lock\Device\MFRC522.c" ""
+A3=_ "D:\program\github\Git\Zigee\Program\Lock\Driver\Buzzer.c" "C:\Victor\Program\Software\git\Git\Zigbee\Program\Lock\Driver\Buzzer.c"
+A4=_ "D:\program\github\Git\Zigee\Program\Lock\Driver\Card.c" ""
+A5=_ "D:\program\github\Git\Zigee\Program\Lock\Driver\Spi.c" ""
+A6=_ "D:\program\github\Git\Zigee\Program\Lock\main.c" ""
+Count=7
 SuppressDialog=1
