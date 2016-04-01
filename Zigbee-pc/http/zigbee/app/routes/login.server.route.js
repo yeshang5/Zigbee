@@ -7,7 +7,7 @@ module.exports = function(app){
      app.get('/find',cmdController.find);
      app.get('/removeAll',cmdController.removeAll);*/
 
-    //首页
+    //登陆页
     app.route('/')
         .get(loginController.login)                 //首页登录
         .post(loginController.loginAuthen);         //登录验证

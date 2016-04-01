@@ -46,7 +46,10 @@ function signupController($scope,signupService){
                 }
             },
             function(err){
-
+                $scope.alertClass = "alert alert-danger";
+                $scope.msg = '网络错误,注册失败!';
+                $scope.formDate.password = '';
+                $scope.formDate.name = '';
             }
         );
     };

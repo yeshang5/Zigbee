@@ -1,6 +1,15 @@
+var mongoose = require('mongoose');
+var crypto = require('crypto'); //加密算法
+var CONSTANT = require('../constant');  //常量
+
+function hashPW(pwd){   //hash256算法
+    return crypto.createHash('sha256').update(pwd).digest('base64').toString();
+}
+
+var User = mongoose.model('User');    //User Model已经发布，可以直接通过名字索引
 
 module.exports = {
-    /*进入主页*/
+    /*进入账号页*/
     account: function(req,res,next) {
         if (req.session.user) {           //如果登录过页面
             res.render('account',{username:req.session.username});
@@ -9,17 +18,50 @@ module.exports = {
         }
     },
 
+    /*显示账号列表*/
     accountTable:function(req,res,next){
-        //console.log('accountTable!');
+        User.find({},function(err,users){
+            if(err){
+                res.json({"id": 1,
+                    "name": "无",
+                    "level": "无"});
+            }
+            res.json(users);
+        });
+    },
 
+    /*修改密码*/
+    modifyPsw:function(req,res,next){
 
+        function modify(){
+            User.findOne({username:req.body.name})
+                .exec(function(err,user){
+                    if(!user){
+                        err = 'user not find!'
+                    } else if(user.hashed_password === hashPW(req.body.password.toString())){
+                        user.hashed_password = hashPW(req.body.newPassword.toString());
+                        user.save(function(error){
+                            if(error){
+                                err = error
+                            } else{
+                                res.json({msg:CONSTANT.MSG.USER_SUCCESS});
+                            }
+                        });
+                    } else{
+                        err = 'Authentication failed!';
+                    }
 
+                    if(err){
+                        req.session.error = err;
+                        res.json({msg:CONSTANT.MSG.USER_PSWERR});  //密码错误
+                    }
+            });
+        }
 
-        res.json([{
-            "id": 9,
-            "name": "张三9",
-            "level": "操作员",
-            "comment": "无"
-        }]);
+        if(req.body.name === req.session.username){ //能修改密码的只能是自身登录的账号
+            modify();
+        } else{
+            res.json({msg:CONSTANT.MSG.USER_AUTHFAIL});
+        }
     }
 };

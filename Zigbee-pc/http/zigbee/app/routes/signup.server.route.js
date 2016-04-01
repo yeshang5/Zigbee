@@ -3,7 +3,7 @@ var logoutController = require('../controllers/logout.server.controller');
 
 module.exports = function(app){
 
-    //注册页
+    //账号注册
     app.route('/signup')
         .get(signupController.signup)                  //进入主页
         .post(signupController.signupAccout);

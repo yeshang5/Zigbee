@@ -10,11 +10,14 @@ function hashPW(pwd){   //hash256算法
 var UserSchema = new mongoose.Schema({
     username:{
         type:String,
-        unique:true         /*账号唯一性*/
+        index:1,            /*索引*/
+        unique:true,        /*账号唯一性*/
+        require:true        /*验证非空*/
     },
     usertype:{
-        type:Number,
-        default:CONSTANT.USER.OPER
+        type:String,
+        default:CONSTANT.USER.OPER,
+        enum:[CONSTANT.USER.ADMIN,CONSTANT.USER.OPER]  //只能是操作员或者管理员
     },
     hashed_password:String,
     createTime:String         /*注册时间*/

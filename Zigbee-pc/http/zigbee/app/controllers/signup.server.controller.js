@@ -12,7 +12,6 @@ function hashPW(pwd){   //hash256算法
 var User = mongoose.model('User');    //User Model已经发布，可以直接通过名字索引
 
 module.exports = {
-
     /*登录注册页*/
     signup:function(req,res,next) {
         if (req.session.user) {           //如果登录过页面
@@ -24,8 +23,7 @@ module.exports = {
 
     /*账号注册*/
     signupAccout:function(req,res,next){
-        //如果是管理员
-        if(req.session.usertype == CONSTANT.USER.ADMIN){
+        if(req.session.usertype === CONSTANT.USER.ADMIN){       //如果是管理员
             var user = new User({
                 username:req.body.name,
                 hashed_password:hashPW(req.body.password.toString()),

@@ -31,7 +31,7 @@
     <title>无线门禁系统注册页</title>
 
 </head>
-<body ng-app="webapp" ng-controller="signupController">
+<body ng-app="webapp" ng-controller="accountController">
 <div id="wrapper">
     <!----------------------------------1.菜单-------------------------------------->
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -58,7 +58,7 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 
                     <i class="fa fa-user fa-fw"></i>
-                    <span class="loginName"><%=username%></span>
+                    <span id="loginName" class="loginName"><%=username%></span>
                     <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
@@ -137,7 +137,7 @@
                 <h1 class="page-header">账号管理</h1>
             </div>
         </div>
-        <!----------2.2 账号列表--------->
+        <!----------2.1 账号列表--------->
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
@@ -164,11 +164,10 @@
                             <thead>
                             <tr>
                                 <th data-field="state" data-checkbox="true"></th>
-                                <th data-field="id" data-align="center" data-sortable="true">序号</th>
-                                <th data-field="name" data-align="center">用户名</th>
-                                <th data-field="level" data-align="center" data-sortable="true">用户类型</th>
-                                <th data-field="comment" data-align="center">备注</th>
-                                <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents" data-align="center">账户操作</th>
+                                <th data-field="username" data-align="center">用户名</th>
+                                <th data-field="usertype" data-align="center" data-sortable="true">用户类型</th>
+                                <th data-field="createTime" data-align="center" data-sortable="true">创建时间</th>
+                                <th data-field="operate" data-formatter="accountFormatter" data-events="accountEvents" data-align="center">账户操作</th>
                             </tr>
                             </thead>
                         </table>
@@ -176,8 +175,53 @@
                 </div>
             </div>
         </div>
-
-
+    </div>
+    <!----------------------------------3.模态框-------------------------------------->
+    <!----------3.1 账号修改（模态框）--------->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        密码修改
+                    </h4>
+                </div>
+                <form ng-submit="modifyPsw()" class="form-horizontal modal-body" role="form" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="userName" class="col-sm-4 control-label">用户名</label>
+                            <div class="col-sm-6">
+                                <input id="userName" type="text" class="form-control" pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required disabled>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="userPassword" class="col-sm-4 control-label">密码</label>
+                            <div class="col-sm-6">
+                                <input ng-focus=clearAlert() ng-model="formDate.password" id="userPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="userNewPassword" class="col-sm-4 control-label">新密码</label>
+                            <div class="col-sm-6">
+                                <input ng-focus=clearAlert() ng-model="formDate.newPassword" id="userNewPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="{{alertClass}} col sm-10" role="alert">
+                            <p style="text-align: left"><i class="fa fa-angle-right fa-fw fa-lg"></i><span ng-bind="msg"></span></p>
+                        </div>
+                        <button type="submit" class="btn  btn-success">提交更改</button>
+                        <button type="button" class="btn   btn-warning" data-dismiss="modal">关 闭</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
     </div>
 </div>
 
@@ -192,10 +236,11 @@
 <script src="/javascripts/lib/menu/active.js"></script>
 <!--AngularJS -->
 <script src="/javascripts/lib/angular.min.js"></script>
-<!-- own-->
+<!-- own angularjs-->
 <script src="/javascripts/webapp.js"></script>
-<script src="/javascripts/services/signup.client.service.js"></script>
-<script src="/javascripts/controllers/signup.client.controller.js"></script>
+<script src="/javascripts/services/account.client.service.js"></script>
+<script src="/javascripts/controllers/account.client.controller.js"></script>
+
 
 </body>
 </html>

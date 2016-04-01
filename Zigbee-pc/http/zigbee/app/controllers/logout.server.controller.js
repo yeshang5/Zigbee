@@ -1,9 +1,7 @@
 
 module.exports = {
-
     logout:function(req,res,next) {
-        //移除会话
-        req.session.destroy(function(){
+        req.session.destroy(function(){  //移除会话
             res.redirect('/');           //重定向到首页
         });
     }
