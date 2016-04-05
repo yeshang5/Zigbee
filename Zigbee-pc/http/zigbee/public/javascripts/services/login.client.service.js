@@ -35,7 +35,7 @@ function loginService($http,$q){
         processForm:function(params){
             return handlerRequest('POST','/',params);
         }
-    }
+    };
 }
 
 

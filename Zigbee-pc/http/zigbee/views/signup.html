@@ -57,7 +57,7 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 
                     <i class="fa fa-user fa-fw"></i>
-                    <span class="loginName"><%=username%></span>
+                    <span id="loginName" class="loginName"><%=username%></span><span><%=usertype%></span>
                     <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
@@ -84,14 +84,28 @@
                         <a href="/home"><i class="fa fa-home fa-fw fa-lg"></i> 系统主页</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 系统管理<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-user fa-fw fa-lg"></i> 账号管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="/signup">账号注册</a>
                                 </li>
                                 <li>
-                                    <a href="/account">账号管理</a>
+                                    <a href="/account">账号列表</a>
+                                </li>
+                            </ul>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/signup">基站注册</a>
+                                </li>
+                                <li>
+                                    <a href="/account">基站列表</a>
                                 </li>
                             </ul>
                         </ul>

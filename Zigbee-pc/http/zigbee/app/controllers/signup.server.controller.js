@@ -15,7 +15,7 @@ module.exports = {
     /*登录注册页*/
     signup:function(req,res,next) {
         if (req.session.user) {           //如果登录过页面
-            res.render('signup',{username:req.session.username});
+            res.render('signup',{username:req.session.username,usertype:req.session.usertype});
         } else {
             res.redirect('/');            //否则返回首页
         }

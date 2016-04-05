@@ -12,12 +12,13 @@
     <!-- Bootstrap Core CSS -->
     <link href="/stylesheets/lib/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap-table Core CSS -->
+    <link href="/stylesheets/lib/bootstrap-table.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
     <link href="/stylesheets/lib/metisMenu.min.css" rel="stylesheet">
 
-
     <!-- Custom Fonts -->
     <link href="/stylesheets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <!-- Custom CSS -->
     <link href="/stylesheets/common.css" rel="stylesheet">
 
@@ -57,7 +58,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 
                         <i class="fa fa-user fa-fw"></i>
-                        <span class="loginName"><%=username%></span>
+                        <span id="loginName" class="loginName"><%=username%></span><span><%=usertype%></span>
                         <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
@@ -84,14 +85,28 @@
                             <a href="/home"><i class="fa fa-home fa-fw fa-lg"></i> 系统主页</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 系统管理<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-user fa-fw fa-lg"></i> 账号管理<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="/signup">账户注册</a>
                                 </li>
                                 <li>
-                                    <a href="/account">账号管理</a>
+                                    <a href="/account">账号列表</a>
                                 </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="/signup">基站注册</a>
+                                    </li>
+                                    <li>
+                                        <a href="/account">基站列表</a>
+                                    </li>
+                                </ul>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -131,15 +146,44 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">主页</h1>
+                    <h1 class="page-header">基站列表</h1>
                 </div>
             </div>
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    设备状态
+                    基站状态
                 </div>
                 <div class="panel-body">
+                    <table data-toggle="table"
+                           data-url="/account/accountTable"
+                           data-cache="false"
+                           data-height="526"
+                           data-row-style="rowStyle"
+                           data-sort-order="desc"
+                           data-show-columns="true"
+                           data-click-to-select="true"
+                           data-single-select="true"
+                           data-show-refresh="true"
+                           data-show-toggle="true"
+                           data-search="true"
+                           data-select-item-name="toolbar1"
+                           data-toolbar="#custom-toolbar"
+                           data-pagination="true"
+                           data-page-list="[10, 20, 50, 100, 200]">
+                        <thead>
+                        <tr>
+                            <th data-field="ID" data-align="center">基站ID</th>
+                            <th data-field="IP" data-align="center" data-sortable="true">IP地址</th>
+                            <th data-field="position" data-align="center" data-sortable="true">地理位置</th>
+                            <th data-field="status" data-align="center" data-sortable="true">连接状态</th>
+                            <th data-field="status" data-align="center" data-sortable="true">最近连接时间</th>
+                            <th data-field="Conncet" data-formatter="operateFormatterConnect" data-events="operateEvents" data-align="center">连接</th>
+                            <th data-field="Check" data-formatter="operateFormatterCheck" data-events="operateEvents" data-align="center">查看</th>
+                            <th data-field="status" data-align="center" data-sortable="true">最近连接时间</th>
+                        </tr>
+                        </thead>
+                    </table>
                 </div>
             </div>
         </div>
@@ -150,7 +194,7 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="/javascripts/lib/bootstrap.min.js"></script>
 <!-- Bootstrap-table Core JavaScript -->
-
+<script src="/javascripts/lib/bootstrap-table/bootstrap-table.min.js"></script>
 <!-- Metis Menu Plugin JavaScript -->
 <script src="/javascripts/lib/menu/metisMenu.min.js"></script>
 <script src="/javascripts/lib/menu/active.js"></script>

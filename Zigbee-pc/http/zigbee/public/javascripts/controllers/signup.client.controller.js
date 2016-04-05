@@ -22,7 +22,6 @@ function signupController($scope,signupService){
         $scope.msg = '请妥善保管设置的密码!';
     };
 
-
     //账号注册
     $scope.signupAccount = function(){
         signupService.signupAccount($scope.formDate).then(

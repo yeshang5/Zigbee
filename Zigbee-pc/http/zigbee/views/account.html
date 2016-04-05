@@ -58,7 +58,7 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 
                     <i class="fa fa-user fa-fw"></i>
-                    <span id="loginName" class="loginName"><%=username%></span>
+                    <span id="loginName" class="loginName"><%=username%></span><span id="loginType"><%=usertype%></span>
                     <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
@@ -85,19 +85,36 @@
                         <a href="/home"><i class="fa fa-home fa-fw fa-lg"></i> 系统主页</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 系统管理<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-user fa-fw fa-lg"></i> 账号管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="/signup">账号注册</a>
                                 </li>
                                 <li>
-                                    <a href="/account">账号管理</a>
+                                    <a href="/account">账号列表</a>
                                 </li>
                             </ul>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
+                    <li>
+                        <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/signup">基站注册</a>
+                                </li>
+                                <li>
+                                    <a href="/account">基站列表</a>
+                                </li>
+                            </ul>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+
+
+
                     <li>
                         <a href="#"><i class="fa fa-table fa-fw fa-lg"></i> 进出办理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
@@ -178,9 +195,9 @@
     </div>
     <!----------------------------------3.模态框-------------------------------------->
     <!----------3.1 账号修改（模态框）--------->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+    <div class="modal fade" id="modify" tabindex="-1" role="dialog"
          aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close"
@@ -192,30 +209,32 @@
                     </h4>
                 </div>
                 <form ng-submit="modifyPsw()" class="form-horizontal modal-body" role="form" enctype="multipart/form-data">
-                    <div class="modal-body">
+                    <div class="modal-body ">
                         <div class="form-group">
-                            <label for="userName" class="col-sm-4 control-label">用户名</label>
-                            <div class="col-sm-6">
+                            <label for="userName" class="control-label">用户名</label>
+                            <div>
                                 <input id="userName" type="text" class="form-control" pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required disabled>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="userPassword" class="col-sm-4 control-label">密码</label>
-                            <div class="col-sm-6">
+                            <label for="userPassword" class="control-label">密码</label>
+                            <div>
                                 <input ng-focus=clearAlert() ng-model="formDate.password" id="userPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="userNewPassword" class="col-sm-4 control-label">新密码</label>
-                            <div class="col-sm-6">
+                            <label for="userNewPassword" class="control-label">新密码</label>
+                            <div>
                                 <input ng-focus=clearAlert() ng-model="formDate.newPassword" id="userNewPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
                             </div>
                         </div>
                     </div>
+
+                    <div id="msg" class="{{alertClass}}" role="alert">
+                        <p style="text-align: left"><i class="fa fa-angle-right fa-fw fa-lg"></i><span id="msg_text" ng-bind="msg"></span></p>
+                    </div>
+
                     <div class="modal-footer">
-                        <div class="{{alertClass}} col sm-10" role="alert">
-                            <p style="text-align: left"><i class="fa fa-angle-right fa-fw fa-lg"></i><span ng-bind="msg"></span></p>
-                        </div>
                         <button type="submit" class="btn  btn-success">提交更改</button>
                         <button type="button" class="btn   btn-warning" data-dismiss="modal">关 闭</button>
                     </div>
@@ -223,6 +242,60 @@
             </div><!-- /.modal-content -->
         </div><!-- /.modal -->
     </div>
+
+    <!----------3.2 账号删除（模态框）--------->
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        账号注销
+                    </h4>
+                </div>
+                <form ng-submit="deletePsw()" class="form-horizontal modal-body" role="form" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li  class="list-group-item list-group-item-danger">
+                                <p class="list-group-item-text">用户名</p>
+                                <h4 id="d_userName" class="list-group-item-heading"></h4>
+                            </li>
+                            <li  class="list-group-item">
+                                <p class="list-group-item-text">用户类型</p>
+                                <h4 id="d_userType" class="list-group-item-heading">用户类型</h4>
+                            </li>
+                            <li  class="list-group-item">
+                                <p  class="list-group-item-text">创建时间</p>
+                                <h4 id="d_createTime" class="list-group-item-heading">创建时间</h4>
+                            </li>
+                        </ul>
+
+                        <div class="list-group">
+                            <label for="userPassword" class="control-label">管理员密码</label>
+                            <div>
+                                <input ng-model="formDate.password" id="userPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
+                            </div>
+                        </div>
+
+                        <div id="d_msg" class="{{d_alertClass}}" role="alert">
+                            <p style="text-align: left"><i class="fa fa-angle-right fa-fw fa-lg"></i><span id="d_msg_text" ng-bind="d_msg"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn  btn-success">删 除</button>
+                        <button type="button" class="btn   btn-warning" data-dismiss="modal">关 闭</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+
 </div>
 
 <!-- jQuery -->

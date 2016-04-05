@@ -35,7 +35,7 @@ function signupService($http,$q){
         signupAccount:function(params){
             return handlerRequest('POST','/signup',params);
         }
-    }
+    };
 }
 
 

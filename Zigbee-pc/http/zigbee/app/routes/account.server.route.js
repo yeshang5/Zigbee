@@ -10,6 +10,9 @@ module.exports = function(app){
     app.route('/account/accountTable')                    //显示列表
         .get(accountController.accountTable);
 
+    app.route('/account/deletePsw')                       //修改密码
+        .post(accountController.deletePsw);
+
     app.route('/account/modifyPsw')                       //修改密码
         .post(accountController.modifyPsw);
 

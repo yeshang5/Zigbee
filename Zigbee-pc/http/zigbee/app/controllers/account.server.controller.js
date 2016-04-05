@@ -12,7 +12,7 @@ module.exports = {
     /*进入账号页*/
     account: function(req,res,next) {
         if (req.session.user) {           //如果登录过页面
-            res.render('account',{username:req.session.username});
+            res.render('account',{username:req.session.username,usertype:req.session.usertype});
         } else {
             res.redirect('/');            //否则返回首页
         }
@@ -63,5 +63,23 @@ module.exports = {
         } else{
             res.json({msg:CONSTANT.MSG.USER_AUTHFAIL});
         }
+    },
+
+    /*注销账号*/
+    deletePsw: function(req,res,next){
+        //console.log(req.body);
+        User.findOne({username:req.body.name})
+            .exec(function(err,user){
+                if(!user){
+                    err = 'user not find!'
+                } else {
+                    user.remove();
+                    res.json({msg:CONSTANT.MSG.USER_SUCCESS});  //删除成功
+                }
+                if(err){
+                    req.session.error = err;
+                    res.json({msg:CONSTANT.MSG.USER_DELFAIL});  //删除失败
+                }
+        })
     }
 };

@@ -34,6 +34,9 @@ function accountService($http,$q){
     return{
         modifyPsw:function(params){
             return handlerRequest('POST','/account/modifyPsw',params);
+        },
+        deletePsw: function(params){
+            return handlerRequest('POST','/account/deletePsw',params);
         }
     }
 }
