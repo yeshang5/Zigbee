@@ -1,4 +1,4 @@
-var signupController = require('../controllers/signup.server.controller');
+var signupController = require('../controllers/userSignup.server.controller');
 var logoutController = require('../controllers/logout.server.controller');
 
 module.exports = function(app){

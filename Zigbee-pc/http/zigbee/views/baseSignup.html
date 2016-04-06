@@ -98,14 +98,14 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-rss fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/signup">基站注册</a>
+                                    <a href="/baseSignup">基站注册</a>
                                 </li>
                                 <li>
-                                    <a href="/account">基站列表</a>
+                                    <a href="/baseSignupAccount">基站列表</a>
                                 </li>
                             </ul>
                         </ul>
@@ -147,50 +147,52 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">网页账号</h1>
+                <h1 class="page-header">基站设置</h1>
             </div>
         </div>
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                账号注册
+                基站注册
             </div>
             <div class="panel-body">
-                <form role="form" class="login-form" ng-submit="signupAccount()">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="loginAccount">用户名</label>
-                                <input ng-focus=clearAlert() ng-model="formDate.name" type="text" class="form-control" id="loginAccount" pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,15}$" maxlength="16" placeholder="" aria-describedby="sizing-addon1" autocomplete="off" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="loginPassword">密码</label>
-                                <input ng-focus=clearAlert() ng-model="formDate.password" type="password" class="form-control"  id="loginPassword" pattern="^[0-9a-zA-Z]{4,15}$" maxlength="16" placeholder="" aria-describedby="sizing-addon1" autocomplete="off" required>
-                            </div>
-                            <div class="{{alertClass}}" role="alert">
-                                <p><i class="fa fa-angle-right fa-fw fa-lg"></i><span ng-bind="msg"></span></p>
-                            </div>
-                            <button type="submit" class="btn btn-success">注册账号</button>
-                        </div>
-                        <div class="col-sm-6">
-                            <br/>
-                            <div class="panel panel-default">
-                                <!-- Default panel contents -->
-                                <div class="panel-body">
-                                    <h3>注意事项</h3>
-                                </div>
-
-                                <!-- List group -->
-                                <ul class="list-group">
-                                    <li class="list-group-item">用户名必须是2-15以内的中文、英文或者数字<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
-                                    <li class="list-group-item">密码必须是4-15以内的英文和数字<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
-                                    <li class="list-group-item">用户名和密码不要有空格等非法字符<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
-                                    <li class="list-group-item">管理员账号才有权限注册账号<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
-                                </ul>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <form role="form" class="login-form" ng-submit="signupAccount()">
+                                    <div class="form-group">
+                                        <label for="loginAccount">用户名</label>
+                                        <input ng-focus=clearAlert() ng-model="formDate.name" type="text" class="form-control" id="loginAccount" pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,15}$" maxlength="16" placeholder="" aria-describedby="sizing-addon1" autocomplete="off" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginPassword">密码</label>
+                                        <input ng-focus=clearAlert() ng-model="formDate.password" type="password" class="form-control"  id="loginPassword" pattern="^[0-9a-zA-Z]{4,15}$" maxlength="16" placeholder="" aria-describedby="sizing-addon1" autocomplete="off" required>
+                                    </div>
+                                    <div class="{{alertClass}}" role="alert">
+                                        <p><i class="fa fa-angle-right fa-fw fa-lg"></i><span ng-bind="msg"></span></p>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">注册账号</button>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </form>
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-body">
+                                <h3>注意事项</h3>
+                            </div>
+                            <!-- List group -->
+                            <ul class="list-group">
+                                <li class="list-group-item">用户名必须是2-15以内的中文、英文或者数字<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
+                                <li class="list-group-item">密码必须是4-15以内的英文和数字<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
+                                <li class="list-group-item">用户名和密码不要有空格等非法字符<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
+                                <li class="list-group-item">管理员账号才有权限注册账号<i class="fa fa-check-circle fa-fw fa-lg"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

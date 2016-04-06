@@ -99,14 +99,14 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-rss fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/signup">基站注册</a>
+                                    <a href="/baseSignup">基站注册</a>
                                 </li>
                                 <li>
-                                    <a href="/account">基站列表</a>
+                                    <a href="/baseSignupAccount">基站列表</a>
                                 </li>
                             </ul>
                         </ul>
@@ -162,7 +162,8 @@
                         账号列表
                     </div>
                     <div class="panel-body">
-                        <table data-toggle="table"
+                        <table id="table"
+                               data-toggle="table"
                                data-url="/account/accountTable"
                                data-cache="false"
                                data-height="526"
@@ -210,30 +211,28 @@
                 </div>
                 <form ng-submit="modifyPsw()" class="form-horizontal modal-body" role="form" enctype="multipart/form-data">
                     <div class="modal-body ">
-                        <div class="form-group">
+                        <div class="list-group">
                             <label for="userName" class="control-label">用户名</label>
                             <div>
                                 <input id="userName" type="text" class="form-control" pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required disabled>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="list-group">
                             <label for="userPassword" class="control-label">密码</label>
                             <div>
                                 <input ng-focus=clearAlert() ng-model="formDate.password" id="userPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="list-group">
                             <label for="userNewPassword" class="control-label">新密码</label>
                             <div>
                                 <input ng-focus=clearAlert() ng-model="formDate.newPassword" id="userNewPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
                             </div>
                         </div>
+                        <div id="msg" class="{{alertClass}}" role="alert">
+                            <p style="text-align: left"><i class="fa fa-angle-right fa-fw fa-lg"></i><span id="msg_text" ng-bind="msg"></span></p>
+                        </div>
                     </div>
-
-                    <div id="msg" class="{{alertClass}}" role="alert">
-                        <p style="text-align: left"><i class="fa fa-angle-right fa-fw fa-lg"></i><span id="msg_text" ng-bind="msg"></span></p>
-                    </div>
-
                     <div class="modal-footer">
                         <button type="submit" class="btn  btn-success">提交更改</button>
                         <button type="button" class="btn   btn-warning" data-dismiss="modal">关 闭</button>
@@ -273,11 +272,10 @@
                                 <h4 id="d_createTime" class="list-group-item-heading">创建时间</h4>
                             </li>
                         </ul>
-
                         <div class="list-group">
-                            <label for="userPassword" class="control-label">管理员密码</label>
+                            <label for="d_userPassword" class="control-label">管理员密码</label>
                             <div>
-                                <input ng-model="formDate.password" id="userPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
+                                <input ng-model="formDate.adminPsw" id="d_userPassword" type="password" class="form-control" pattern="^[0-9a-zA-Z]{1,15}$" maxlength="16"  aria-describedby="sizing-addon1" autocomplete="off" required>
                             </div>
                         </div>
 
@@ -285,7 +283,6 @@
                             <p style="text-align: left"><i class="fa fa-angle-right fa-fw fa-lg"></i><span id="d_msg_text" ng-bind="d_msg"></span></p>
                         </div>
                     </div>
-
                     <div class="modal-footer">
                         <button type="submit" class="btn  btn-success">删 除</button>
                         <button type="button" class="btn   btn-warning" data-dismiss="modal">关 闭</button>
@@ -313,6 +310,9 @@
 <script src="/javascripts/webapp.js"></script>
 <script src="/javascripts/services/account.client.service.js"></script>
 <script src="/javascripts/controllers/account.client.controller.js"></script>
+
+
+
 
 
 </body>

@@ -67,10 +67,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/users', users);
 
 /*路由算法*/
+
+/*登录页和主页*/
 require('./app/routes/login.server.route')(app);
 require('./app/routes/home.server.route')(app);
-require('./app/routes/signup.server.route')(app);
-require('./app/routes/account.server.route')(app);
+
+/*基站管理*/
+require('./app/routes/baseSignup.server.route')(app);
+
+
+/*账号管理*/
+require('./app/routes/userSignup.server.route')(app);
+require('./app/routes/userAccount.server.route')(app);
+
 
 
 

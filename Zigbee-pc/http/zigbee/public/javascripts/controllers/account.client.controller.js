@@ -12,7 +12,6 @@ var MSG = {
 };
 
 
-
 function accountController($scope,accountService){
     $scope.formDate = {};
     $scope.alertClass = "alert alert-info";
@@ -71,8 +70,7 @@ function accountController($scope,accountService){
         var loginType = $('#loginType').text();     //当前登录用户类型
         var deleteType = $('#d_userType').text();    //当前需删除用户类型
         $scope.formDate.name = $('#d_userName').text();
-
-
+        $scope.formDate.adminName =  $('#loginName').text(); //当前登录用户名
 
         if(loginType == '管理员'){
             if(deleteType == '管理员'){
@@ -86,6 +84,21 @@ function accountController($scope,accountService){
                             $('#d_msg').removeClass();
                             $('#d_msg').addClass('alert alert-success');
                             $('#d_msg_text').text('注销成功!');
+
+                            //$table.bootstrapTable('remove',{field:})
+                            var username = $.map($('#table').bootstrapTable('getSelections'), function (row) {
+                                return row.username;
+                            });
+
+                            $('#table').bootstrapTable('remove', {
+                                field: 'username',
+                                values: username
+                            });
+                            //$('#delete').modal('hide');
+                        } else if(data.msg == MSG.USER_PSWERR){
+                            $('#d_msg').removeClass();
+                            $('#d_msg').addClass('alert alert-danger');
+                            $('#d_msg_text').text('管理员密码错误,注销失败!');
                         } else{
                             $('#d_msg').removeClass();
                             $('#d_msg').addClass('alert alert-success');
@@ -102,12 +115,7 @@ function accountController($scope,accountService){
             $('#d_msg').addClass('alert alert-danger');
             $('#d_msg_text').text('操作员无权限,注销失败!');
         }
-
     }
-
-
-
-
 }
 
 
@@ -116,8 +124,7 @@ function accountController($scope,accountService){
 
 
 
-/*<!----------3.1 账号修改（模态框）--------->*/
-//图标样式
+//表格图标样式
 function accountFormatter(value, row, index) {
     return [
         '<a class="edit ml10" href="javascript:void(0)" title="Edit">',
@@ -129,7 +136,7 @@ function accountFormatter(value, row, index) {
     ].join('');
 }
 
-//图标事件
+//表格图标事件
 window.accountEvents = {
     'click .edit': function (e, value, row, index) {
         $(document).ready(function(){
@@ -149,11 +156,26 @@ window.accountEvents = {
             $('#d_msg').addClass('alert alert-info');
             $('#d_msg_text').text('注销账号需谨慎!');
 
+
+            $('#d_userPassword').val('');
             $('#d_userName').text(row.username);
             $('#d_userType').text(row.usertype);
             $('#d_createTime').text(row.createTime);
             $('#delete').modal('show');
 
         });
+
+        //$('#table').bootstrapTable('removeAll');
     }
 };
+
+//表格条纹样式
+function rowStyle(row, index) {
+    if (index === 0 || index === 1) {
+        return {
+            classes: 'active'
+        };
+    }
+    return {};
+}
+

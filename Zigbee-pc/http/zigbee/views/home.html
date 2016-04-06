@@ -97,14 +97,14 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-rss fa-fw fa-lg"></i> 基站管理<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="/signup">基站注册</a>
+                                        <a href="/baseSignup">基站注册</a>
                                     </li>
                                     <li>
-                                        <a href="/account">基站列表</a>
+                                        <a href="/baseSignupAccount">基站列表</a>
                                     </li>
                                 </ul>
                             </ul>
@@ -173,14 +173,12 @@
                            data-page-list="[10, 20, 50, 100, 200]">
                         <thead>
                         <tr>
-                            <th data-field="ID" data-align="center">基站ID</th>
-                            <th data-field="IP" data-align="center" data-sortable="true">IP地址</th>
-                            <th data-field="position" data-align="center" data-sortable="true">地理位置</th>
-                            <th data-field="status" data-align="center" data-sortable="true">连接状态</th>
-                            <th data-field="status" data-align="center" data-sortable="true">最近连接时间</th>
+                            <th data-field="state" data-checkbox="true"></th>
+                            <th data-field="IP" data-align="center">IP地址</th>
+                            <th data-field="position" data-align="center">地理位置</th>
+                            <th data-field="status" data-align="center">连接状态</th>
                             <th data-field="Conncet" data-formatter="operateFormatterConnect" data-events="operateEvents" data-align="center">连接</th>
                             <th data-field="Check" data-formatter="operateFormatterCheck" data-events="operateEvents" data-align="center">查看</th>
-                            <th data-field="status" data-align="center" data-sortable="true">最近连接时间</th>
                         </tr>
                         </thead>
                     </table>
